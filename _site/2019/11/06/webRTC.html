@@ -1,0 +1,495 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>WebRTC 音视频流</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(255,90,90) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(255,90,90);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">WebRTC 音视频流</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(255,90,90);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,90,90)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,90,90);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">WebRTC 音视频流</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/11/06/FirstBlog.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,90,90)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,90,90);"><sapn class="main">我家成员介绍</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(255,90,90);border-bottom: 2px solid rgb(255,90,90);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2019/11/06/FirstBlog.html" class="rightchange" style="border-left: 1px solid rgb(255,90,90);border-bottom: 2px solid rgb(255,90,90);"><span>下一篇<br><br>我家成员介绍</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(255,90,90); border-right: 8px solid rgb(255,90,90)">
+        Welcome to WebRTC!
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <p>官方文档: https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-supported-constraints</p>
+
+<blockquote>
+  <p>WebRTC是一个免费的开放项目，它通过简单的API为浏览器和移动应用程序提供实时通信（RTC）功能。WebRTC组件已经过优化，可以最好地满足此目的。</p>
+</blockquote>
+
+<blockquote>
+  <p>我们的使命：为浏览器，移动平台和IoT设备开发丰富，高质量的RTC应用程序，并允许它们全部通过一组通用协议进行通信。</p>
+</blockquote>
+
+<blockquote>
+  <p>WebRTC计划是一个由Google，Mozilla和Opera等机构支持的项目。此页面由Google Chrome小组维护。</p>
+  <h5 id="webrtc实现了下列三个-api">WebRTC实现了下列三个 API：</h5>
+  <ul>
+    <li>(1）MediaStream（别名 getUserMedia）</li>
+    <li>(2）RTCPeerConnection</li>
+    <li>(3）RTCDataChannel</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>利用 getUserMedia 可以从设备上获取数据流，比如说摄像头和麦克风。</li>
+  <li>利用 RTCPeerConnection 能够实现音视频通话，包括设备加密和带宽管理。</li>
+  <li>利用 RTCDataChannel 可以实现 p2p 通话</li>
+</ul>
+
+<h4 id="clientjs">client.js</h4>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Skip</span> <span class="nx">to</span> <span class="nx">content</span>
+<span class="nx">Search</span> <span class="nx">or</span> <span class="nx">jump</span> <span class="nx">to</span><span class="err">…</span>
+
+<span class="nx">Pull</span> <span class="nx">requests</span>
+<span class="nx">Issues</span>
+<span class="nx">Marketplace</span>
+<span class="nx">Explore</span>
+ 
+<span class="p">@</span><span class="nd">guokaigdg</span> 
+<span class="mi">1</span>
+<span class="mi">00</span><span class="nx">guokaigdg</span><span class="o">/</span><span class="nx">WebRTC</span>
+ <span class="nx">Code</span> <span class="nx">Issues</span> <span class="mi">0</span> <span class="nx">Pull</span> <span class="nx">requests</span> <span class="mi">0</span> <span class="nx">Projects</span> <span class="mi">0</span> <span class="nx">Wiki</span> <span class="nx">Security</span> <span class="nx">Insights</span> <span class="nx">Settings</span>
+<span class="nx">WebRTC</span><span class="o">/</span><span class="nx">client</span><span class="p">.</span><span class="nx">js</span>
+<span class="p">@</span><span class="nd">guokaigdg</span> <span class="nx">guokaigdg</span> <span class="err">视频录制</span>
+<span class="nx">afd1446</span> <span class="nx">on</span> <span class="mi">2</span> <span class="nx">Aug</span>
+<span class="mi">113</span> <span class="nx">lines</span> <span class="p">(</span><span class="mi">96</span> <span class="nx">sloc</span><span class="p">)</span>  <span class="mf">2.66</span> <span class="nx">KB</span>
+  
+<span class="dl">'</span><span class="s1">use strict</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">mediaStreamContrains</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">video</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">frameRate</span><span class="p">:</span> <span class="p">{</span><span class="na">min</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span>
+    <span class="na">width</span><span class="p">:</span> <span class="p">{</span><span class="na">min</span><span class="p">:</span> <span class="mi">640</span><span class="p">,</span> <span class="na">ideal</span><span class="p">:</span> <span class="mi">1280</span><span class="p">},</span>
+    <span class="na">height</span><span class="p">:</span> <span class="p">{</span><span class="na">min</span><span class="p">:</span> <span class="mi">360</span><span class="p">,</span> <span class="na">ideal</span><span class="p">:</span> <span class="mi">720</span><span class="p">},</span>
+    <span class="na">aspectRatio</span><span class="p">:</span> <span class="mi">16</span><span class="o">/</span><span class="mi">9</span><span class="p">,</span>
+    <span class="na">facingMode</span><span class="p">:</span> <span class="dl">"</span><span class="s2">user</span><span class="dl">"</span>
+  <span class="p">},</span>
+  <span class="na">audio</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">echoCancellation</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="na">noiseSuppression</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">autoGainControl</span><span class="p">:</span> <span class="kc">true</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+
+<span class="kd">const</span> <span class="nx">localVideo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#capture</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">recvideo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#replay</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">stream</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">gotLocalMediaStream</span><span class="p">(</span><span class="nx">mediaStream</span><span class="p">){</span>
+  <span class="nx">localVideo</span><span class="p">.</span><span class="nx">srcObject</span> <span class="o">=</span> <span class="nx">stream</span> <span class="o">=</span> <span class="nx">mediaStream</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">handleLocalMediaStreamError</span><span class="p">(</span><span class="nx">error</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">navigator.getUserMedia error: </span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nb">navigator</span><span class="p">.</span><span class="nx">mediaDevices</span><span class="p">.</span><span class="nx">getUserMedia</span><span class="p">(</span><span class="nx">mediaStreamContrains</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span>
+  <span class="nx">gotLocalMediaStream</span>
+<span class="p">).</span><span class="k">catch</span><span class="p">(</span>
+  <span class="nx">handleLocalMediaStreamError</span>
+<span class="p">);</span>
+<span class="c1">// navigator.mediaDevices.enumerateDevices().then((list) =&gt; {</span>
+<span class="c1">//   console.log("origin:", list);</span>
+<span class="c1">// })</span>
+
+<span class="kd">var</span> <span class="nx">buffer</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">btn_record</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">#record</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">btn_play</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">#recplay</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">btn_download</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">#download</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="nx">btn_record</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">startRecord</span><span class="p">();</span>
+<span class="p">});</span>
+<span class="nx">btn_play</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">play</span><span class="p">();</span>
+<span class="p">});</span>
+<span class="nx">btn_download</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">download</span><span class="p">();</span>
+<span class="p">})</span>
+
+<span class="c1">// 当该函数被触发后，将数据压入到 blob 中</span>
+<span class="kd">function</span> <span class="nx">handleDataAvailable</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span> <span class="o">&amp;&amp;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">data</span> <span class="o">&amp;&amp;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">size</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="nx">buffer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+    <span class="nx">btn_play</span><span class="p">.</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">mediaRecorder</span>
+<span class="kd">function</span> <span class="nx">startRecord</span><span class="p">(){</span>
+
+  <span class="nx">buffer</span> <span class="o">=</span> <span class="p">[];</span>
+
+  <span class="c1">// 设置录制下来的多媒体格式 </span>
+  <span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">mimeType</span><span class="p">:</span> <span class="dl">'</span><span class="s1">video/webm;codecs=h264</span><span class="dl">'</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 判断浏览器是否支持录制</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">MediaRecorder</span><span class="p">.</span><span class="nx">isTypeSupported</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">mimeType</span><span class="p">)){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">options</span><span class="p">.</span><span class="nx">mimeType</span><span class="p">}</span><span class="s2"> is not supported!`</span><span class="p">);</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">try</span><span class="p">{</span>
+    <span class="c1">// 创建录制对象</span>
+    <span class="nx">mediaRecorder</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MediaRecorder</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">stream</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+  <span class="p">}</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Failed to create MediaRecorder:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">e</span><span class="p">);</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nx">btn_record</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+  <span class="c1">// 当有音视频数据来了之后触发该事件</span>
+  <span class="nx">mediaRecorder</span><span class="p">.</span><span class="nx">ondataavailable</span> <span class="o">=</span> <span class="nx">handleDataAvailable</span><span class="p">;</span>
+  <span class="c1">// 开始录制</span>
+  <span class="nx">mediaRecorder</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">play</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">mediaRecorder</span><span class="p">.</span><span class="nx">ondataavailable</span> <span class="o">=</span> <span class="kc">null</span>
+  <span class="kd">var</span> <span class="nx">blob</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Blob</span><span class="p">(</span><span class="nx">buffer</span><span class="p">,</span> <span class="p">{</span><span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">video/webm</span><span class="dl">'</span><span class="p">});</span>
+  <span class="nx">recvideo</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">URL</span><span class="p">.</span><span class="nx">createObjectURL</span><span class="p">(</span><span class="nx">blob</span><span class="p">);</span>
+  <span class="nx">recvideo</span><span class="p">.</span><span class="nx">srcObject</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+  <span class="nx">recvideo</span><span class="p">.</span><span class="nx">controls</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="nx">recvideo</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+  <span class="nx">btn_record</span><span class="p">.</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">);</span>
+  <span class="nx">btn_download</span><span class="p">.</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">download</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">blob</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Blob</span><span class="p">(</span><span class="nx">buffer</span><span class="p">,</span> <span class="p">{</span><span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">video/webm</span><span class="dl">'</span><span class="p">});</span>
+  <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">URL</span><span class="p">.</span><span class="nx">createObjectURL</span><span class="p">(</span><span class="nx">blob</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">);</span>
+
+  <span class="nx">a</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">url</span><span class="p">;</span>
+  <span class="nx">a</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span><span class="p">;</span>
+  <span class="nx">a</span><span class="p">.</span><span class="nx">download</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">aaa.webm</span><span class="dl">'</span><span class="p">;</span>
+  <span class="nx">a</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+
+<span class="p">}</span>
+<span class="err">©</span> <span class="mi">2019</span> <span class="nx">GitHub</span><span class="p">,</span> <span class="nx">Inc</span><span class="p">.</span>
+<span class="nx">Terms</span>
+<span class="nx">Privacy</span>
+<span class="nx">Security</span>
+<span class="nx">Status</span>
+<span class="nx">Help</span>
+<span class="nx">Contact</span> <span class="nx">GitHub</span>
+<span class="nx">Pricing</span>
+<span class="nx">API</span>
+<span class="nx">Training</span>
+<span class="nx">Blog</span>
+<span class="nx">About</span>
+
+</code></pre></div></div>
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2019/11/06/webRTC', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2019
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
