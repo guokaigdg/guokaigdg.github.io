@@ -1,0 +1,410 @@
+<!-- 首页及其他页面的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="撸猫小能手的博客" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title></title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+</head>
+<body>
+<!-- 页面主体 -->
+<p><a href="https://guokaigdg.github.io">在线预览 view→</a></p>
+
+<h3 id="主题特性">主题特性</h3>
+
+<ul>
+  <li>主题基于 <code class="language-plaintext highlighter-rouge">jekyll 3.8.1</code> 开发</li>
+  <li>响应式布局</li>
+  <li>文章标签索引</li>
+  <li>文章时间线索引</li>
+  <li>博主个人信息展示</li>
+  <li>支持9种代码高亮主题色</li>
+  <li>支持 <code class="language-plaintext highlighter-rouge">dispus</code> 、 <code class="language-plaintext highlighter-rouge">来必力</code> 、 <code class="language-plaintext highlighter-rouge">Gitment</code> 三种评论系统</li>
+  <li>支持 <code class="language-plaintext highlighter-rouge">百度统计</code> 、<code class="language-plaintext highlighter-rouge">谷歌分析</code> 两种网站追踪系统</li>
+  <li>支持13款不同社交平台图标及链接地址指向</li>
+  <li>支持11个不同平台的文章分享路口</li>
+</ul>
+
+<h3 id="开始使用">开始使用</h3>
+
+<h4 id="线上部署">线上部署</h4>
+
+<p>​ 首先在 <code class="language-plaintext highlighter-rouge">github</code> 上开启一个仓库起名为 <code class="language-plaintext highlighter-rouge">你的github用户名.github.io</code> 。并 <code class="language-plaintext highlighter-rouge">clone</code> 你的仓库到本地。 然后下载 <code class="language-plaintext highlighter-rouge">HardCandy-Jekyll</code> 的 <a href="https://github.com/xukimseven/HardCandy-Jekyll">源码</a> 到本地之后，</p>
+<ul>
+  <li>Gemfile 文件代码最后加上 gem “github-pages”, group: :jekyll_plugins</li>
+  <li>将 <code class="language-plaintext highlighter-rouge">_config.yml</code> 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 <code class="language-plaintext highlighter-rouge">github</code> 线上仓库，即可通过域名 <code class="language-plaintext highlighter-rouge">https://你的github用户名.github.io</code> 访问看到自己的博客页面。</li>
+</ul>
+
+<h4 id="本地部署">本地部署</h4>
+
+<p>​	首先在本地安装 <code class="language-plaintext highlighter-rouge">Jekyll</code> <a href="https://www.jekyll.com.cn/docs/quickstart/">详情请戳</a></p>
+
+<p>​	安装完成之后，使用命令 <code class="language-plaintext highlighter-rouge">jekyll -v</code> 查看 <strong>jekyll版本号</strong> ，若低于 <code class="language-plaintext highlighter-rouge">jekyll 3.x.x</code> 则需要升级至 <code class="language-plaintext highlighter-rouge">jekyll 3.x.x</code> 。</p>
+
+<p>​	使用 <code class="language-plaintext highlighter-rouge">gem install jekyll-paginate</code> 或 <code class="language-plaintext highlighter-rouge">sudo gem install jekyll-paginate</code> 安装Jekyll的分页插件。</p>
+
+<p>​	将源码 <code class="language-plaintext highlighter-rouge">clone</code> 到本地后，在终端进入 <code class="language-plaintext highlighter-rouge">HardCandy-Jekyll</code> 根目录，运行 <code class="language-plaintext highlighter-rouge">jekyll server</code> 或 <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> ，即可开启jekyll的服务。通过浏览器访问 <a href="http://localhost:4000">http://localhost:4000</a> ，即可看到本地部署的 <code class="language-plaintext highlighter-rouge">HardCandy-Jekyll</code> 博客了。</p>
+
+<blockquote>
+  <p>warning！值得注意的地方：</p>
+
+  <p>​	由于本主题是基于 <code class="language-plaintext highlighter-rouge">jekyll 3.8.1</code> 开发 ，jekyll的版本差异也许会导致相关显示效果的差异。详情请参考官方文档：<a href="https://jekyllrb.com/news/">news</a></p>
+</blockquote>
+
+<h3 id="配置文档">配置文档</h3>
+
+<ul>
+  <li>开始
+    <ul>
+      <li><a href="#关于博客">关于博客</a></li>
+      <li><a href="#写文章">写文章</a></li>
+    </ul>
+  </li>
+  <li>组件
+    <ul>
+      <li><a href="#博主个人信息">博主个人信息</a></li>
+      <li><a href="#社交媒体">社交媒体</a></li>
+      <li><a href="#首页显示信息">首页显示信息</a></li>
+      <li><a href="#导航栏">导航栏</a></li>
+      <li><a href="#分页">分页</a></li>
+      <li><a href="#代码高亮主题">代码高亮主题</a></li>
+      <li><a href="#友情链接">友情链接</a></li>
+      <li><a href="#页脚">页脚</a></li>
+    </ul>
+  </li>
+  <li>第三方服务
+    <ul>
+      <li><a href="#评论系统的切换">评论系统的切换</a></li>
+      <li><a href="#文章分享的路口">文章分享的路口</a></li>
+      <li><a href="#网站流量追综的配置">网站流量追综的配置</a></li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>​	通用修改 <code class="language-plaintext highlighter-rouge">_config.yml</code> 文件，你便可以轻松搭建属于你自己的个人博客。</p>
+
+  <p>​	一部分配置，默认已经是配置好的，你只需要修改下面列出的内容即可完成搭建。</p>
+</blockquote>
+
+<h4 id="关于博客">关于博客</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="c1"># Site settings 配置站点</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">your</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">title'</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">your</span><span class="nv"> </span><span class="s">web</span><span class="nv"> </span><span class="s">description'</span>
+<span class="na">keywords</span><span class="pi">:</span> <span class="s1">'</span><span class="s">your</span><span class="nv"> </span><span class="s">web</span><span class="nv"> </span><span class="s">keywords,</span><span class="nv"> </span><span class="s">another</span><span class="nv"> </span><span class="s">keywords'</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">https://abc.github.io'</span> <span class="c1"># your host</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">title</code> ：用于页面的 title 标签的显示内容</p>
+
+<p><code class="language-plaintext highlighter-rouge">description</code> ：网站的简介</p>
+
+<p><code class="language-plaintext highlighter-rouge">keywords</code> ：网站的关键词</p>
+
+<p><code class="language-plaintext highlighter-rouge">url</code> ：网站域名</p>
+
+<h4 id="写文章">写文章</h4>
+
+<p>​	博客通过解析 <code class="language-plaintext highlighter-rouge">markdown</code> 文件来部署文章页面的，所以用户写文章只需要写一篇markdown，并放置在站点根目录下的 <code class="language-plaintext highlighter-rouge">_post</code> 文件夹即可。具体的markdown语法自行上网搜索学习，或使用markdown编辑器进行写作。推荐一款 markdown编辑器：<a href="https://www.typora.io">typora</a> 。支持 windows 、mac OSX 、Linux 。</p>
+
+<p>关于文章 YAML头信息：</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">post</span><span class="nv"> </span><span class="s">title"</span>
+<span class="na">subtitle</span><span class="pi">:</span> <span class="s1">'</span><span class="s">post</span><span class="nv"> </span><span class="s">subtitle'</span>
+<span class="na">date</span><span class="pi">:</span>   <span class="s">2018-05-29 08:44:13</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="s">html js css</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+<span class="na">color</span><span class="pi">:</span> <span class="s1">'</span><span class="s">rgb(154,133,255)'</span>
+<span class="na">cover</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+</code></pre></div></div>
+
+<p>关于color：</p>
+
+<p>​	此处的color用于post页面的顶部位置的背景色。如上面展示图所示为 <code class="language-plaintext highlighter-rouge">rgb(154,133,255)</code> 色。</p>
+
+<p>​	对于color的书写，如果颜色代码为 <code class="language-plaintext highlighter-rouge">rgb</code> 或 <code class="language-plaintext highlighter-rouge">rgba</code> 又或是 <code class="language-plaintext highlighter-rouge">英文单词</code> 的话，可以不用引号包裹，但如果颜色代码为 <code class="language-plaintext highlighter-rouge">#123456</code> 这种16进制码的话，就必须使用引号包裹。所以，在使用中，推荐一致都使用引号，以免错误使用。</p>
+
+<p>​	当然，如果你在书写文章时，忘记写color的值的话，主题默认会为你填写 <code class="language-plaintext highlighter-rouge">rgb(154,133,255)</code> 色。就是上图显示的颜色。虽然不影响页面的显示，但如果想要更多彩的页面效果的话，建议在每一篇的头信息里写上 color 值。</p>
+
+<p>关于cover：</p>
+
+<p>​	此处需填写某一张图片的 <code class="language-plaintext highlighter-rouge">url</code> ，<code class="language-plaintext highlighter-rouge">url</code> 值可以是线上的某张图片，也可以是博客目录下的图片。关键是要书写正确。这张图片用于在首页下博客列表里显示，如下图。</p>
+
+<p><img src="/screenshot/5.png" alt="5" /></p>
+
+<h4 id="博主个人信息">博主个人信息</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 博主</span>
+<span class="na">author</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s1">'</span><span class="s">your</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">name'</span>
+<span class="na">NickName</span><span class="pi">:</span> <span class="s1">'</span><span class="s">your</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">nickname'</span>
+<span class="na">webtitle</span><span class="pi">:</span> <span class="s1">'</span><span class="s">your</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">webtitle'</span>
+<span class="na">bio</span><span class="pi">:</span> <span class="s1">'</span><span class="s">your</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">bio'</span>
+<span class="na">about</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">aboutyou</span><span class="pi">:</span> <span class="s1">'</span><span class="s">your</span><span class="nv"> </span><span class="s">introduction'</span>
+<span class="na">portraits</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/assets/profile.jpeg'</span> <span class="c1"># your portraits image file path</span>
+</code></pre></div></div>
+
+<p>​	该部分显示在 <code class="language-plaintext highlighter-rouge">关于博主</code> 页面，与 <code class="language-plaintext highlighter-rouge">社交媒体</code> 一同在下图显示。</p>
+
+<p><img src="/screenshot/6.png" alt="6" /></p>
+
+<p>关于author：</p>
+
+<p>​	使用 <code class="language-plaintext highlighter-rouge">true</code> 或者 <code class="language-plaintext highlighter-rouge">false</code> 来打开或关闭博主信息卡片，默认 true ，最佳体验也是 true 。</p>
+
+<p>关于about：</p>
+
+<p>​	使用 <code class="language-plaintext highlighter-rouge">true</code> 或者 <code class="language-plaintext highlighter-rouge">false</code> 来打开或关闭博主关于信息，即是否显示 aboutyou 部分的信息。默认 true ，该部分需要在 aboutyou 中输入相关信息，支持在此填写html代码。</p>
+
+<h4 id="社交媒体">社交媒体</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># SNS</span>
+<span class="na">SNS</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">SNS-icon</span><span class="pi">:</span> <span class="c1">#['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']</span>
+  <span class="na">mail</span><span class="pi">:</span> <span class="s1">'</span><span class="s">mailto:abc@gmail.com'</span>
+  <span class="na">weixin</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span> <span class="c1"># 你的微信二维码存放的地址</span>
+  <span class="na">qq</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span> <span class="c1"># 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&amp;uin='你的QQ号'&amp;site=qq&amp;menu=yes</span>
+  <span class="na">github</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">Codepen</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">weibo</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">instagram</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">Twitter</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">Dribbble</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">Facebook</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">Google</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">zhihu</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">juejin</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">twitch</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+</code></pre></div></div>
+
+<p>​	<del>主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 <code class="language-plaintext highlighter-rouge">#</code> 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。</del></p>
+
+<p>​	在 <code class="language-plaintext highlighter-rouge">SNS</code> 后填写  <code class="language-plaintext highlighter-rouge">true</code> 或者 <code class="language-plaintext highlighter-rouge">false</code> 来打开或者关闭这一部分。</p>
+
+<p>2018/09/28 更新：</p>
+
+<p><img src="/screenshot/sns-icon.png" alt="7" /></p>
+
+<ul>
+  <li>更新社交图标为 线上地址 ，便于管理与修改。</li>
+  <li>添加 <strong>Codepen</strong> 图标</li>
+  <li>修改原来的圆形图标为不规则图标</li>
+</ul>
+
+<h4 id="首页显示信息">首页显示信息</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">your awesome title</span>
+<span class="na">page-title</span><span class="pi">:</span> <span class="s">awesome page-title.</span>
+<span class="na">home-title</span><span class="pi">:</span> <span class="s">awesome home-title.</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">description</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>​	该部分位于 <code class="language-plaintext highlighter-rouge">index.html</code> 页面，修改 <code class="language-plaintext highlighter-rouge">title</code> 、<code class="language-plaintext highlighter-rouge">page-title</code> 、<code class="language-plaintext highlighter-rouge">home-title</code>  、<code class="language-plaintext highlighter-rouge">description</code>为个人想要的信息，默认配置的显示效果如下图。</p>
+
+<p><img src="/screenshot/7.png" alt="7" /></p>
+
+<h4 id="导航栏">导航栏</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># nav 中文字符空格：&amp;emsp;</span>
+<span class="na">nav</span><span class="pi">:</span> <span class="c1"># 最佳体验 六个标签 且最好每个标签不超过4中文字</span>
+  <span class="s">首页</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/'</span>
+  <span class="s">标签</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/tags.html'</span>
+  <span class="s">时间线</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/timeline.html'</span>
+  <span class="s">关于博主</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/about.html'</span>
+  <span class="s">友情链接</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/friendLink.html'</span>
+</code></pre></div></div>
+
+<p>​	默认全部开启他们，当然如果想要自己添加，按照格式填在下方即可，当然页面显示顺序与每一行的位置有关。</p>
+
+<h4 id="分页">分页</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 分页</span>
+<span class="na">paginate</span><span class="pi">:</span> <span class="m">2</span>
+<span class="na">paginatepath</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">page:num'</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>​	随个人爱好在，在上面填写你需要的在首页一页最多显示多少篇博客的数字。</p>
+
+<p>​	本地部署的需要使用 <code class="language-plaintext highlighter-rouge">gem install jekyll-paginate</code> 或 <code class="language-plaintext highlighter-rouge">sudo gem install jekyll-paginate</code> 安装Jekyll的分页插件。</p>
+
+<h4 id="代码高亮主题">代码高亮主题</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 代码高亮 使用rouge</span>
+<span class="na">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+<span class="c1"># 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中</span>
+<span class="na">pygmentsTheme</span><span class="pi">:</span> <span class="s1">'</span><span class="s">default'</span>
+</code></pre></div></div>
+
+<p>​	代码高亮使用 jekyll3.0 之后的默认高亮引擎 <code class="language-plaintext highlighter-rouge">rouge</code> 。关于主题，只需要在 <code class="language-plaintext highlighter-rouge">pygmentsTheme</code> 后填写喜欢的主题名称即可。共有9款主题可选，主题名见上文。</p>
+
+<p>​	代码高亮的写法：</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl"> css
+</span><span class="o">*</span><span class="p">{</span>
+ <span class="nl">margin</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+ <span class="nl">padding</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<p>2018/09/28 更新：</p>
+
+<p><img src="/screenshot/%E5%8D%9A%E5%AE%A2%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E4%BE%8B%E5%AD%90.png" alt="7" /></p>
+
+<p>上图为 <strong>代码高亮试例图</strong> ，仅以 html 作为参考例子，其他代码参考 上图，或自行切换测试选择自己喜欢的代码高亮主题</p>
+
+<h4 id="友情链接">友情链接</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 友情链接</span>
+<span class="na">friends</span><span class="pi">:</span>
+  <span class="na">jekyll</span><span class="pi">:</span> <span class="s1">'</span><span class="s">https://www.jekyll.com.cn/'</span>
+</code></pre></div></div>
+
+<p>​	按格式填写即可，排序与配置文件里的排序有关。</p>
+
+<h4 id="页脚">页脚</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># since</span>
+<span class="na">footer</span><span class="pi">:</span>
+  <span class="na">since</span><span class="pi">:</span> <span class="m">2018</span>
+</code></pre></div></div>
+
+<p>​	用于页脚显示时间。</p>
+
+<h4 id="评论系统的切换">评论系统的切换</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 评论 最佳体验 在disqus、livere和Gitment之间三选一</span>
+<span class="c1"># disqus 评论</span>
+<span class="na">disqus</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">disqus_url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span> <span class="c1"># https://abc.disqus.com/embed.js</span>
+<span class="c1"># 来必力评论</span>
+<span class="na">livere</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">livere_uid</span><span class="pi">:</span> <span class="s1">'</span><span class="s">MTAyMC8zNDI2OS8xMDgwNg=='</span> <span class="c1"># MTAyMC8zNDI2OS8xMDgwNg==</span>
+<span class="c1"># Gitment评论 OAuth Application</span>
+<span class="na">Gitment</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">Gitment_owner</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>  <span class="c1"># github用户名</span>
+<span class="na">Gitment_repo</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>  <span class="c1"># github博客存放的仓库名</span>
+<span class="na">client_id</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>  <span class="c1"># 注册 OAuth Application 后获得的 client_id</span>
+<span class="na">client_secret</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>  <span class="c1"># 注册 OAuth Application 后获得的 client_secret</span>
+</code></pre></div></div>
+
+<p>​	按申请第三方评论是获取的相关信息在配置文件中进行填写即可。</p>
+
+<p>​	共有三款评论可供选择，使用 <code class="language-plaintext highlighter-rouge">true</code> 或者 <code class="language-plaintext highlighter-rouge">false</code> 开启或关闭某个评论系统。可开启多个甚至全开。当然，最佳体验，开一个即可。</p>
+
+<p>​	三款评论的样式如下图：</p>
+
+<p>dispus：</p>
+
+<p><img src="/screenshot/8.png" alt="8" /></p>
+
+<p>来必力：</p>
+
+<p><img src="/screenshot/9.png" alt="9" /></p>
+
+<p>Gitment评论：</p>
+
+<p><img src="/screenshot/10.png" alt="10" /></p>
+
+<p>​	三款评论各有各的优势与坏处。出于显示样式与中国大陆网络环境考虑，主题默认开启 <code class="language-plaintext highlighter-rouge">来必力</code> 评论为最佳体验。当然需要填写好相关的 <code class="language-plaintext highlighter-rouge">livere_uid</code> 代码。</p>
+
+<h4 id="文章分享的路口">文章分享的路口</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google</span>
+<span class="na">social-share</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">social-share-items</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">qq'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">wechat'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">weibo'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">twitter'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">facebook'</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>​	为了让文章更方便地分享，使用了第三方分享插件<a href="http://overtrue.github.io/share.js/">Share.js</a>，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。</p>
+
+<p>​	只需要填写相关的名称在 <code class="language-plaintext highlighter-rouge">social-share-items</code> 后即可，显示顺序与书写顺序有关。</p>
+
+<h4 id="网站流量追综的配置">网站流量追综的配置</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 百度统计 在baidu-url里填写自己相关的url代码</span>
+<span class="na">baidu</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">baidu-url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+<span class="c1"># 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID</span>
+<span class="na">google</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">google-ID</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+</code></pre></div></div>
+
+<p>​	在 <code class="language-plaintext highlighter-rouge">baidu-url</code> 和 <code class="language-plaintext highlighter-rouge">google-ID</code> 分别填上注册获取的相关信息。使用 <code class="language-plaintext highlighter-rouge">true</code> 或者 <code class="language-plaintext highlighter-rouge">false</code> 开启或关闭他们。出于中国大陆网络环境，默认开启 百度统计 ，当然可以多开。</p>
+
+<h3 id="license-许可证">License 许可证</h3>
+
+<p>HardCandy-Jekyll is licensed under <a href="https://github.com/xukimseven/HardCandy-Jekyll/blob/master/LICENSE">MIT</a>.</p>
+
+<h3 id="求star-求关注">求Star 求关注</h3>
+
+<p>看到这里，如果你喜欢我的小项目，欢迎下载使用他，也请你为我点个小星星 😜 ，多谢。</p>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 5,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+
+</body>
+</html>
