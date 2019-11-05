@@ -1,6 +1,6 @@
 # Site settings 配置站点
 title: '佩奇の家'
-description: '撸猫小能手的博客'
+description: 'JUST DO IT'
 keywords: 'React web , JavaScript CSS cat'
 url: 'https://guokaigdg.github.io' # your host
 
@@ -14,34 +14,46 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 
 # 博主
 author: true
-name: 'your awesome name'
-NickName: 'your awesome nickname'
-webtitle: 'your awesome webtitle'
-bio: 'your awesome bio'
+name: '郭凯 ma_meng'
+NickName: '我家猫叫佩奇'
+webtitle: 'Be happy forever'
+bio: '幼稚园->小学->初中->高中->大学-> 每个人都是这样的吗 ?? '
 about: true
-aboutyou: 'your introduction'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+aboutyou: ' 你的 </br>
+            沙雕网友 </br>
+            撸猫小能手 </br>
+            手写三级残废 </br>
+            从未获奖的画手 </br>
+            被编程耽误的艺术家 </br>
+            外卖品鉴师学习做饭ing </br>
+            定焦靠手变焦靠走的摄影师 </br>
+            无聊的日子就這樣，一天天過去  </br>
+            新一年期待还是要有的 </br>
+            1.學習Flutter </br>
+            2.精通React </br>
+            3.堅持每天兩點睡覺，爭取早日享受國家醫保 ​​'
+portraits: '/assets/profile.png' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
+  mail: 'guokaigdg@gmail.com'
   weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: ''
-  Codepen: ''
+  qq: 'http://wpa.qq.com/msgrd?v=3&uin=972579026&site=qq&menu=yes' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+  github: 'https://github.com/guokaigdg'
+  # Codepen: ''
   weibo: ''
   instagram: ''
   Twitter: ''
-  Dribbble: ''
+  # Dribbble: ''
   Facebook: ''
   Google: ''
   zhihu: ''
-  juejin: ''
-  twitch: ''
+  # juejin: ''
+  # twitch: ''
 
 # 分页
-paginate: 2
+paginate: 5
 paginatepath: ['page:num']
 
 # since
@@ -63,15 +75,15 @@ friends:
 
 # 评论 最佳体验 在disqus、livere和Gitment之间三选一
 # disqus 评论
-disqus: false
-disqus_url: '' # https://abc.disqus.com/embed.js
+disqus: true
+disqus_url: ' https://abc.disqus.com/embed.js' # https://abc.disqus.com/embed.js
 # 来必力评论
 livere: true
 livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg==
 # Gitment评论 OAuth Application
-Gitment: false
-Gitment_owner: ''  # github用户名
-Gitment_repo: ''  # github博客存放的仓库名
+Gitment: true
+Gitment_owner: 'guokaigdg'  # github用户名
+Gitment_repo: 'guokaigdg.github.io'  # github博客存放的仓库名
 client_id: ''  # 注册 OAuth Application 后获得的 client_id
 client_secret: ''  # 注册 OAuth Application 后获得的 client_secret
 
