@@ -1,21 +1,8 @@
-## HardCandy-Jekyll
-
-
+## 佩奇の家
 
 ### Preview
 
-[在线预览 view demo →](http://xseven.me/)
-
-![1](/screenshot/1.png)
-
-![2](/screenshot/2.png)
-
-![3](/screenshot/3.png)
-
-想要查看手机端显示效果，扫描下方二维码浏览器打开即可
-
-![4](/screenshot/4.png)
-
+[在线预览 view→](https://guokaigdg.github.io)
 
 
 ### 主题特性
