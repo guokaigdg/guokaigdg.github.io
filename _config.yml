@@ -1,7 +1,7 @@
 # Site settings 配置站点
-title: 'your awesome title'
-description: 'your web description'
-keywords: 'your web keywords, another keywords'
+title: '佩奇の家'
+description: '撸猫小能手的博客'
+keywords: 'React web , JavaScript CSS cat'
 url: 'https://guokaigdg.github.io' # your host
 
 # nav 中文字符空格：&emsp;
