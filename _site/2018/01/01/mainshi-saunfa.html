@@ -1,0 +1,822 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>算法面试题</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(135,206,250) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(135,206,250);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">算法面试题</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(135,206,250);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="/2019/10/30/hello-jekyll.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(135,206,250)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(135,206,250);"><sapn class="main">如何使用Jekyll + github 搭建一个个人博客</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">算法面试题</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2017/11/05/welcome-to-jekyll.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(135,206,250)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(135,206,250);"><sapn class="main">Welcome to Jekyll!</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="/2019/10/30/hello-jekyll.html" class="leftchange" style="border-right: 1px solid rgb(135,206,250);border-bottom: 2px solid rgb(135,206,250);"><span>上一篇<br><br>如何使用Jekyll + github 搭建一个个人博客</span></a>
+    
+    
+      <a href="/2017/11/05/welcome-to-jekyll.html" class="rightchange" style="border-left: 1px solid rgb(135,206,250);border-bottom: 2px solid rgb(135,206,250);"><span>下一篇<br><br>Welcome to Jekyll!</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+
+  <!-- 文章内容 -->
+  <h1 id="算法面试题">算法面试题</h1>
+
+<p>算法相关的题在前端面试中的比重越来越高,当然最有效的方法是去LeetCode上刷题,关于JavaScript版的LeetCode解题思路可以参考此项目<a href="https://github.com/azl397985856/leetcode">leetcode题解，记录自己的leetcode解题之路</a></p>
+
+<h2 id="如何分析时间复杂度">如何分析时间复杂度?</h2>
+
+<p>当问题规模即要处理的数据增长时，基本操作要重复执行的次数必定也会增长，那么我们关心地是这个执行次数以什么样的数量级增长。</p>
+
+<p>我们用大O表示法表示一下常见的时间复杂度量级：</p>
+
+<p>常数阶O(1)
+线性阶O(n)
+对数阶O(logn)
+线性对数阶O(nlogn)
+平方阶O(n²)</p>
+
+<p>当然还有指数阶和阶乘阶这种非常极端的复杂度量级，我们就不讨论了。</p>
+
+<p><img src="https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/c8f312b9fb2d0c8d87af05a04ff208ba.png" alt="2019-06-17-14-10-02" /></p>
+
+<h4 id="o1">O(1)</h4>
+
+<p>传说中的常数阶的复杂度，这种复杂度无论数据规模n如何增长，计算时间是不变的。</p>
+
+<p>举一个简单的例子：</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">increment</span> <span class="o">=</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span><span class="o">++</span>
+</code></pre></div></div>
+
+<p>不管n如何增长，都不会影响到这个函数的计算时间，因此这个代码的时间复杂度都是O(1)。</p>
+
+<h4 id="on">O(n)</h4>
+
+<p>线性复杂度，随着数据规模n的增长，计算时间也会随着n线性增长。</p>
+
+<p>典型的O(n)的例子就是线性查找。</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">const</span> <span class="nx">linearSearch</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">target</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="nx">target</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">i</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>线性查找的时间消化与输入的数组数量n成一个线性比例，随着n规模的增大，时间也会线性增长。</p>
+
+<h4 id="ologn">O(logn)</h4>
+
+<p>对数复杂度，随着问题规模n的增长，计算时间也会随着n对数级增长。</p>
+
+<p>典型的例子是二分查找法。</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">functions</span> <span class="nx">binarySearch</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">target</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span>
+	<span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">while</span> <span class="p">(</span><span class="nx">min</span> <span class="o">&lt;=</span> <span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+		<span class="kd">let</span> <span class="nx">mid</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">max</span> <span class="o">+</span> <span class="nx">min</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">target</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">mid</span><span class="p">])</span> <span class="p">{</span>
+			<span class="nx">max</span> <span class="o">=</span> <span class="nx">mid</span> <span class="o">-</span> <span class="mi">1</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">target</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">mid</span><span class="p">])</span> <span class="p">{</span>
+			<span class="nx">min</span> <span class="o">=</span> <span class="nx">mid</span> <span class="o">+</span> <span class="mi">1</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+			<span class="k">return</span> <span class="nx">mid</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>在二分查找法的代码中，通过while循环，成 2 倍数的缩减搜索范围，也就是说需要经过 log2^n 次即可跳出循环。</p>
+
+<p>事实上在实际项目中，<code class="language-plaintext highlighter-rouge">O(logn)</code>是一个非常好的时间复杂度，比如当<code class="language-plaintext highlighter-rouge">n=100</code>的数据规模时，二分查找只需要7次，线性查找需要100次，这对于计算机而言差距不大，但是当有10亿的数据规模的时候，二分查找依然只需要30次，而线性查找需要惊人的10亿次，<code class="language-plaintext highlighter-rouge">O(logn)</code>时间复杂度的算法随着数据规模的增大，它的优势就越明显。</p>
+
+<h4 id="onlogn">O(nlogn)</h4>
+
+<p>线性对数复杂度，随着数据规模n的增长，计算时间也会随着n呈线性对数级增长。</p>
+
+<p>这其中典型代表就是归并排序，我们会在对应小节详细分析它的复杂度。</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">mergeSort</span> <span class="o">=</span> <span class="nx">array</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nx">len</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nx">len</span>
+	<span class="p">}</span>
+
+	<span class="kd">const</span> <span class="nx">mid</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">len</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+	<span class="kd">const</span> <span class="nx">first</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">mid</span><span class="p">)</span>
+	<span class="kd">const</span> <span class="nx">last</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">mid</span><span class="p">)</span>
+
+	<span class="k">return</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">mergeSort</span><span class="p">(</span><span class="nx">fist</span><span class="p">),</span> <span class="nx">mergeSort</span><span class="p">(</span><span class="nx">last</span><span class="p">))</span>
+
+	<span class="kd">function</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+		<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[];</span>
+		<span class="k">while</span> <span class="p">(</span><span class="nx">left</span><span class="p">.</span><span class="nx">length</span> <span class="o">&amp;&amp;</span> <span class="nx">right</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">if</span> <span class="p">(</span><span class="nx">left</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nx">right</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+				<span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">left</span><span class="p">.</span><span class="nx">shift</span><span class="p">());</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+				<span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">right</span><span class="p">.</span><span class="nx">shift</span><span class="p">());</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+	
+		<span class="k">while</span> <span class="p">(</span><span class="nx">left</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+			<span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">left</span><span class="p">.</span><span class="nx">shift</span><span class="p">());</span>
+	
+		<span class="k">while</span> <span class="p">(</span><span class="nx">right</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+			<span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">right</span><span class="p">.</span><span class="nx">shift</span><span class="p">());</span>
+		<span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="on-1">O(n²)</h4>
+
+<p>平方级复杂度，典型情况是当存在双重循环的时候，即把 O(n) 的代码再嵌套循环一遍，它的时间复杂度就是 O(n²) 了，代表应用是冒泡排序算法。</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">function</span> <span class="nx">bubleSort</span><span class="p">(</span><span class="nx">arra</span><span class="p">){</span>
+
+        <span class="kd">var</span> <span class="nx">temp</span><span class="p">;</span>
+
+        <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">arra</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">j</span><span class="o">&lt;</span><span class="nx">arra</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="nx">i</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="nx">j</span><span class="o">++</span><span class="p">){</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">arra</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">&gt;</span><span class="nx">arra</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
+                    <span class="nx">temp</span><span class="o">=</span><span class="nx">arra</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span>
+                    <span class="nx">arra</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">=</span><span class="nx">arra</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+                    <span class="nx">arra</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nx">temp</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+    <span class="k">return</span> <span class="nx">arra</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="排序算法">排序算法</h2>
+
+<p>排序算法有很多种,我们只讲最具代表性的几种算法： 冒泡排序、希尔排序、归并排序、快速排序</p>
+
+<p><img src="https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/5cf4f5068302e59c8231c18ad9680f10.png" alt="2019-08-07-00-04-56" /></p>
+
+<p>排序算法主体内容采用的是<a href="https://github.com/damonare/Sorts">十大经典排序算法总结（JavaScript描述）</a>,更详细的内容可以移步,因为作者的内容与教科书上的内容有较大冲突,因此我们重写了<strong>快速排序</strong>部分的内容,以教科书为准,因此建议重点读一下本文的快速排序部分.</p>
+
+<h3 id="冒泡排序bubble-sort">冒泡排序（Bubble Sort）</h3>
+
+<p>实现思路:</p>
+
+<ol>
+  <li>
+    <p>比较相邻的元素。如果第一个比第二个大，就交换他们两个。</p>
+  </li>
+  <li>
+    <p>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。</p>
+  </li>
+  <li>
+    <p>针对所有的元素重复以上的步骤，除了最后一个。</p>
+  </li>
+  <li>
+    <p>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</p>
+  </li>
+</ol>
+
+<p>实现:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">bubbleSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">len</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nx">i</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">temp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+                <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span>
+                <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>改进1: 设置一标志性变量pos,用于记录每趟排序中最后一次进行交换的位置。由于pos位置之后的记录均已交换到位,故在进行下一趟排序时只要扫描到pos位置即可。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">function</span> <span class="nx">bubbleSort2</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">time</span><span class="p">(</span><span class="dl">'</span><span class="s1">改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>  <span class="c1">//初始时,最后位置保持不变</span>
+    <span class="k">while</span> <span class="p">(</span> <span class="nx">i</span><span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">pos</span><span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//每趟开始时,无记录交换</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span> <span class="nx">i</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+                <span class="nx">pos</span><span class="o">=</span> <span class="nx">j</span><span class="p">;</span> <span class="c1">//记录交换的位置</span>
+                <span class="kd">var</span> <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">=</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nx">tmp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nx">i</span><span class="o">=</span> <span class="nx">pos</span><span class="p">;</span> <span class="c1">//为下一趟排序作准备</span>
+     <span class="p">}</span>
+     <span class="nx">console</span><span class="p">.</span><span class="nx">timeEnd</span><span class="p">(</span><span class="dl">'</span><span class="s1">改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
+     <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>改进2: 传统冒泡排序中每一趟排序操作只能找到一个最大值或最小值,我们考虑利用在每趟排序中进行正向和反向两遍冒泡的方法一次可以得到两个最终值(最大者和最小者) , 从而使排序趟数几乎减少了一半。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">bubbleSort3</span><span class="p">(</span><span class="nx">arr3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">low</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">high</span><span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">//设置变量的初始值</span>
+    <span class="kd">var</span> <span class="nx">tmp</span><span class="p">,</span><span class="nx">j</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">time</span><span class="p">(</span><span class="dl">'</span><span class="s1">2.改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">low</span> <span class="o">&lt;</span> <span class="nx">high</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="nx">j</span><span class="o">=</span> <span class="nx">low</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span> <span class="nx">high</span><span class="p">;</span> <span class="o">++</span><span class="nx">j</span><span class="p">)</span> <span class="c1">//正向冒泡,找到最大者</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+                <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">=</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nx">tmp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="o">--</span><span class="nx">high</span><span class="p">;</span>                 <span class="c1">//修改high值, 前移一位</span>
+        <span class="k">for</span> <span class="p">(</span><span class="nx">j</span><span class="o">=</span><span class="nx">high</span><span class="p">;</span> <span class="nx">j</span><span class="o">&gt;</span><span class="nx">low</span><span class="p">;</span> <span class="o">--</span><span class="nx">j</span><span class="p">)</span> <span class="c1">//反向冒泡,找到最小者</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">&lt;</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+                <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">=</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nx">tmp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="o">++</span><span class="nx">low</span><span class="p">;</span>                  <span class="c1">//修改low值,后移一位</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">timeEnd</span><span class="p">(</span><span class="dl">'</span><span class="s1">2.改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">arr3</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>动画:</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2016/11/30/f427727489dff5fcb0debdd69b478ecf?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="" /></p>
+
+<h3 id="希尔排序shell-sort">希尔排序(Shell Sort）</h3>
+
+<blockquote>
+  <p>1959年Shell发明；
+第一个突破O(n^2)的排序算法；是简单插入排序的改进版；它与插入排序的不同之处在于，它会优先比较距离较远的元素。希尔排序又叫缩小增量排序</p>
+</blockquote>
+
+<h4 id="算法简介">算法简介</h4>
+
+<blockquote>
+  <p>希尔排序的核心在于间隔序列的设定。既可以提前设定好间隔序列，也可以动态的定义间隔序列。动态定义间隔序列的算法是《算法（第4版》的合著者Robert Sedgewick提出的。</p>
+</blockquote>
+
+<h4 id="算法描述和实现">算法描述和实现</h4>
+
+<p>先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，具体算法描述：</p>
+
+<ol>
+  <li>选择一个增量序列t1，t2，…，tk，其中ti&gt;tj，tk=1；</li>
+  <li>按增量序列个数k，对序列进行k 趟排序；</li>
+  <li>每趟排序，根据对应的增量ti，将待排序列分割成若干长度为m 的子序列，分别对各子表进行直接插入排序。仅增量因子为1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。</li>
+</ol>
+
+<p><strong>Javascript代码实现：</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">shellSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span>
+        <span class="nx">temp</span><span class="p">,</span>
+        <span class="nx">gap</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">time</span><span class="p">(</span><span class="dl">'</span><span class="s1">希尔排序耗时:</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">while</span><span class="p">(</span><span class="nx">gap</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>          <span class="c1">//动态定义间隔序列</span>
+        <span class="nx">gap</span> <span class="o">=</span><span class="nx">gap</span><span class="o">*</span><span class="mi">5</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">gap</span><span class="p">;</span> <span class="nx">gap</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">gap</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">gap</span><span class="o">/</span><span class="mi">5</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">gap</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">temp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">i</span><span class="o">-</span><span class="nx">gap</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">temp</span><span class="p">;</span> <span class="nx">j</span><span class="o">-=</span><span class="nx">gap</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="nx">gap</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span>
+            <span class="p">}</span>
+            <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="nx">gap</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">timeEnd</span><span class="p">(</span><span class="dl">'</span><span class="s1">希尔排序耗时:</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">arr</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">38</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">47</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">36</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">27</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">46</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">48</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shellSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span><span class="c1">//[2, 3, 4, 5, 15, 19, 26, 27, 36, 38, 44, 46, 47, 48, 50]</span>
+
+</code></pre></div></div>
+
+<p><strong>希尔排序图示（图片来源网络）：</strong></p>
+
+<p><img src="https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/6974f74ff2e54223d60693f04759ff7f.png" alt="2019-08-07-00-16-36" /></p>
+
+<h4 id="算法分析">算法分析</h4>
+
+<ul>
+  <li>最佳情况：T(n) = O(nlog2 n)</li>
+  <li>最坏情况：T(n) = O(nlog2 n)</li>
+  <li>平均情况：T(n) =O(nlog n)</li>
+</ul>
+
+<h3 id="归并排序merge-sort">归并排序（Merge Sort）</h3>
+
+<blockquote>
+  <p>和选择排序一样，归并排序的性能不受输入数据的影响，但表现比选择排序好的多，因为始终都是O(n log n）的时间复杂度。代价是需要额外的内存空间。</p>
+</blockquote>
+
+<h4 id="算法简介-1">算法简介</h4>
+
+<blockquote>
+  <p>归并排序是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。归并排序是一种稳定的排序方法。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为2-路归并。</p>
+</blockquote>
+
+<h4 id="算法描述和实现-1">算法描述和实现</h4>
+
+<p>具体算法描述如下：</p>
+
+<ol>
+  <li>把长度为n的输入序列分成两个长度为n/2的子序列；</li>
+  <li>对这两个子序列分别采用归并排序；</li>
+  <li>将两个排序好的子序列合并成一个最终的排序序列。</li>
+</ol>
+
+<p><strong>Javscript代码实现:</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">mergeSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">//采用自上而下的递归方法</span>
+    <span class="kd">var</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">len</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">var</span> <span class="nx">middle</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">len</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="nx">left</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">middle</span><span class="p">),</span>
+        <span class="nx">right</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">middle</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">mergeSort</span><span class="p">(</span><span class="nx">left</span><span class="p">),</span> <span class="nx">mergeSort</span><span class="p">(</span><span class="nx">right</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">time</span><span class="p">(</span><span class="dl">'</span><span class="s1">归并排序耗时</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">left</span><span class="p">.</span><span class="nx">length</span> <span class="o">&amp;&amp;</span> <span class="nx">right</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">left</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nx">right</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+            <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">left</span><span class="p">.</span><span class="nx">shift</span><span class="p">());</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">right</span><span class="p">.</span><span class="nx">shift</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="nx">left</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+        <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">left</span><span class="p">.</span><span class="nx">shift</span><span class="p">());</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="nx">right</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+        <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">right</span><span class="p">.</span><span class="nx">shift</span><span class="p">());</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">timeEnd</span><span class="p">(</span><span class="dl">'</span><span class="s1">归并排序耗时</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">arr</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">38</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">47</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">36</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">27</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">46</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">48</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mergeSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span>
+
+</code></pre></div></div>
+
+<p><strong>归并排序动图演示:</strong></p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2016/11/29/33d105e7e7e9c60221c445f5684ccfb6?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="这里写图片描述" /></p>
+
+<h4 id="算法分析-1">算法分析</h4>
+
+<ul>
+  <li>最佳情况：T(n) = O(n)</li>
+  <li>最差情况：T(n) = O(nlogn)</li>
+  <li>平均情况：T(n) = O(nlogn)</li>
+</ul>
+
+<h3 id="快速排序quick-sort">快速排序（Quick Sort）</h3>
+
+<h4 id="算法简介-2">算法简介</h4>
+
+<p>快速排序的基本思想：通过一趟排序将待排记录分隔成独立的两部分，其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。</p>
+
+<h4 id="算法描述和实现-2">算法描述和实现</h4>
+
+<p>1.从数组中选择中间一项作为主元；</p>
+
+<p>2.创建两个指针，左边一个指向数组的第一项，右边指向数组最后一项。移动左指针直到我们找到一个比主元大的元素，接着，移动右指针直到找到一个比主元小的元素。然后交换它们，重复这个过程，直到左指针超过了右指针。这个过程是的比主元小的值都排在了主元之前，而比主元大的值都排在了主元之后，这一步叫划分操作。</p>
+
+<p>3.接着，算法对划分的小数组（较主元小的值组成的子数组，以及较主元大的值组成的子数组）重复之前的两个步骤，直至数组以完全排序。</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 快速排序</span>
+<span class="kd">const</span> <span class="nx">quickSort</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="c1">// 默认状态下的比较函数</span>
+	<span class="kd">function</span> <span class="nx">compare</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">===</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">return</span> <span class="mi">0</span>
+		<span class="p">}</span>
+		<span class="k">return</span> <span class="nx">a</span> <span class="o">&lt;</span> <span class="nx">b</span> <span class="p">?</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span>
+	<span class="p">}</span>
+
+	<span class="kd">function</span> <span class="nx">swap</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+		<span class="p">[</span><span class="nx">array</span><span class="p">[</span><span class="nx">a</span><span class="p">],</span> <span class="nx">array</span><span class="p">[</span><span class="nx">b</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="nx">array</span><span class="p">[</span><span class="nx">b</span><span class="p">],</span> <span class="nx">array</span><span class="p">[</span><span class="nx">a</span><span class="p">]]</span>
+	<span class="p">}</span>
+
+	<span class="c1">// 分治函数</span>
+	<span class="kd">function</span> <span class="nx">partition</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+		<span class="c1">// 用index取中间值而非splice</span>
+		<span class="kd">const</span> <span class="nx">pivot</span> <span class="o">=</span> <span class="nx">array</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">right</span> <span class="o">+</span> <span class="nx">left</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)]</span>
+		<span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">left</span>
+		<span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">right</span>
+
+		<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">j</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">while</span> <span class="p">(</span><span class="nx">compare</span><span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">pivot</span><span class="p">)</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">i</span><span class="o">++</span>
+			<span class="p">}</span>
+			<span class="k">while</span> <span class="p">(</span><span class="nx">compare</span><span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">j</span><span class="p">],</span> <span class="nx">pivot</span><span class="p">)</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">j</span><span class="o">--</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">j</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">swap</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">)</span>
+				<span class="nx">i</span><span class="o">++</span>
+				<span class="nx">j</span><span class="o">--</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="k">return</span> <span class="nx">i</span>
+	<span class="p">}</span>
+	<span class="c1">// 快排函数</span>
+	<span class="kd">function</span> <span class="nx">quick</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+		<span class="kd">let</span> <span class="nx">index</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">index</span> <span class="o">=</span> <span class="nx">partition</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span>
+			<span class="k">if</span> <span class="p">(</span><span class="nx">left</span> <span class="o">&lt;</span> <span class="nx">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">quick</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">left</span><span class="p">,</span> <span class="nx">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">&lt;</span> <span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">quick</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="k">return</span> <span class="nx">array</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="kd">function</span> <span class="nx">quickSort</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nx">quick</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+	<span class="p">}</span>
+<span class="p">})()</span>
+</code></pre></div></div>
+
+<p><img src="https://user-gold-cdn.xitu.io/2016/11/29/dd9dc195a7331351671fe9ac4f7d5aa4?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="" /></p>
+
+<h4 id="算法分析-2">算法分析</h4>
+
+<p>最佳情况：T(n) = O(nlogn)
+最差情况：T(n) = O(n2)
+平均情况：T(n) = O(nlogn)</p>
+
+<h2 id="查找算法">查找算法</h2>
+
+<h3 id="二分查找法">二分查找法</h3>
+
+<h4 id="算法简介-3">算法简介</h4>
+
+<p>折半查找算法要求查找表的数据是线性结构存储，还要求查找表中的顺序是由小到大排序（由大到小排序）</p>
+
+<h4 id="算法思路及实现">算法思路及实现</h4>
+
+<ol>
+  <li>首先设两个指针，low和height，表示最低索引和最高索引</li>
+  <li>然后取中间位置索引middle，判断middle处的值是否与所要查找的数相同，相同则结束查找，middle处的值比所要查找的值小就把low设为middle+1，如果middle处的值比所要查找的值大就把height设为middle-1</li>
+  <li>然后再新区间继续查到，直到找到或者low&gt;height找不到所要查找的值结束查找</li>
+</ol>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">functions</span> <span class="nx">binarySearch</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">target</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span>
+	<span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">while</span> <span class="p">(</span><span class="nx">min</span> <span class="o">&lt;=</span> <span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+		<span class="kd">let</span> <span class="nx">mid</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">max</span> <span class="o">+</span> <span class="nx">min</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">target</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">mid</span><span class="p">])</span> <span class="p">{</span>
+			<span class="nx">max</span> <span class="o">=</span> <span class="nx">mid</span> <span class="o">-</span> <span class="mi">1</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">target</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">mid</span><span class="p">])</span> <span class="p">{</span>
+			<span class="nx">min</span> <span class="o">=</span> <span class="nx">mid</span> <span class="o">+</span> <span class="mi">1</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+			<span class="k">return</span> <span class="nx">mid</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="算法分析-3">算法分析</h4>
+
+<p>最佳情况：T(n) = O(logn)
+最差情况：T(n) = O(logn)
+平均情况：T(n) = O(logn)</p>
+
+<h3 id="线性查找">线性查找</h3>
+
+<h4 id="算法简介及实现">算法简介及实现</h4>
+
+<p>线性查找很简单,只需要进行简单的遍历即可.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">linearSearch</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">target</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="nx">target</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">return</span> <span class="nx">i</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="算法分析-4">算法分析</h4>
+
+<p>最佳情况：T(n) = O(n)
+最差情况：T(n) = O(n)
+平均情况：T(n) = O(n)</p>
+
+<hr />
+
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2018/01/01/mainshi-saunfa', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2019
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

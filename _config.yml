@@ -32,7 +32,7 @@ aboutyou: ' 你的 </br>
             1.學習Flutter </br>
             2.精通React </br>
             3.堅持每天兩點睡覺，爭取早日享受國家醫保 ​​'
-portraits: '/assets/profile.png' # your portraits image file path
+portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
 SNS: true
