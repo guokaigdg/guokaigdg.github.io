@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-07T02:58:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">熟悉的Smartisan又回来了</title><link href="http://localhost:4000/2019/11/07/Smartisan.html" rel="alternate" type="text/html" title="熟悉的Smartisan又回来了" /><published>2019-11-07T00:00:00+08:00</published><updated>2019-11-07T00:00:00+08:00</updated><id>http://localhost:4000/2019/11/07/Smartisan</id><content type="html" xml:base="http://localhost:4000/2019/11/07/Smartisan.html">&lt;h3 id=&quot;时隔400天坚果手机到底还是来了&quot;&gt;“时隔400天坚果手机到底还是来了”&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-07T03:12:26+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">熟悉的Smartisan又回来了</title><link href="http://localhost:4000/2019/11/07/Smartisan.html" rel="alternate" type="text/html" title="熟悉的Smartisan又回来了" /><published>2019-11-07T00:00:00+08:00</published><updated>2019-11-07T00:00:00+08:00</updated><id>http://localhost:4000/2019/11/07/Smartisan</id><content type="html" xml:base="http://localhost:4000/2019/11/07/Smartisan.html">&lt;h3 id=&quot;时隔400天坚果手机到底还是来了&quot;&gt;“时隔400天坚果手机到底还是来了”&lt;/h3&gt;
 &lt;h4 id=&quot;这已经是第三次参见发布会了-2017-2018-2019-&quot;&gt;这已经是第三次参见发布会了, 2017/ 2018 /2019 …&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019110702402059.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -549,7 +549,489 @@
 
 &lt;h3 id=&quot;license-许可证&quot;&gt;License 许可证&lt;/h3&gt;
 
-&lt;p&gt;HardCandy-Jekyll is licensed under &lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll/blob/master/LICENSE&quot;&gt;MIT&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jekyll</name></author><category term="jekyll" /><category term="gitbub" /><category term="linux" /><category term="markdown" /><summary type="html">主题特性 主题基于 jekyll 3.8.1 开发 响应式布局 文章标签索引 文章时间线索引 博主个人信息展示 支持9种代码高亮主题色 支持 dispus 、 来必力 、 Gitment 三种评论系统 支持 百度统计 、谷歌分析 两种网站追踪系统 支持13款不同社交平台图标及链接地址指向 支持11个不同平台的文章分享路口 开始使用 线上部署 ​ 首先在 github 上开启一个仓库起名为 你的github用户名.github.io 。并 clone 你的仓库到本地。 然后下载 HardCandy-Jekyll 的 源码 到本地之后， Gemfile 文件代码最后加上 gem “github-pages”, group: :jekyll_plugins 将 _config.yml 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 github 线上仓库，即可通过域名 https://你的github用户名.github.io 访问看到自己的博客页面。 本地部署 ​ 首先在本地安装 Jekyll 详情请戳 ​ 安装完成之后，使用命令 jekyll -v 查看 jekyll版本号 ，若低于 jekyll 3.x.x 则需要升级至 jekyll 3.x.x 。 ​ 使用 gem install jekyll-paginate 或 sudo gem install jekyll-paginate 安装Jekyll的分页插件。 ​ 将源码 clone 到本地后，在终端进入 HardCandy-Jekyll 根目录，运行 jekyll server 或 bundle exec jekyll serve ，即可开启jekyll的服务。通过浏览器访问 http://localhost:4000 ，即可看到本地部署的 HardCandy-Jekyll 博客了。 warning！值得注意的地方： ​ 由于本主题是基于 jekyll 3.8.1 开发 ，jekyll的版本差异也许会导致相关显示效果的差异。详情请参考官方文档：news 配置文档 开始 关于博客 写文章 组件 博主个人信息 社交媒体 首页显示信息 导航栏 分页 代码高亮主题 友情链接 页脚 第三方服务 评论系统的切换 文章分享的路口 网站流量追综的配置 ​ 通用修改 _config.yml 文件，你便可以轻松搭建属于你自己的个人博客。 ​ 一部分配置，默认已经是配置好的，你只需要修改下面列出的内容即可完成搭建。 关于博客 --- # Site settings 配置站点 title: 'your awesome title' description: 'your web description' keywords: 'your web keywords, another keywords' url: 'https://abc.github.io' # your host --- title ：用于页面的 title 标签的显示内容 description ：网站的简介 keywords ：网站的关键词 url ：网站域名 写文章 ​ 博客通过解析 markdown 文件来部署文章页面的，所以用户写文章只需要写一篇markdown，并放置在站点根目录下的 _post 文件夹即可。具体的markdown语法自行上网搜索学习，或使用markdown编辑器进行写作。推荐一款 markdown编辑器：typora 。支持 windows 、mac OSX 、Linux 。 关于文章 YAML头信息： layout: post title: &quot;post title&quot; subtitle: 'post subtitle' date: 2018-05-29 08:44:13 tags: html js css description: '' color: 'rgb(154,133,255)' cover: '' 关于color： ​ 此处的color用于post页面的顶部位置的背景色。如上面展示图所示为 rgb(154,133,255) 色。 ​ 对于color的书写，如果颜色代码为 rgb 或 rgba 又或是 英文单词 的话，可以不用引号包裹，但如果颜色代码为 #123456 这种16进制码的话，就必须使用引号包裹。所以，在使用中，推荐一致都使用引号，以免错误使用。 ​ 当然，如果你在书写文章时，忘记写color的值的话，主题默认会为你填写 rgb(154,133,255) 色。就是上图显示的颜色。虽然不影响页面的显示，但如果想要更多彩的页面效果的话，建议在每一篇的头信息里写上 color 值。 关于cover： ​ 此处需填写某一张图片的 url ，url 值可以是线上的某张图片，也可以是博客目录下的图片。关键是要书写正确。这张图片用于在首页下博客列表里显示，如下图。 博主个人信息 # 博主 author: true name: 'your awesome name' NickName: 'your awesome nickname' webtitle: 'your awesome webtitle' bio: 'your awesome bio' about: true aboutyou: 'your introduction' portraits: '/assets/profile.jpeg' # your portraits image file path ​ 该部分显示在 关于博主 页面，与 社交媒体 一同在下图显示。 关于author： ​ 使用 true 或者 false 来打开或关闭博主信息卡片，默认 true ，最佳体验也是 true 。 关于about： ​ 使用 true 或者 false 来打开或关闭博主关于信息，即是否显示 aboutyou 部分的信息。默认 true ，该部分需要在 aboutyou 中输入相关信息，支持在此填写html代码。 社交媒体 # SNS SNS: true SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen'] mail: 'mailto:abc@gmail.com' weixin: '' # 你的微信二维码存放的地址 qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&amp;amp;uin='你的QQ号'&amp;amp;site=qq&amp;amp;menu=yes github: '' Codepen: '' weibo: '' instagram: '' Twitter: '' Dribbble: '' Facebook: '' Google: '' zhihu: '' juejin: '' twitch: '' ​ 主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 # 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。 ​ 在 SNS 后填写 true 或者 false 来打开或者关闭这一部分。 2018/09/28 更新： 更新社交图标为 线上地址 ，便于管理与修改。 添加 Codepen 图标 修改原来的圆形图标为不规则图标 首页显示信息 --- layout: default title: your awesome title page-title: awesome page-title. home-title: awesome home-title. description: description --- ​ 该部分位于 index.html 页面，修改 title 、page-title 、home-title 、description为个人想要的信息，默认配置的显示效果如下图。 导航栏 # nav 中文字符空格：&amp;amp;emsp; nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字 首页: '/' 标签: '/tags.html' 时间线: '/timeline.html' 关于博主: '/about.html' 友情链接: '/friendLink.html' ​ 默认全部开启他们，当然如果想要自己添加，按照格式填在下方即可，当然页面显示顺序与每一行的位置有关。 分页 # 分页 paginate: 2 paginatepath: ['page:num'] ​ 随个人爱好在，在上面填写你需要的在首页一页最多显示多少篇博客的数字。 ​ 本地部署的需要使用 gem install jekyll-paginate 或 sudo gem install jekyll-paginate 安装Jekyll的分页插件。 代码高亮主题 # 代码高亮 使用rouge highlighter: rouge # 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中 pygmentsTheme: 'default' ​ 代码高亮使用 jekyll3.0 之后的默认高亮引擎 rouge 。关于主题，只需要在 pygmentsTheme 后填写喜欢的主题名称即可。共有9款主题可选，主题名见上文。 ​ 代码高亮的写法： ``` css *{ margin:0; padding:0; } ``` 2018/09/28 更新： 上图为 代码高亮试例图 ，仅以 html 作为参考例子，其他代码参考 上图，或自行切换测试选择自己喜欢的代码高亮主题 友情链接 # 友情链接 friends: jekyll: 'https://www.jekyll.com.cn/' ​ 按格式填写即可，排序与配置文件里的排序有关。 页脚 # since footer: since: 2018 ​ 用于页脚显示时间。 评论系统的切换 # 评论 最佳体验 在disqus、livere和Gitment之间三选一 # disqus 评论 disqus: false disqus_url: '' # https://abc.disqus.com/embed.js # 来必力评论 livere: true livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg== # Gitment评论 OAuth Application Gitment: false Gitment_owner: '' # github用户名 Gitment_repo: '' # github博客存放的仓库名 client_id: '' # 注册 OAuth Application 后获得的 client_id client_secret: '' # 注册 OAuth Application 后获得的 client_secret ​ 按申请第三方评论是获取的相关信息在配置文件中进行填写即可。 ​ 共有三款评论可供选择，使用 true 或者 false 开启或关闭某个评论系统。可开启多个甚至全开。当然，最佳体验，开一个即可。 ​ 三款评论的样式如下图： dispus： 来必力： Gitment评论： ​ 三款评论各有各的优势与坏处。出于显示样式与中国大陆网络环境考虑，主题默认开启 来必力 评论为最佳体验。当然需要填写好相关的 livere_uid 代码。 文章分享的路口 # Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google social-share: true social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook'] ​ 为了让文章更方便地分享，使用了第三方分享插件Share.js，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。 ​ 只需要填写相关的名称在 social-share-items 后即可，显示顺序与书写顺序有关。 网站流量追综的配置 # 百度统计 在baidu-url里填写自己相关的url代码 baidu: true baidu-url: '' # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID google: false google-ID: '' ​ 在 baidu-url 和 google-ID 分别填上注册获取的相关信息。使用 true 或者 false 开启或关闭他们。出于中国大陆网络环境，默认开启 百度统计 ，当然可以多开。 License 许可证 HardCandy-Jekyll is licensed under MIT.</summary></entry><entry><title type="html">算法面试题</title><link href="http://localhost:4000/2018/01/01/mainshi-saunfa.html" rel="alternate" type="text/html" title="算法面试题" /><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><id>http://localhost:4000/2018/01/01/mainshi-saunfa</id><content type="html" xml:base="http://localhost:4000/2018/01/01/mainshi-saunfa.html">&lt;h1 id=&quot;算法面试题&quot;&gt;算法面试题&lt;/h1&gt;
+&lt;p&gt;HardCandy-Jekyll is licensed under &lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll/blob/master/LICENSE&quot;&gt;MIT&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jekyll</name></author><category term="jekyll" /><category term="gitbub" /><category term="linux" /><category term="markdown" /><summary type="html">主题特性 主题基于 jekyll 3.8.1 开发 响应式布局 文章标签索引 文章时间线索引 博主个人信息展示 支持9种代码高亮主题色 支持 dispus 、 来必力 、 Gitment 三种评论系统 支持 百度统计 、谷歌分析 两种网站追踪系统 支持13款不同社交平台图标及链接地址指向 支持11个不同平台的文章分享路口 开始使用 线上部署 ​ 首先在 github 上开启一个仓库起名为 你的github用户名.github.io 。并 clone 你的仓库到本地。 然后下载 HardCandy-Jekyll 的 源码 到本地之后， Gemfile 文件代码最后加上 gem “github-pages”, group: :jekyll_plugins 将 _config.yml 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 github 线上仓库，即可通过域名 https://你的github用户名.github.io 访问看到自己的博客页面。 本地部署 ​ 首先在本地安装 Jekyll 详情请戳 ​ 安装完成之后，使用命令 jekyll -v 查看 jekyll版本号 ，若低于 jekyll 3.x.x 则需要升级至 jekyll 3.x.x 。 ​ 使用 gem install jekyll-paginate 或 sudo gem install jekyll-paginate 安装Jekyll的分页插件。 ​ 将源码 clone 到本地后，在终端进入 HardCandy-Jekyll 根目录，运行 jekyll server 或 bundle exec jekyll serve ，即可开启jekyll的服务。通过浏览器访问 http://localhost:4000 ，即可看到本地部署的 HardCandy-Jekyll 博客了。 warning！值得注意的地方： ​ 由于本主题是基于 jekyll 3.8.1 开发 ，jekyll的版本差异也许会导致相关显示效果的差异。详情请参考官方文档：news 配置文档 开始 关于博客 写文章 组件 博主个人信息 社交媒体 首页显示信息 导航栏 分页 代码高亮主题 友情链接 页脚 第三方服务 评论系统的切换 文章分享的路口 网站流量追综的配置 ​ 通用修改 _config.yml 文件，你便可以轻松搭建属于你自己的个人博客。 ​ 一部分配置，默认已经是配置好的，你只需要修改下面列出的内容即可完成搭建。 关于博客 --- # Site settings 配置站点 title: 'your awesome title' description: 'your web description' keywords: 'your web keywords, another keywords' url: 'https://abc.github.io' # your host --- title ：用于页面的 title 标签的显示内容 description ：网站的简介 keywords ：网站的关键词 url ：网站域名 写文章 ​ 博客通过解析 markdown 文件来部署文章页面的，所以用户写文章只需要写一篇markdown，并放置在站点根目录下的 _post 文件夹即可。具体的markdown语法自行上网搜索学习，或使用markdown编辑器进行写作。推荐一款 markdown编辑器：typora 。支持 windows 、mac OSX 、Linux 。 关于文章 YAML头信息： layout: post title: &quot;post title&quot; subtitle: 'post subtitle' date: 2018-05-29 08:44:13 tags: html js css description: '' color: 'rgb(154,133,255)' cover: '' 关于color： ​ 此处的color用于post页面的顶部位置的背景色。如上面展示图所示为 rgb(154,133,255) 色。 ​ 对于color的书写，如果颜色代码为 rgb 或 rgba 又或是 英文单词 的话，可以不用引号包裹，但如果颜色代码为 #123456 这种16进制码的话，就必须使用引号包裹。所以，在使用中，推荐一致都使用引号，以免错误使用。 ​ 当然，如果你在书写文章时，忘记写color的值的话，主题默认会为你填写 rgb(154,133,255) 色。就是上图显示的颜色。虽然不影响页面的显示，但如果想要更多彩的页面效果的话，建议在每一篇的头信息里写上 color 值。 关于cover： ​ 此处需填写某一张图片的 url ，url 值可以是线上的某张图片，也可以是博客目录下的图片。关键是要书写正确。这张图片用于在首页下博客列表里显示，如下图。 博主个人信息 # 博主 author: true name: 'your awesome name' NickName: 'your awesome nickname' webtitle: 'your awesome webtitle' bio: 'your awesome bio' about: true aboutyou: 'your introduction' portraits: '/assets/profile.jpeg' # your portraits image file path ​ 该部分显示在 关于博主 页面，与 社交媒体 一同在下图显示。 关于author： ​ 使用 true 或者 false 来打开或关闭博主信息卡片，默认 true ，最佳体验也是 true 。 关于about： ​ 使用 true 或者 false 来打开或关闭博主关于信息，即是否显示 aboutyou 部分的信息。默认 true ，该部分需要在 aboutyou 中输入相关信息，支持在此填写html代码。 社交媒体 # SNS SNS: true SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen'] mail: 'mailto:abc@gmail.com' weixin: '' # 你的微信二维码存放的地址 qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&amp;amp;uin='你的QQ号'&amp;amp;site=qq&amp;amp;menu=yes github: '' Codepen: '' weibo: '' instagram: '' Twitter: '' Dribbble: '' Facebook: '' Google: '' zhihu: '' juejin: '' twitch: '' ​ 主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 # 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。 ​ 在 SNS 后填写 true 或者 false 来打开或者关闭这一部分。 2018/09/28 更新： 更新社交图标为 线上地址 ，便于管理与修改。 添加 Codepen 图标 修改原来的圆形图标为不规则图标 首页显示信息 --- layout: default title: your awesome title page-title: awesome page-title. home-title: awesome home-title. description: description --- ​ 该部分位于 index.html 页面，修改 title 、page-title 、home-title 、description为个人想要的信息，默认配置的显示效果如下图。 导航栏 # nav 中文字符空格：&amp;amp;emsp; nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字 首页: '/' 标签: '/tags.html' 时间线: '/timeline.html' 关于博主: '/about.html' 友情链接: '/friendLink.html' ​ 默认全部开启他们，当然如果想要自己添加，按照格式填在下方即可，当然页面显示顺序与每一行的位置有关。 分页 # 分页 paginate: 2 paginatepath: ['page:num'] ​ 随个人爱好在，在上面填写你需要的在首页一页最多显示多少篇博客的数字。 ​ 本地部署的需要使用 gem install jekyll-paginate 或 sudo gem install jekyll-paginate 安装Jekyll的分页插件。 代码高亮主题 # 代码高亮 使用rouge highlighter: rouge # 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中 pygmentsTheme: 'default' ​ 代码高亮使用 jekyll3.0 之后的默认高亮引擎 rouge 。关于主题，只需要在 pygmentsTheme 后填写喜欢的主题名称即可。共有9款主题可选，主题名见上文。 ​ 代码高亮的写法： ``` css *{ margin:0; padding:0; } ``` 2018/09/28 更新： 上图为 代码高亮试例图 ，仅以 html 作为参考例子，其他代码参考 上图，或自行切换测试选择自己喜欢的代码高亮主题 友情链接 # 友情链接 friends: jekyll: 'https://www.jekyll.com.cn/' ​ 按格式填写即可，排序与配置文件里的排序有关。 页脚 # since footer: since: 2018 ​ 用于页脚显示时间。 评论系统的切换 # 评论 最佳体验 在disqus、livere和Gitment之间三选一 # disqus 评论 disqus: false disqus_url: '' # https://abc.disqus.com/embed.js # 来必力评论 livere: true livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg== # Gitment评论 OAuth Application Gitment: false Gitment_owner: '' # github用户名 Gitment_repo: '' # github博客存放的仓库名 client_id: '' # 注册 OAuth Application 后获得的 client_id client_secret: '' # 注册 OAuth Application 后获得的 client_secret ​ 按申请第三方评论是获取的相关信息在配置文件中进行填写即可。 ​ 共有三款评论可供选择，使用 true 或者 false 开启或关闭某个评论系统。可开启多个甚至全开。当然，最佳体验，开一个即可。 ​ 三款评论的样式如下图： dispus： 来必力： Gitment评论： ​ 三款评论各有各的优势与坏处。出于显示样式与中国大陆网络环境考虑，主题默认开启 来必力 评论为最佳体验。当然需要填写好相关的 livere_uid 代码。 文章分享的路口 # Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google social-share: true social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook'] ​ 为了让文章更方便地分享，使用了第三方分享插件Share.js，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。 ​ 只需要填写相关的名称在 social-share-items 后即可，显示顺序与书写顺序有关。 网站流量追综的配置 # 百度统计 在baidu-url里填写自己相关的url代码 baidu: true baidu-url: '' # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID google: false google-ID: '' ​ 在 baidu-url 和 google-ID 分别填上注册获取的相关信息。使用 true 或者 false 开启或关闭他们。出于中国大陆网络环境，默认开启 百度统计 ，当然可以多开。 License 许可证 HardCandy-Jekyll is licensed under MIT.</summary></entry><entry><title type="html">CSS常用</title><link href="http://localhost:4000/2018/01/02/mainshi-css.html" rel="alternate" type="text/html" title="CSS常用" /><published>2018-01-02T00:00:00+08:00</published><updated>2018-01-02T00:00:00+08:00</updated><id>http://localhost:4000/2018/01/02/mainshi-css</id><content type="html" xml:base="http://localhost:4000/2018/01/02/mainshi-css.html">&lt;h1 id=&quot;css基础&quot;&gt;CSS基础&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#css选择器的优先级是怎样的？✨&quot;&gt;CSS选择器的优先级是怎样的？✨&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#link和@import的区别？&quot;&gt;link和@import的区别？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#有哪些方式（CSS）可以隐藏页面元素？&quot;&gt;有哪些方式（CSS）可以隐藏页面元素？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#em\px\rem区别？&quot;&gt;em\px\rem区别？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#块级元素水平居中的方法？&quot;&gt;块级元素水平居中的方法？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#css有几种定位方式？&quot;&gt;CSS有几种定位方式？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#如何理解z-index？✨&quot;&gt;如何理解z-index？✨&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#如何理解层叠上下文？✨&quot;&gt;如何理解层叠上下文？✨&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#清除浮动有哪些方法？&quot;&gt;清除浮动有哪些方法？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#你对css-sprites的理解，好处是什么？&quot;&gt;你对css-sprites的理解&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#你对媒体查询的理解？&quot;&gt;你对媒体查询的理解？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#你对盒模型的理解✨&quot;&gt;你对盒模型的理解？✨&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#标准盒模型和怪异盒模型有什么区别？✨&quot;&gt;标准盒模型和怪异盒模型有什么区别？✨&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#谈谈对bfc的理解✨&quot;&gt;谈谈对BFC(Block Formatting Context)的理解？ ✨&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#为什么有时候人们用translate来改变位置而不是定位？&quot;&gt;为什么有时候人们用translate来改变位置而不是定位？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#伪类和伪元素的区别是什么？&quot;&gt;伪类和伪元素的区别是什么？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#你对flex的理解？✨&quot;&gt;你对flex的理解？✨&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#关于css的动画与过渡问题&quot;&gt;关于CSS的动画与过渡问题&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;本章是CSS考点的非重难点，因此我们采用简略回答的方式进行撰写，所以不会有太多详细的解释。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我们约定，每个问题后我们标记『✨』的为高频面试题&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;css选择器的优先级是怎样的&quot;&gt;CSS选择器的优先级是怎样的？✨&lt;/h2&gt;
+
+&lt;p&gt;CSS选择器的优先级是：内联 &amp;gt; ID选择器 &amp;gt; 类选择器 &amp;gt; 标签选择器&lt;/p&gt;
+
+&lt;p&gt;到具体的计算层面，优先级是由 A 、B、C、D 的值来决定的，其中它们的值计算规则如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A 的值等于 1 的前提是存在内联样式, 否则 A = 0;&lt;/li&gt;
+  &lt;li&gt;B 的值等于 ID选择器 出现的次数;&lt;/li&gt;
+  &lt;li&gt;C 的值等于 类选择器 和 属性选择器 和 伪类 出现的总次数;&lt;/li&gt;
+  &lt;li&gt;D 的值等于 标签选择器 和 伪元素 出现的总次数 。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;就比如下面的选择器，它不存在内联样式，所以A=0,不存在id选择器B=0,存在一个类选择器C=1,存在三个标签选择器D=3，那么最终计算结果为: {0, 0, 1 ,3}&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ol&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.red&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;按照这个结算方式，下面的计算结果为: {0, 1, 0, 0}&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#red&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;我们的比较优先级的方式是从A到D去比较值的大小，A、B、C、D权重从左到右，依次减小。判断优先级时，从左到右，一一比较，直到比较出最大值，即可停止。&lt;/p&gt;
+
+&lt;p&gt;比如第二个例子的B与第一个例子的B相比，1&amp;gt;0,接下来就不需要比较了，第二个选择器的优先级更高。&lt;/p&gt;
+
+&lt;h2 id=&quot;link和import的区别&quot;&gt;link和@import的区别？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;link属于XHTML标签，而@import是CSS提供的。&lt;/li&gt;
+  &lt;li&gt;页面被加载时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载。&lt;/li&gt;
+  &lt;li&gt;import只在IE 5以上才能识别，而link是XHTML标签，无兼容问题。&lt;/li&gt;
+  &lt;li&gt;link方式的样式权重高于@import的权重。&lt;/li&gt;
+  &lt;li&gt;使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;有哪些方式css可以隐藏页面元素&quot;&gt;有哪些方式（CSS）可以隐藏页面元素？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;opacity:0&lt;/code&gt;：本质上是将元素的透明度将为0，就看起来隐藏了，但是依然占据空间且可以交互&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;visibility:hidden&lt;/code&gt;: 与上一个方法类似的效果，占据空间，但是不可以交互了&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;overflow:hidden&lt;/code&gt;: 这个只隐藏元素溢出的部分，但是占据空间且不可交互&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display:none&lt;/code&gt;: 这个是彻底隐藏了元素，元素从文档流中消失，既不占据空间也不交互，也不影响布局&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z-index:-9999&lt;/code&gt;: 原理是将层级放到底部，这样就被覆盖了，看起来隐藏了&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform: scale(0,0)&lt;/code&gt;: 平面变换，将元素缩放为0，但是依然占据空间，但不可交互&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;还有一些靠绝对定位把元素移到可视区域外，或者用clip-path进行裁剪的操作过于Hack，就不提了。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;empxrem区别&quot;&gt;em\px\rem区别？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;px：绝对单位，页面按精确像素展示。&lt;/li&gt;
+  &lt;li&gt;em：相对单位，基准点为父节点字体的大小，如果自身定义了font-size按自身来计算（浏览器默认字体是16px），整个页面内1em不是一个固定的值。&lt;/li&gt;
+  &lt;li&gt;rem：相对单位，可理解为”root em”, 相对根节点html的字体大小来计算，CSS3新加属性，chrome/firefox/IE9+支持&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;块级元素水平居中的方法&quot;&gt;块级元素水平居中的方法？&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如果使用Hack的话，水平居中的方法非常多，我们只介绍主流的，奇葩的见拓展阅读&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;margin:0 auto&lt;/code&gt;方法&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nc&quot;&gt;.center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;center&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;水平居中&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;flex布局，目前主流方法&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nc&quot;&gt;.center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;center&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;flex-div&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;flex-div&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;table方法&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nc&quot;&gt;.center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;center&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;水平居中&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;还有一些通过position+(margin&lt;/td&gt;
+      &lt;td&gt;transform)等方法的不一样列举了，非重点没必要。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;拓展阅读: &lt;a href=&quot;https://louiszhai.github.io/2016/03/12/css-center/&quot;&gt;16种方法实现水平居中垂直居中&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;css有几种定位方式&quot;&gt;CSS有几种定位方式？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;static: 正常文档流定位，此时 top, right, bottom, left 和 z-index 属性无效，块级元素从上往下纵向排布，行级元素从左向右排列。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;relative：相对定位，此时的『相对』是相对于正常文档流的位置。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;absolute：相对于最近的非 static 定位祖先元素的偏移，来确定元素位置，比如一个绝对定位元素它的父级、和祖父级元素都为relative，它会相对他的父级而产生偏移。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;fixed：指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变，比如那种回到顶部的按钮一般都是用此定位方式。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;sticky：粘性定位，特性近似于relative和fixed的合体，其在实际应用中的近似效果就是IOS通讯录滚动的时候的『顶屁股』。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;文字描述很难理解，可以直接看代码&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-theme-id=&quot;33015&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;xiaomuzhu&quot; data-slug-hash=&quot;bPVNxj&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;bPVNxj&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/xiaomuzhu/pen/bPVNxj/&quot;&gt;
+  bPVNxj&lt;/a&gt; by Iwobi (&lt;a href=&quot;https://codepen.io/xiaomuzhu&quot;&gt;@xiaomuzhu&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;如何理解z-index&quot;&gt;如何理解z-index？✨&lt;/h2&gt;
+
+&lt;p&gt;CSS 中的z-index属性控制重叠元素的垂直叠加顺序，默认元素的z-index为0，我们可以修改z-index来控制元素的图层位置，而且z-index只能影响设置了position值的元素。&lt;/p&gt;
+
+&lt;p&gt;我们可以把视图上的元素认为是一摞书的层叠，而人眼是俯视的视角，设置z-index的位置，就如同设置某一本书在这摞书中的位置。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;顶部: 最接近观察者&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+  &lt;li&gt;3 层&lt;/li&gt;
+  &lt;li&gt;2 层&lt;/li&gt;
+  &lt;li&gt;1 层&lt;/li&gt;
+  &lt;li&gt;0 层 默认层&lt;/li&gt;
+  &lt;li&gt;-1 层&lt;/li&gt;
+  &lt;li&gt;-2 层&lt;/li&gt;
+  &lt;li&gt;-3 层&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+  &lt;li&gt;底层: 距离观察者最远&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/282998fe2501b87e23af0fba61d9077e.png&quot; alt=&quot;2019-06-14-02-19-16&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;可以结合这个例子理解z-index&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-theme-id=&quot;33015&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;xiaomuzhu&quot; data-slug-hash=&quot;xowqjG&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;xowqjG&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/xiaomuzhu/pen/xowqjG/&quot;&gt;
+  xowqjG&lt;/a&gt; by Iwobi (&lt;a href=&quot;https://codepen.io/xiaomuzhu&quot;&gt;@xiaomuzhu&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;如何理解层叠上下文&quot;&gt;如何理解层叠上下文？✨&lt;/h2&gt;
+
+&lt;h3 id=&quot;是什么&quot;&gt;是什么？&lt;/h3&gt;
+
+&lt;p&gt;层叠上下文是HTML元素的三维概念，这些HTML元素在一条假想的相对于面向（电脑屏幕的）视窗或者网页的用户的z轴上延伸，HTML元素依据其自身属性按照优先级顺序占用层叠上下文的空间。&lt;/p&gt;
+
+&lt;h3 id=&quot;如何产生&quot;&gt;如何产生？&lt;/h3&gt;
+
+&lt;p&gt;触发一下条件则会产生层叠上下文：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;根元素 (HTML),&lt;/li&gt;
+  &lt;li&gt;z-index 值不为 “auto”的 绝对/相对定位，&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;一个 z-index 值不为 “auto”的 flex 项目 (flex item)，即：父元素 display: flex&lt;/td&gt;
+          &lt;td&gt;inline-flex，&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;opacity 属性值小于 1 的元素（参考 the specification for opacity），&lt;/li&gt;
+  &lt;li&gt;transform 属性值不为 “none”的元素，&lt;/li&gt;
+  &lt;li&gt;mix-blend-mode 属性值不为 “normal”的元素，&lt;/li&gt;
+  &lt;li&gt;filter值不为“none”的元素，&lt;/li&gt;
+  &lt;li&gt;perspective值不为“none”的元素，&lt;/li&gt;
+  &lt;li&gt;isolation 属性被设置为 “isolate”的元素，&lt;/li&gt;
+  &lt;li&gt;position: fixed&lt;/li&gt;
+  &lt;li&gt;在 will-change 中指定了任意 CSS 属性，即便你没有直接指定这些属性的值（参考 这篇文章）&lt;/li&gt;
+  &lt;li&gt;-webkit-overflow-scrolling 属性被设置 “touch”的元素&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;拓展阅读：&lt;a href=&quot;https://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/&quot;&gt;层叠上下文-张鑫旭&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;清除浮动有哪些方法&quot;&gt;清除浮动有哪些方法？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;空div方法：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div style=&quot;clear:both;&quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Clearfix 方法：上文使用.clearfix类已经提到&lt;/li&gt;
+  &lt;li&gt;overflow: auto或overflow: hidden方法，使用BFC&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在flex已经成为布局主流之后，浮动这种东西越来越少见了，毕竟它的副作用太大&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;你对css-sprites的理解好处是什么&quot;&gt;你对css sprites的理解，好处是什么？&lt;/h2&gt;
+
+&lt;h3 id=&quot;是什么-&quot;&gt;是什么 ？&lt;/h3&gt;
+
+&lt;p&gt;雪碧图也叫CSS精灵， 是一CSS图像合成技术，开发人员往往将小图标合并在一起之后的图片称作雪碧图。&lt;/p&gt;
+
+&lt;h3 id=&quot;如何操作&quot;&gt;如何操作？&lt;/h3&gt;
+
+&lt;p&gt;使用工具（PS之类的）将多张图片打包成一张雪碧图，并为其生成合适的 CSS。
+每张图片都有相应的 CSS 类，该类定义了background-image、background-position和background-size属性。
+使用图片时，将相应的类添加到你的元素中。&lt;/p&gt;
+
+&lt;h3 id=&quot;好处&quot;&gt;好处：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;减少加载多张图片的 HTTP 请求数（一张雪碧图只需要一个请求）&lt;/li&gt;
+  &lt;li&gt;提前加载资源&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;不足&quot;&gt;不足：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CSS Sprite维护成本较高，如果页面背景有少许改动，一般就要改这张合并的图片&lt;/li&gt;
+  &lt;li&gt;加载速度优势在http2开启后荡然无存，HTTP2多路复用，多张图片也可以重复利用一个连接通道搞定&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;你对媒体查询的理解&quot;&gt;你对媒体查询的理解？&lt;/h2&gt;
+
+&lt;h3 id=&quot;是什么-1&quot;&gt;是什么&lt;/h3&gt;
+
+&lt;p&gt;媒体查询由一个可选的媒体类型和零个或多个使用媒体功能的限制了样式表范围的表达式组成，例如宽度、高度和颜色。媒体查询，添加自CSS3，允许内容的呈现针对一个特定范围的输出设备而进行裁剪，而不必改变内容本身,非常适合web网页应对不同型号的设备而做出对应的响应适配。&lt;/p&gt;
+
+&lt;h3 id=&quot;如何使用&quot;&gt;如何使用？&lt;/h3&gt;
+
+&lt;p&gt;媒体查询包含一个可选的媒体类型和，满足CSS3规范的条件下，包含零个或多个表达式，这些表达式描述了媒体特征，最终会被解析为true或false。如果媒体查询中指定的媒体类型匹配展示文档所使用的设备类型，并且所有的表达式的值都是true，那么该媒体查询的结果为true.那么媒体查询内的样式将会生效。&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- link元素中的CSS媒体查询 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;(max-width: 800px)&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;example.css&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 样式表中的CSS媒体查询 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;600px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.facet_sidebar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;拓展阅读：&lt;a href=&quot;https://www.cnblogs.com/xiaohuochai/p/5848612.html&quot;&gt;深入理解CSS Media媒体查询&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;你对盒模型的理解&quot;&gt;你对盒模型的理解✨&lt;/h2&gt;
+
+&lt;h3 id=&quot;是什么-2&quot;&gt;是什么？&lt;/h3&gt;
+
+&lt;p&gt;当对一个文档进行布局（lay out）的时候，浏览器的渲染引擎会根据标准之一的 CSS 基础框盒模型（CSS basic box model），将所有元素表示为一个个矩形的盒子（box）。CSS 决定这些盒子的大小、位置以及属性（例如颜色、背景、边框尺寸…）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/14650bf5fbb24066cea1dc1714d52a5b.png&quot; alt=&quot;2019-06-14-04-15-49&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;盒模型由content（内容）、padding（内边距）、border（边框）、margin（外边距）组成。&lt;/p&gt;
+
+&lt;h2 id=&quot;标准盒模型和怪异盒模型有什么区别&quot;&gt;标准盒模型和怪异盒模型有什么区别？✨&lt;/h2&gt;
+
+&lt;p&gt;在W3C标准下，我们定义元素的width值即为盒模型中的content的宽度值，height值即为盒模型中的content的高度值。&lt;/p&gt;
+
+&lt;p&gt;因此，标准盒模型下：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;元素的宽度 = margin-left + border-left + padding-left + width + padding-right + border-right + margin-right&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/232580766e15853d521a4c0bf6a5c794.png&quot; alt=&quot;2019-06-14-04-25-26&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;而IE怪异盒模型（IE8以下）width的宽度并不是content的宽度，而是border-left + padding-left + content的宽度值 + padding-right + border-right之和，height同理。&lt;/p&gt;
+
+&lt;p&gt;在怪异盒模型下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;元素占据的宽度 = margin-left + width + margin-right&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/e427c6d19ea6be1359bd0177d7a5b7a3.png&quot; alt=&quot;2019-06-14-04-25-04&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;虽然现代浏览器默认使用W3C的标准盒模型，但是在不少情况下怪异盒模型更好用，于是W3C在css3中加入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;box-sizing&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;box-sizing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;content-box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;标准盒模型&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;box-sizing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;border-box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;怪异盒模型&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;box-sizing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;padding-box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;火狐的私有模型，没人用&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;此演示来源于拓展阅读文章&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-theme-id=&quot;33015&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;xiaomuzhu&quot; data-slug-hash=&quot;LKpyzz&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;LKpyzz&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/xiaomuzhu/pen/LKpyzz/&quot;&gt;
+  LKpyzz&lt;/a&gt; by Iwobi (&lt;a href=&quot;https://codepen.io/xiaomuzhu&quot;&gt;@xiaomuzhu&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;拓展阅读：&lt;a href=&quot;https://www.cnblogs.com/xiaohuochai/p/5202597.html&quot;&gt;深入理解盒模型&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;谈谈对bfc的理解&quot;&gt;谈谈对BFC的理解✨&lt;/h2&gt;
+
+&lt;h3 id=&quot;是什么-3&quot;&gt;是什么？&lt;/h3&gt;
+
+&lt;p&gt;书面解释：BFC(Block Formatting Context)这几个英文拆解&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Block: Block在这里可以理解为Block-level Box,指的是块级盒子的标准&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Formatting context：块级上下文格式化，它是页面中的一块渲染区域，并且有一套渲染规则，它决定了其子元素将如何定位，以及和其他元素的关系和相互作用&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;BFC是指&lt;strong&gt;一个独立的渲染区域，只有Block-level Box参与， 它规定了内部的Block-level Box如何布局，并且与这个区域外部毫不相干&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;它的作用是在&lt;strong&gt;一块独立的区域，让处于BFC内部的元素与外部的元素互相隔离&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;如何形成&quot;&gt;如何形成？&lt;/h3&gt;
+
+&lt;p&gt;BFC触发条件:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;根元素，即HTML元素&lt;/li&gt;
+  &lt;li&gt;position: fixed/absolute&lt;/li&gt;
+  &lt;li&gt;float 不为none&lt;/li&gt;
+  &lt;li&gt;overflow不为visible&lt;/li&gt;
+  &lt;li&gt;display的值为inline-block、table-cell、table-caption&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;作用是什么&quot;&gt;作用是什么？&lt;/h3&gt;
+
+&lt;h4 id=&quot;防止margin发生重叠&quot;&gt;防止margin发生重叠&lt;/h4&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-theme-id=&quot;33015&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;xiaomuzhu&quot; data-slug-hash=&quot;NZGjYQ&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;NZGjYQ&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/xiaomuzhu/pen/NZGjYQ/&quot;&gt;
+  NZGjYQ&lt;/a&gt; by Iwobi (&lt;a href=&quot;https://codepen.io/xiaomuzhu&quot;&gt;@xiaomuzhu&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;两栏布局防止文字环绕等&quot;&gt;两栏布局，防止文字环绕等&lt;/h4&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-theme-id=&quot;33015&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;xiaomuzhu&quot; data-slug-hash=&quot;XLmRPM&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;XLmRPM&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/xiaomuzhu/pen/XLmRPM/&quot;&gt;
+  XLmRPM&lt;/a&gt; by Iwobi (&lt;a href=&quot;https://codepen.io/xiaomuzhu&quot;&gt;@xiaomuzhu&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;防止元素塌陷&quot;&gt;防止元素塌陷&lt;/h4&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-theme-id=&quot;33015&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;xiaomuzhu&quot; data-slug-hash=&quot;VJvbEd&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;VJvbEd&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/xiaomuzhu/pen/VJvbEd/&quot;&gt;
+  VJvbEd&lt;/a&gt; by Iwobi (&lt;a href=&quot;https://codepen.io/xiaomuzhu&quot;&gt;@xiaomuzhu&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;拓展阅读：&lt;a href=&quot;https://www.cnblogs.com/xiaohuochai/p/5248536.html&quot;&gt;深入理解BFC&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;为什么有时候人们用translate来改变位置而不是定位&quot;&gt;为什么有时候人们用translate来改变位置而不是定位？&lt;/h2&gt;
+
+&lt;p&gt;translate()是transform的一个值。改变transform或opacity不会触发浏览器重新布局（reflow）或重绘（repaint），只会触发复合（compositions）。而改变绝对定位会触发重新布局，进而触发重绘和复合。transform使浏览器为元素创建一个 GPU 图层，但改变绝对定位会使用到 CPU。 因此translate()更高效，可以缩短平滑动画的绘制时间。&lt;/p&gt;
+
+&lt;p&gt;而translate改变位置时，元素依然会占据其原始空间，绝对定位就不会发生这种情况。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;拓展阅读:&lt;a href=&quot;https://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/&quot;&gt;CSS3 3D transform变换-张鑫旭&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;伪类和伪元素的区别是什么&quot;&gt;伪类和伪元素的区别是什么？&lt;/h2&gt;
+
+&lt;h3 id=&quot;是什么-4&quot;&gt;是什么？&lt;/h3&gt;
+
+&lt;p&gt;伪类（pseudo-class） 是一个以冒号(:)作为前缀，被添加到一个选择器末尾的关键字，当你希望样式在特定状态下才被呈现到指定的元素时，你可以往元素的选择器后面加上对应的伪类。&lt;/p&gt;
+
+&lt;p&gt;伪元素用于创建一些不在文档树中的元素，并为其添加样式。比如说，我们可以通过::before来在一个元素前增加一些文本，并为这些文本添加样式。虽然用户可以看到这些文本，但是这些文本实际上不在文档树中。&lt;/p&gt;
+
+&lt;h3 id=&quot;区别&quot;&gt;区别&lt;/h3&gt;
+
+&lt;p&gt;其实上文已经表达清楚两者区别了，伪类是通过在元素选择器上加入伪类改变元素状态，而伪元素通过对元素的操作进行对元素的改变。&lt;/p&gt;
+
+&lt;p&gt;我们通过&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p::before&lt;/code&gt;对这段文本添加了额外的元素，通过 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p:first-child&lt;/code&gt;改变了文本的样式。&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-theme-id=&quot;33015&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;xiaomuzhu&quot; data-slug-hash=&quot;qzOXxO&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;qzOXxO&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/xiaomuzhu/pen/qzOXxO/&quot;&gt;
+  qzOXxO&lt;/a&gt; by Iwobi (&lt;a href=&quot;https://codepen.io/xiaomuzhu&quot;&gt;@xiaomuzhu&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;拓展阅读：&lt;a href=&quot;http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/&quot;&gt;伪类与伪元素&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;你对flex的理解&quot;&gt;你对flex的理解？✨&lt;/h2&gt;
+
+&lt;p&gt;web应用有不同设备尺寸和分辨率，这时需要响应式界面设计来满足复杂的布局需求，Flex弹性盒模型的优势在于开发人员只是声明布局应该具有的行为，而不需要给出具体的实现方式，浏览器负责完成实际布局，当布局涉及到不定宽度，分布对齐的场景时，就要优先考虑弹性盒布局&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; 具体用法移步阮一峰的&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html&quot;&gt;flex语法&lt;/a&gt;、&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/07/flex-examples.html&quot;&gt;flex实战&lt;/a&gt;，讲得非常通俗易懂，而且我们一两句话说不清楚。&lt;/p&gt;
+
+&lt;h2 id=&quot;关于css的动画与过渡问题&quot;&gt;关于CSS的动画与过渡问题&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/xiaohuochai/p/5391663.html&quot;&gt;深入理解CSS动画animation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/xiaohuochai/p/5347930.html&quot;&gt;深入理解CSS过渡transition&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000014801021&quot;&gt;盒模型&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;</content><author><name>ma_meng</name></author><category term="CSS" /><category term="JavaScript" /><category term="布局" /><category term="CSS3" /><category term="选择器" /><summary type="html">CSS基础</summary></entry><entry><title type="html">算法面试题</title><link href="http://localhost:4000/2018/01/01/mainshi-saunfa.html" rel="alternate" type="text/html" title="算法面试题" /><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><id>http://localhost:4000/2018/01/01/mainshi-saunfa</id><content type="html" xml:base="http://localhost:4000/2018/01/01/mainshi-saunfa.html">&lt;h1 id=&quot;算法面试题&quot;&gt;算法面试题&lt;/h1&gt;
 
 &lt;p&gt;算法相关的题在前端面试中的比重越来越高,当然最有效的方法是去LeetCode上刷题,关于JavaScript版的LeetCode解题思路可以参考此项目&lt;a href=&quot;https://github.com/azl397985856/leetcode&quot;&gt;leetcode题解，记录自己的leetcode解题之路&lt;/a&gt;&lt;/p&gt;
 
