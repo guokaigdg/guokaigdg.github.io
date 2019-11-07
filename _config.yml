@@ -42,7 +42,7 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   qq: 'http://wpa.qq.com/msgrd?v=3&uin=972579026&site=qq&menu=yes' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/guokaigdg'
   # Codepen: ''
-  weibo: ''
+  weibo: 'https://weibo.com/5880240752/'
   instagram: ''
   Twitter: ''
   # Dribbble: ''
