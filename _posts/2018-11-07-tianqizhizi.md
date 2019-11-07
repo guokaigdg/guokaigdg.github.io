@@ -4,7 +4,7 @@ title: '《天气之子》——即便此后无晴，不要紧，活下去'
 date: 2019-11-07 20:00:21 +0800
 author: ma_meng
 color: rgb(135,206,250)
-cover: 'https://i0.hdslb.com/bfs/article/5bbd8c73f06e47ee63620ccbf5637fd01efa26ad.jpg@1320w_744h.webp'
+cover: 'https://img-blog.csdnimg.cn/20191107231014920.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70'
 subtitle: 'RADWIMPS·illion'
 tags: 天气之子 新海诚 动漫
 ---
@@ -14,8 +14,7 @@ tags: 天气之子 新海诚 动漫
 
 #### ——RADWIMPS·illion
 
-![](https://i0.hdslb.com/bfs/article/5bbd8c73f06e47ee63620ccbf5637fd01efa26ad.jpg@1320w_744h.webp)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107231014920.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70)
 
 两千多年以前，亚里士多德在一本书中写到自己的观点——“一个地方并非总是陆地或海洋，以前是陆地的，变成了海洋，而现在是海洋的，有一天将变成陆地……”，先贤认定这种古老的循环一直在自然界上演，我们或许偶尔能观察到现象，但以人类的渺小却未必有幸见证整个循环的完整过程。这本书叫做《Meteorolosis（天象论）》，是世界上第一本有关天气的论著，也是气象学（meteorology）这个单词的由来。
 
