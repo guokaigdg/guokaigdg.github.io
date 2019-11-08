@@ -56,7 +56,8 @@ tags: Smartisan OS Android 字节跳动
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107225406863.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107225429626.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107225422263.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70)
 
-> 最低2699的售价,硬件方面来说就是你话的钱对得起买的料, 常规旗舰骁龙855+, 12GDDR4x内存, 256G ufs3.0 跟市面上旗舰机型大差不差, 核心在亮点上  新的大爆炸, 一步, TNT, 无线TNT真的有点吊, 你买吗??? 我等明年的5G R系列, 毕竟现在一加7pro还比较香
+> 最低2699的售价,硬件方面来说就是你花的钱对得起你买的料, 常规旗舰骁龙855+, 12GDDR4x内存, 256G ufs3.0 跟市面上旗舰机型大差不差, 核心亮点在os上  新的大爆炸, 一步, TNT, 吹一下无线TNT真的有点吊, 不过最实用的还是一步.... 所以你会买吗??? 嗯 我还是等明年的5G R系列吧, 毕竟现在一加7pro还比较香
 
