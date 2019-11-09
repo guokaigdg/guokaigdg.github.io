@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'CSS常用'
-date: 2018-1-2
+date: 2018-01-02
 author: ma_meng
 color: rgb(220,220,220)
 cover: 'https://img-blog.csdnimg.cn/201911070310403.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70'

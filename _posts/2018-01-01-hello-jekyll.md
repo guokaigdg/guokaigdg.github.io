@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '如何使用Jekyll + github 搭建一个个人博客'
-date: 2019-10-30
+date: 2018-01-01 12:05:21 +0800
 author: Jekyll
 color: rgb(255,210,32)
 cover: '../screenshot/howtobuild.png'

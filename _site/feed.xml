@@ -1,94 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-09T23:46:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">ES7 新增内容简介</title><link href="http://localhost:4000/2019/11/08/ES7.html" rel="alternate" type="text/html" title="ES7 新增内容简介" /><published>2019-11-08T05:00:21+08:00</published><updated>2019-11-08T05:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/ES7</id><content type="html" xml:base="http://localhost:4000/2019/11/08/ES7.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191109023636487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;ES7 出来了 ES8 也定稿了 ES9 ES10规范也都浮出水面的 我的老天鹅啊&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-10T03:58:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">啊哈 礼物</title><link href="http://localhost:4000/2019/11/08/picture.html" rel="alternate" type="text/html" title="啊哈 礼物" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/picture</id><content type="html" xml:base="http://localhost:4000/2019/11/08/picture.html">&lt;blockquote&gt;
+  &lt;p&gt;啊哈 收到女朋友亲手画的礼物了开心&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;数组&quot;&gt;数组&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;1 includes()  : 出现查询数组里面有是否含有某个值, 如果含有 返回teue , 没有返回false&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035200443.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;includes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//返回false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035204881.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;2.for .. of   : 循环迭代器, 循环(value)值
-    &lt;blockquote&gt;
-      &lt;p&gt;以下是for … in跟for…of区别:&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;数组&lt;/th&gt;
-          &lt;th&gt;json&lt;/th&gt;
-          &lt;th&gt; &lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;for… in&lt;/td&gt;
-          &lt;td&gt;下标(key)&lt;/td&gt;
-          &lt;td&gt;下标(key)&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;for… of&lt;/td&gt;
-          &lt;td&gt;值(value)&lt;/td&gt;
-          &lt;td&gt;不支持&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;3.keys() / .values() / .entries()  获取下标, 值, 实体(下标+值)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019111003521165.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;67&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()){&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 1 2 3 4 5 6&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035216720.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;67&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()){&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 7 8 9 1 2 67 33&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;上墙效果&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;67&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;entries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()){&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// [0,7] [2,9] [3,1] [4,2] [5,67] [6,33]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035155856.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;4.幂  **表示, 等于ES6 Math.pow()&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//8  ES6&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//8  ES7&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;5 .padStart(xx, xx) / .padEnd()  补位操作 可以传递两个参数&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;fff&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (   fff)&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;fff&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (fff   )&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;fff&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (000fff)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;6 .function show(a, b, c,)  ES7 函数多一个逗号也可以支持&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;7 async awite “取代”ES6 generator yoied 优势在于不依赖于外部runner, 统一标准,提高性能, 可以支持箭头函数&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>true</name></author><category term="ES7" /><category term="ES6" /><category term="前端" /><summary type="html">ES7 出来了 ES8 也定稿了 ES9 ES10规范也都浮出水面的 我的老天鹅啊</summary></entry><entry><title type="html">《天气之子》——即便此后无晴，不要紧，活下去</title><link href="http://localhost:4000/2019/11/07/tianqizhizi.html" rel="alternate" type="text/html" title="《天气之子》——即便此后无晴，不要紧，活下去" /><published>2019-11-07T20:00:21+08:00</published><updated>2019-11-07T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/07/tianqizhizi</id><content type="html" xml:base="http://localhost:4000/2019/11/07/tianqizhizi.html">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035148307.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="画" /><category term="油画" /><category term="女朋友" /><summary type="html">啊哈 收到女朋友亲手画的礼物了开心</summary></entry><entry><title type="html">《天气之子》——即便此后无晴，不要紧，活下去</title><link href="http://localhost:4000/2019/11/07/tianqizhizi.html" rel="alternate" type="text/html" title="《天气之子》——即便此后无晴，不要紧，活下去" /><published>2019-11-07T20:00:21+08:00</published><updated>2019-11-07T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/07/tianqizhizi</id><content type="html" xml:base="http://localhost:4000/2019/11/07/tianqizhizi.html">&lt;blockquote&gt;
   &lt;p&gt;“所有人都只拥有自己的世界，在那个世界里拼命生活着，扮演自己的角色，背负着某种责任，把自己唯一的生命从今天运作到明天，不仅仅是阳菜而已。所有人都挣扎着，生存在那种自我的世界里。我明白有他人在近处看着自己这一切带来的信心和安心感。‘在看着我’、‘知道我的小世界’、‘有人牵挂着我不要紧’——我明白这是莫大的支持。而当看见无可替代的那个重要的人在挣扎的情景时，就会希望自己变成这个人的‘不要紧（だいじょうぶ ）’。”&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -441,340 +369,99 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;辛巴: 这个是佩奇亲儿子, 我从出第一天开始一把屎一把尿拉扯大, 刚生下来时候不到巴掌大小, 现在已经有五斤了  希望多运动千万不要长成大白那样&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Jekyll</name></author><category term="cat" /><category term="猫" /><category term="英短" /><category term="美短" /><summary type="html">家里猫咪介绍🐈: 佩奇: 英短 1.5岁 大白: 美短 2岁 辛巴: 英短 4个月</summary></entry><entry><title type="html">如何使用Jekyll + github 搭建一个个人博客</title><link href="http://localhost:4000/2019/10/30/hello-jekyll.html" rel="alternate" type="text/html" title="如何使用Jekyll + github 搭建一个个人博客" /><published>2019-10-30T00:00:00+08:00</published><updated>2019-10-30T00:00:00+08:00</updated><id>http://localhost:4000/2019/10/30/hello-jekyll</id><content type="html" xml:base="http://localhost:4000/2019/10/30/hello-jekyll.html">&lt;h3 id=&quot;主题特性&quot;&gt;主题特性&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;主题基于 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll 3.8.1&lt;/code&gt; 开发&lt;/li&gt;
-  &lt;li&gt;响应式布局&lt;/li&gt;
-  &lt;li&gt;文章标签索引&lt;/li&gt;
-  &lt;li&gt;文章时间线索引&lt;/li&gt;
-  &lt;li&gt;博主个人信息展示&lt;/li&gt;
-  &lt;li&gt;支持9种代码高亮主题色&lt;/li&gt;
-  &lt;li&gt;支持 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dispus&lt;/code&gt; 、 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;来必力&lt;/code&gt; 、 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gitment&lt;/code&gt; 三种评论系统&lt;/li&gt;
-  &lt;li&gt;支持 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;百度统计&lt;/code&gt; 、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;谷歌分析&lt;/code&gt; 两种网站追踪系统&lt;/li&gt;
-  &lt;li&gt;支持13款不同社交平台图标及链接地址指向&lt;/li&gt;
-  &lt;li&gt;支持11个不同平台的文章分享路口&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;开始使用&quot;&gt;开始使用&lt;/h3&gt;
-
-&lt;h4 id=&quot;线上部署&quot;&gt;线上部署&lt;/h4&gt;
-
-&lt;p&gt;​ 首先在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github&lt;/code&gt; 上开启一个仓库起名为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;你的github用户名.github.io&lt;/code&gt; 。并 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clone&lt;/code&gt; 你的仓库到本地。 然后下载 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HardCandy-Jekyll&lt;/code&gt; 的 &lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll&quot;&gt;源码&lt;/a&gt; 到本地之后，&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Gemfile 文件代码最后加上 gem “github-pages”, group: :jekyll_plugins&lt;/li&gt;
-  &lt;li&gt;将 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github&lt;/code&gt; 线上仓库，即可通过域名 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://你的github用户名.github.io&lt;/code&gt; 访问看到自己的博客页面。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;本地部署&quot;&gt;本地部署&lt;/h4&gt;
-
-&lt;p&gt;​	首先在本地安装 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt; &lt;a href=&quot;https://www.jekyll.com.cn/docs/quickstart/&quot;&gt;详情请戳&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;​	安装完成之后，使用命令 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll -v&lt;/code&gt; 查看 &lt;strong&gt;jekyll版本号&lt;/strong&gt; ，若低于 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll 3.x.x&lt;/code&gt; 则需要升级至 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll 3.x.x&lt;/code&gt; 。&lt;/p&gt;
-
-&lt;p&gt;​	使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install jekyll-paginate&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install jekyll-paginate&lt;/code&gt; 安装Jekyll的分页插件。&lt;/p&gt;
-
-&lt;p&gt;​	将源码 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clone&lt;/code&gt; 到本地后，在终端进入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HardCandy-Jekyll&lt;/code&gt; 根目录，运行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll server&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; ，即可开启jekyll的服务。通过浏览器访问 &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt; ，即可看到本地部署的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HardCandy-Jekyll&lt;/code&gt; 博客了。&lt;/p&gt;
-
+&lt;/blockquote&gt;</content><author><name>Jekyll</name></author><category term="cat" /><category term="猫" /><category term="英短" /><category term="美短" /><summary type="html">家里猫咪介绍🐈: 佩奇: 英短 1.5岁 大白: 美短 2岁 辛巴: 英短 4个月</summary></entry><entry><title type="html">ES7 新增内容简介</title><link href="http://localhost:4000/2019/04/01/ES7.html" rel="alternate" type="text/html" title="ES7 新增内容简介" /><published>2019-04-01T05:00:21+08:00</published><updated>2019-04-01T05:00:21+08:00</updated><id>http://localhost:4000/2019/04/01/ES7</id><content type="html" xml:base="http://localhost:4000/2019/04/01/ES7.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191109023636487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;warning！值得注意的地方：&lt;/p&gt;
-
-  &lt;p&gt;​	由于本主题是基于 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll 3.8.1&lt;/code&gt; 开发 ，jekyll的版本差异也许会导致相关显示效果的差异。详情请参考官方文档：&lt;a href=&quot;https://jekyllrb.com/news/&quot;&gt;news&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;ES7 出来了 ES8 也定稿了 ES9 ES10规范也都浮出水面的 我的老天鹅啊&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;配置文档&quot;&gt;配置文档&lt;/h3&gt;
-
+&lt;h4 id=&quot;数组&quot;&gt;数组&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;开始
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#关于博客&quot;&gt;关于博客&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#写文章&quot;&gt;写文章&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;组件
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#博主个人信息&quot;&gt;博主个人信息&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#社交媒体&quot;&gt;社交媒体&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#首页显示信息&quot;&gt;首页显示信息&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#导航栏&quot;&gt;导航栏&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#分页&quot;&gt;分页&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#代码高亮主题&quot;&gt;代码高亮主题&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#友情链接&quot;&gt;友情链接&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#页脚&quot;&gt;页脚&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;第三方服务
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#评论系统的切换&quot;&gt;评论系统的切换&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#文章分享的路口&quot;&gt;文章分享的路口&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#网站流量追综的配置&quot;&gt;网站流量追综的配置&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;1 includes()  : 出现查询数组里面有是否含有某个值, 如果含有 返回teue , 没有返回false&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;​	通用修改 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 文件，你便可以轻松搭建属于你自己的个人博客。&lt;/p&gt;
-
-  &lt;p&gt;​	一部分配置，默认已经是配置好的，你只需要修改下面列出的内容即可完成搭建。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;关于博客&quot;&gt;关于博客&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# Site settings 配置站点&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;title'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;description'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;keywords&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;keywords,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;another&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;keywords'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://abc.github.io'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# your host&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;includes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//返回false&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt; ：用于页面的 title 标签的显示内容&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;description&lt;/code&gt; ：网站的简介&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keywords&lt;/code&gt; ：网站的关键词&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;url&lt;/code&gt; ：网站域名&lt;/p&gt;
-
-&lt;h4 id=&quot;写文章&quot;&gt;写文章&lt;/h4&gt;
-
-&lt;p&gt;​	博客通过解析 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;markdown&lt;/code&gt; 文件来部署文章页面的，所以用户写文章只需要写一篇markdown，并放置在站点根目录下的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_post&lt;/code&gt; 文件夹即可。具体的markdown语法自行上网搜索学习，或使用markdown编辑器进行写作。推荐一款 markdown编辑器：&lt;a href=&quot;https://www.typora.io&quot;&gt;typora&lt;/a&gt; 。支持 windows 、mac OSX 、Linux 。&lt;/p&gt;
-
-&lt;p&gt;关于文章 YAML头信息：&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;title&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;subtitle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;subtitle'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;2018-05-29 08:44:13&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;html js css&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;rgb(154,133,255)'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;cover&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;关于color：&lt;/p&gt;
-
-&lt;p&gt;​	此处的color用于post页面的顶部位置的背景色。如上面展示图所示为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgb(154,133,255)&lt;/code&gt; 色。&lt;/p&gt;
-
-&lt;p&gt;​	对于color的书写，如果颜色代码为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgb&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgba&lt;/code&gt; 又或是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;英文单词&lt;/code&gt; 的话，可以不用引号包裹，但如果颜色代码为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#123456&lt;/code&gt; 这种16进制码的话，就必须使用引号包裹。所以，在使用中，推荐一致都使用引号，以免错误使用。&lt;/p&gt;
-
-&lt;p&gt;​	当然，如果你在书写文章时，忘记写color的值的话，主题默认会为你填写 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgb(154,133,255)&lt;/code&gt; 色。就是上图显示的颜色。虽然不影响页面的显示，但如果想要更多彩的页面效果的话，建议在每一篇的头信息里写上 color 值。&lt;/p&gt;
-
-&lt;p&gt;关于cover：&lt;/p&gt;
-
-&lt;p&gt;​	此处需填写某一张图片的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;url&lt;/code&gt; ，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;url&lt;/code&gt; 值可以是线上的某张图片，也可以是博客目录下的图片。关键是要书写正确。这张图片用于在首页下博客列表里显示，如下图。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/screenshot/5.png&quot; alt=&quot;5&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;博主个人信息&quot;&gt;博主个人信息&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 博主&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;name'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;NickName&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;nickname'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;webtitle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;webtitle'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bio'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;about&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;aboutyou&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;introduction'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;portraits&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/assets/profile.jpeg'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# your portraits image file path&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	该部分显示在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;关于博主&lt;/code&gt; 页面，与 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;社交媒体&lt;/code&gt; 一同在下图显示。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/screenshot/6.png&quot; alt=&quot;6&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;关于author：&lt;/p&gt;
-
-&lt;p&gt;​	使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 来打开或关闭博主信息卡片，默认 true ，最佳体验也是 true 。&lt;/p&gt;
-
-&lt;p&gt;关于about：&lt;/p&gt;
-
-&lt;p&gt;​	使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 来打开或关闭博主关于信息，即是否显示 aboutyou 部分的信息。默认 true ，该部分需要在 aboutyou 中输入相关信息，支持在此填写html代码。&lt;/p&gt;
-
-&lt;h4 id=&quot;社交媒体&quot;&gt;社交媒体&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# SNS&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;SNS&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;SNS-icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;mail&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;mailto:abc@gmail.com'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;weixin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 你的微信二维码存放的地址&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;qq&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&amp;amp;uin='你的QQ号'&amp;amp;site=qq&amp;amp;menu=yes&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Codepen&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;weibo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;instagram&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Dribbble&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Facebook&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Google&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;zhihu&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;juejin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;twitch&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	&lt;del&gt;主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;​	在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SNS&lt;/code&gt; 后填写  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 来打开或者关闭这一部分。&lt;/p&gt;
-
-&lt;p&gt;2018/09/28 更新：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/screenshot/sns-icon.png&quot; alt=&quot;7&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;更新社交图标为 线上地址 ，便于管理与修改。&lt;/li&gt;
-  &lt;li&gt;添加 &lt;strong&gt;Codepen&lt;/strong&gt; 图标&lt;/li&gt;
-  &lt;li&gt;修改原来的圆形图标为不规则图标&lt;/li&gt;
+  &lt;li&gt;2.for .. of   : 循环迭代器, 循环(value)值
+    &lt;blockquote&gt;
+      &lt;p&gt;以下是for … in跟for…of区别:&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;数组&lt;/th&gt;
+          &lt;th&gt;json&lt;/th&gt;
+          &lt;th&gt; &lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;for… in&lt;/td&gt;
+          &lt;td&gt;下标(key)&lt;/td&gt;
+          &lt;td&gt;下标(key)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;for… of&lt;/td&gt;
+          &lt;td&gt;值(value)&lt;/td&gt;
+          &lt;td&gt;不支持&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;3.keys() / .values() / .entries()  获取下标, 值, 实体(下标+值)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;首页显示信息&quot;&gt;首页显示信息&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;default&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;your awesome title&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;page-title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;awesome page-title.&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;home-title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;awesome home-title.&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	该部分位于 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; 页面，修改 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt; 、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;page-title&lt;/code&gt; 、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;home-title&lt;/code&gt;  、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;description&lt;/code&gt;为个人想要的信息，默认配置的显示效果如下图。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/screenshot/7.png&quot; alt=&quot;7&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;导航栏&quot;&gt;导航栏&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# nav 中文字符空格：&amp;amp;emsp;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;nav&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 最佳体验 六个标签 且最好每个标签不超过4中文字&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;首页&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/'&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;标签&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/tags.html'&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;时间线&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/timeline.html'&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;关于博主&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/about.html'&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;友情链接&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/friendLink.html'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	默认全部开启他们，当然如果想要自己添加，按照格式填在下方即可，当然页面显示顺序与每一行的位置有关。&lt;/p&gt;
-
-&lt;h4 id=&quot;分页&quot;&gt;分页&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 分页&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;paginate&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;paginatepath&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;page:num'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	随个人爱好在，在上面填写你需要的在首页一页最多显示多少篇博客的数字。&lt;/p&gt;
-
-&lt;p&gt;​	本地部署的需要使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install jekyll-paginate&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install jekyll-paginate&lt;/code&gt; 安装Jekyll的分页插件。&lt;/p&gt;
-
-&lt;h4 id=&quot;代码高亮主题&quot;&gt;代码高亮主题&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 代码高亮 使用rouge&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;highlighter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rouge&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;pygmentsTheme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;default'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	代码高亮使用 jekyll3.0 之后的默认高亮引擎 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rouge&lt;/code&gt; 。关于主题，只需要在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pygmentsTheme&lt;/code&gt; 后填写喜欢的主题名称即可。共有9款主题可选，主题名见上文。&lt;/p&gt;
-
-&lt;p&gt;​	代码高亮的写法：&lt;/p&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt; css
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;67&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()){&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 1 2 3 4 5 6&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;67&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()){&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 7 8 9 1 2 67 33&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;67&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;entries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()){&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// [0,7] [2,9] [3,1] [4,2] [5,67] [6,33]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;2018/09/28 更新：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;4.幂  **表示, 等于ES6 Math.pow()&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/screenshot/博客代码高亮例子.png&quot; alt=&quot;7&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//8  ES6&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//8  ES7&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;5 .padStart(xx, xx) / .padEnd()  补位操作 可以传递两个参数&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;上图为 &lt;strong&gt;代码高亮试例图&lt;/strong&gt; ，仅以 html 作为参考例子，其他代码参考 上图，或自行切换测试选择自己喜欢的代码高亮主题&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;fff&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (   fff)&lt;/span&gt;
 
-&lt;h4 id=&quot;友情链接&quot;&gt;友情链接&lt;/h4&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;fff&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (fff   )&lt;/span&gt;
 
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 友情链接&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;friends&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://www.jekyll.com.cn/'&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;fff&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (000fff)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;​	按格式填写即可，排序与配置文件里的排序有关。&lt;/p&gt;
-
-&lt;h4 id=&quot;页脚&quot;&gt;页脚&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# since&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;footer&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;since&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2018&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	用于页脚显示时间。&lt;/p&gt;
-
-&lt;h4 id=&quot;评论系统的切换&quot;&gt;评论系统的切换&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 评论 最佳体验 在disqus、livere和Gitment之间三选一&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# disqus 评论&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;disqus&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;disqus_url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# https://abc.disqus.com/embed.js&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 来必力评论&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;livere&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;livere_uid&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;MTAyMC8zNDI2OS8xMDgwNg=='&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# MTAyMC8zNDI2OS8xMDgwNg==&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# Gitment评论 OAuth Application&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;Gitment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;Gitment_owner&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# github用户名&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;Gitment_repo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# github博客存放的仓库名&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;client_id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 注册 OAuth Application 后获得的 client_id&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;client_secret&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 注册 OAuth Application 后获得的 client_secret&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	按申请第三方评论是获取的相关信息在配置文件中进行填写即可。&lt;/p&gt;
-
-&lt;p&gt;​	共有三款评论可供选择，使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 开启或关闭某个评论系统。可开启多个甚至全开。当然，最佳体验，开一个即可。&lt;/p&gt;
-
-&lt;p&gt;​	三款评论的样式如下图：&lt;/p&gt;
-
-&lt;p&gt;dispus：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/screenshot/8.png&quot; alt=&quot;8&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;来必力：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/screenshot/9.png&quot; alt=&quot;9&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Gitment评论：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/screenshot/10.png&quot; alt=&quot;10&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;​	三款评论各有各的优势与坏处。出于显示样式与中国大陆网络环境考虑，主题默认开启 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;来必力&lt;/code&gt; 评论为最佳体验。当然需要填写好相关的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;livere_uid&lt;/code&gt; 代码。&lt;/p&gt;
-
-&lt;h4 id=&quot;文章分享的路口&quot;&gt;文章分享的路口&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;social-share&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;social-share-items&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;qq'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;wechat'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;weibo'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;twitter'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;facebook'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	为了让文章更方便地分享，使用了第三方分享插件&lt;a href=&quot;http://overtrue.github.io/share.js/&quot;&gt;Share.js&lt;/a&gt;，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。&lt;/p&gt;
-
-&lt;p&gt;​	只需要填写相关的名称在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;social-share-items&lt;/code&gt; 后即可，显示顺序与书写顺序有关。&lt;/p&gt;
-
-&lt;h4 id=&quot;网站流量追综的配置&quot;&gt;网站流量追综的配置&lt;/h4&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 百度统计 在baidu-url里填写自己相关的url代码&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;baidu&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;baidu-url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;google&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;google-ID&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​	在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;baidu-url&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google-ID&lt;/code&gt; 分别填上注册获取的相关信息。使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 开启或关闭他们。出于中国大陆网络环境，默认开启 百度统计 ，当然可以多开。&lt;/p&gt;
-
-&lt;h3 id=&quot;license-许可证&quot;&gt;License 许可证&lt;/h3&gt;
-
-&lt;p&gt;HardCandy-Jekyll is licensed under &lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll/blob/master/LICENSE&quot;&gt;MIT&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jekyll</name></author><category term="jekyll" /><category term="gitbub" /><category term="linux" /><category term="markdown" /><summary type="html">主题特性 主题基于 jekyll 3.8.1 开发 响应式布局 文章标签索引 文章时间线索引 博主个人信息展示 支持9种代码高亮主题色 支持 dispus 、 来必力 、 Gitment 三种评论系统 支持 百度统计 、谷歌分析 两种网站追踪系统 支持13款不同社交平台图标及链接地址指向 支持11个不同平台的文章分享路口 开始使用 线上部署 ​ 首先在 github 上开启一个仓库起名为 你的github用户名.github.io 。并 clone 你的仓库到本地。 然后下载 HardCandy-Jekyll 的 源码 到本地之后， Gemfile 文件代码最后加上 gem “github-pages”, group: :jekyll_plugins 将 _config.yml 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 github 线上仓库，即可通过域名 https://你的github用户名.github.io 访问看到自己的博客页面。 本地部署 ​ 首先在本地安装 Jekyll 详情请戳 ​ 安装完成之后，使用命令 jekyll -v 查看 jekyll版本号 ，若低于 jekyll 3.x.x 则需要升级至 jekyll 3.x.x 。 ​ 使用 gem install jekyll-paginate 或 sudo gem install jekyll-paginate 安装Jekyll的分页插件。 ​ 将源码 clone 到本地后，在终端进入 HardCandy-Jekyll 根目录，运行 jekyll server 或 bundle exec jekyll serve ，即可开启jekyll的服务。通过浏览器访问 http://localhost:4000 ，即可看到本地部署的 HardCandy-Jekyll 博客了。 warning！值得注意的地方： ​ 由于本主题是基于 jekyll 3.8.1 开发 ，jekyll的版本差异也许会导致相关显示效果的差异。详情请参考官方文档：news 配置文档 开始 关于博客 写文章 组件 博主个人信息 社交媒体 首页显示信息 导航栏 分页 代码高亮主题 友情链接 页脚 第三方服务 评论系统的切换 文章分享的路口 网站流量追综的配置 ​ 通用修改 _config.yml 文件，你便可以轻松搭建属于你自己的个人博客。 ​ 一部分配置，默认已经是配置好的，你只需要修改下面列出的内容即可完成搭建。 关于博客 --- # Site settings 配置站点 title: 'your awesome title' description: 'your web description' keywords: 'your web keywords, another keywords' url: 'https://abc.github.io' # your host --- title ：用于页面的 title 标签的显示内容 description ：网站的简介 keywords ：网站的关键词 url ：网站域名 写文章 ​ 博客通过解析 markdown 文件来部署文章页面的，所以用户写文章只需要写一篇markdown，并放置在站点根目录下的 _post 文件夹即可。具体的markdown语法自行上网搜索学习，或使用markdown编辑器进行写作。推荐一款 markdown编辑器：typora 。支持 windows 、mac OSX 、Linux 。 关于文章 YAML头信息： layout: post title: &quot;post title&quot; subtitle: 'post subtitle' date: 2018-05-29 08:44:13 tags: html js css description: '' color: 'rgb(154,133,255)' cover: '' 关于color： ​ 此处的color用于post页面的顶部位置的背景色。如上面展示图所示为 rgb(154,133,255) 色。 ​ 对于color的书写，如果颜色代码为 rgb 或 rgba 又或是 英文单词 的话，可以不用引号包裹，但如果颜色代码为 #123456 这种16进制码的话，就必须使用引号包裹。所以，在使用中，推荐一致都使用引号，以免错误使用。 ​ 当然，如果你在书写文章时，忘记写color的值的话，主题默认会为你填写 rgb(154,133,255) 色。就是上图显示的颜色。虽然不影响页面的显示，但如果想要更多彩的页面效果的话，建议在每一篇的头信息里写上 color 值。 关于cover： ​ 此处需填写某一张图片的 url ，url 值可以是线上的某张图片，也可以是博客目录下的图片。关键是要书写正确。这张图片用于在首页下博客列表里显示，如下图。 博主个人信息 # 博主 author: true name: 'your awesome name' NickName: 'your awesome nickname' webtitle: 'your awesome webtitle' bio: 'your awesome bio' about: true aboutyou: 'your introduction' portraits: '/assets/profile.jpeg' # your portraits image file path ​ 该部分显示在 关于博主 页面，与 社交媒体 一同在下图显示。 关于author： ​ 使用 true 或者 false 来打开或关闭博主信息卡片，默认 true ，最佳体验也是 true 。 关于about： ​ 使用 true 或者 false 来打开或关闭博主关于信息，即是否显示 aboutyou 部分的信息。默认 true ，该部分需要在 aboutyou 中输入相关信息，支持在此填写html代码。 社交媒体 # SNS SNS: true SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen'] mail: 'mailto:abc@gmail.com' weixin: '' # 你的微信二维码存放的地址 qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&amp;amp;uin='你的QQ号'&amp;amp;site=qq&amp;amp;menu=yes github: '' Codepen: '' weibo: '' instagram: '' Twitter: '' Dribbble: '' Facebook: '' Google: '' zhihu: '' juejin: '' twitch: '' ​ 主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 # 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。 ​ 在 SNS 后填写 true 或者 false 来打开或者关闭这一部分。 2018/09/28 更新： 更新社交图标为 线上地址 ，便于管理与修改。 添加 Codepen 图标 修改原来的圆形图标为不规则图标 首页显示信息 --- layout: default title: your awesome title page-title: awesome page-title. home-title: awesome home-title. description: description --- ​ 该部分位于 index.html 页面，修改 title 、page-title 、home-title 、description为个人想要的信息，默认配置的显示效果如下图。 导航栏 # nav 中文字符空格：&amp;amp;emsp; nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字 首页: '/' 标签: '/tags.html' 时间线: '/timeline.html' 关于博主: '/about.html' 友情链接: '/friendLink.html' ​ 默认全部开启他们，当然如果想要自己添加，按照格式填在下方即可，当然页面显示顺序与每一行的位置有关。 分页 # 分页 paginate: 2 paginatepath: ['page:num'] ​ 随个人爱好在，在上面填写你需要的在首页一页最多显示多少篇博客的数字。 ​ 本地部署的需要使用 gem install jekyll-paginate 或 sudo gem install jekyll-paginate 安装Jekyll的分页插件。 代码高亮主题 # 代码高亮 使用rouge highlighter: rouge # 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中 pygmentsTheme: 'default' ​ 代码高亮使用 jekyll3.0 之后的默认高亮引擎 rouge 。关于主题，只需要在 pygmentsTheme 后填写喜欢的主题名称即可。共有9款主题可选，主题名见上文。 ​ 代码高亮的写法： ``` css *{ margin:0; padding:0; } ``` 2018/09/28 更新： 上图为 代码高亮试例图 ，仅以 html 作为参考例子，其他代码参考 上图，或自行切换测试选择自己喜欢的代码高亮主题 友情链接 # 友情链接 friends: jekyll: 'https://www.jekyll.com.cn/' ​ 按格式填写即可，排序与配置文件里的排序有关。 页脚 # since footer: since: 2018 ​ 用于页脚显示时间。 评论系统的切换 # 评论 最佳体验 在disqus、livere和Gitment之间三选一 # disqus 评论 disqus: false disqus_url: '' # https://abc.disqus.com/embed.js # 来必力评论 livere: true livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg== # Gitment评论 OAuth Application Gitment: false Gitment_owner: '' # github用户名 Gitment_repo: '' # github博客存放的仓库名 client_id: '' # 注册 OAuth Application 后获得的 client_id client_secret: '' # 注册 OAuth Application 后获得的 client_secret ​ 按申请第三方评论是获取的相关信息在配置文件中进行填写即可。 ​ 共有三款评论可供选择，使用 true 或者 false 开启或关闭某个评论系统。可开启多个甚至全开。当然，最佳体验，开一个即可。 ​ 三款评论的样式如下图： dispus： 来必力： Gitment评论： ​ 三款评论各有各的优势与坏处。出于显示样式与中国大陆网络环境考虑，主题默认开启 来必力 评论为最佳体验。当然需要填写好相关的 livere_uid 代码。 文章分享的路口 # Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google social-share: true social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook'] ​ 为了让文章更方便地分享，使用了第三方分享插件Share.js，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。 ​ 只需要填写相关的名称在 social-share-items 后即可，显示顺序与书写顺序有关。 网站流量追综的配置 # 百度统计 在baidu-url里填写自己相关的url代码 baidu: true baidu-url: '' # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID google: false google-ID: '' ​ 在 baidu-url 和 google-ID 分别填上注册获取的相关信息。使用 true 或者 false 开启或关闭他们。出于中国大陆网络环境，默认开启 百度统计 ，当然可以多开。 License 许可证 HardCandy-Jekyll is licensed under MIT.</summary></entry><entry><title type="html">ES6 Promise async/await</title><link href="http://localhost:4000/2019/03/04/es6-promise.html" rel="alternate" type="text/html" title="ES6 Promise async/await" /><published>2019-03-04T23:00:21+08:00</published><updated>2019-03-04T23:00:21+08:00</updated><id>http://localhost:4000/2019/03/04/es6-promise</id><content type="html" xml:base="http://localhost:4000/2019/03/04/es6-promise.html">&lt;blockquote&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;6 .function show(a, b, c,)  ES7 函数多一个逗号也可以支持&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;7 async awite “取代”ES6 generator yoied 优势在于不依赖于外部runner, 统一标准,提高性能, 可以支持箭头函数&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>true</name></author><category term="ES7" /><category term="ES6" /><category term="前端" /><summary type="html">ES7 出来了 ES8 也定稿了 ES9 ES10规范也都浮出水面的 我的老天鹅啊</summary></entry><entry><title type="html">ES6 Promise async/await</title><link href="http://localhost:4000/2019/03/04/es6-promise.html" rel="alternate" type="text/html" title="ES6 Promise async/await" /><published>2019-03-04T23:00:21+08:00</published><updated>2019-03-04T23:00:21+08:00</updated><id>http://localhost:4000/2019/03/04/es6-promise</id><content type="html" xml:base="http://localhost:4000/2019/03/04/es6-promise.html">&lt;blockquote&gt;
   &lt;p&gt;Promise最大的好处是在异步执行的流程中，把执行代码和处理结果的代码清晰地分离了：
-&lt;img src=&quot;https://www.liaoxuefeng.com/files/attachments/1027242914217888/l&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110034450818.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h4 id=&quot;promise传统写法&quot;&gt;Promise传统写法&lt;/h4&gt;
@@ -1346,7 +1033,338 @@
   &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000014801021&quot;&gt;盒模型&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;hr /&gt;</content><author><name>ma_meng</name></author><category term="CSS" /><category term="JavaScript" /><category term="布局" /><category term="CSS3" /><category term="选择器" /><summary type="html">CSS基础</summary></entry><entry><title type="html">算法面试题</title><link href="http://localhost:4000/2018/01/01/mainshi-saunfa.html" rel="alternate" type="text/html" title="算法面试题" /><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><id>http://localhost:4000/2018/01/01/mainshi-saunfa</id><content type="html" xml:base="http://localhost:4000/2018/01/01/mainshi-saunfa.html">&lt;h1 id=&quot;算法面试题&quot;&gt;算法面试题&lt;/h1&gt;
+&lt;hr /&gt;</content><author><name>ma_meng</name></author><category term="CSS" /><category term="JavaScript" /><category term="布局" /><category term="CSS3" /><category term="选择器" /><summary type="html">CSS基础</summary></entry><entry><title type="html">如何使用Jekyll + github 搭建一个个人博客</title><link href="http://localhost:4000/2018/01/01/hello-jekyll.html" rel="alternate" type="text/html" title="如何使用Jekyll + github 搭建一个个人博客" /><published>2018-01-01T12:05:21+08:00</published><updated>2018-01-01T12:05:21+08:00</updated><id>http://localhost:4000/2018/01/01/hello-jekyll</id><content type="html" xml:base="http://localhost:4000/2018/01/01/hello-jekyll.html">&lt;h3 id=&quot;主题特性&quot;&gt;主题特性&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;主题基于 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll 3.8.1&lt;/code&gt; 开发&lt;/li&gt;
+  &lt;li&gt;响应式布局&lt;/li&gt;
+  &lt;li&gt;文章标签索引&lt;/li&gt;
+  &lt;li&gt;文章时间线索引&lt;/li&gt;
+  &lt;li&gt;博主个人信息展示&lt;/li&gt;
+  &lt;li&gt;支持9种代码高亮主题色&lt;/li&gt;
+  &lt;li&gt;支持 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dispus&lt;/code&gt; 、 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;来必力&lt;/code&gt; 、 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gitment&lt;/code&gt; 三种评论系统&lt;/li&gt;
+  &lt;li&gt;支持 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;百度统计&lt;/code&gt; 、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;谷歌分析&lt;/code&gt; 两种网站追踪系统&lt;/li&gt;
+  &lt;li&gt;支持13款不同社交平台图标及链接地址指向&lt;/li&gt;
+  &lt;li&gt;支持11个不同平台的文章分享路口&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;开始使用&quot;&gt;开始使用&lt;/h3&gt;
+
+&lt;h4 id=&quot;线上部署&quot;&gt;线上部署&lt;/h4&gt;
+
+&lt;p&gt;​ 首先在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github&lt;/code&gt; 上开启一个仓库起名为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;你的github用户名.github.io&lt;/code&gt; 。并 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clone&lt;/code&gt; 你的仓库到本地。 然后下载 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HardCandy-Jekyll&lt;/code&gt; 的 &lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll&quot;&gt;源码&lt;/a&gt; 到本地之后，&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Gemfile 文件代码最后加上 gem “github-pages”, group: :jekyll_plugins&lt;/li&gt;
+  &lt;li&gt;将 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github&lt;/code&gt; 线上仓库，即可通过域名 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://你的github用户名.github.io&lt;/code&gt; 访问看到自己的博客页面。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;本地部署&quot;&gt;本地部署&lt;/h4&gt;
+
+&lt;p&gt;​	首先在本地安装 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt; &lt;a href=&quot;https://www.jekyll.com.cn/docs/quickstart/&quot;&gt;详情请戳&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;​	安装完成之后，使用命令 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll -v&lt;/code&gt; 查看 &lt;strong&gt;jekyll版本号&lt;/strong&gt; ，若低于 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll 3.x.x&lt;/code&gt; 则需要升级至 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll 3.x.x&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;p&gt;​	使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install jekyll-paginate&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install jekyll-paginate&lt;/code&gt; 安装Jekyll的分页插件。&lt;/p&gt;
+
+&lt;p&gt;​	将源码 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clone&lt;/code&gt; 到本地后，在终端进入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HardCandy-Jekyll&lt;/code&gt; 根目录，运行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll server&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; ，即可开启jekyll的服务。通过浏览器访问 &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt; ，即可看到本地部署的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HardCandy-Jekyll&lt;/code&gt; 博客了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;warning！值得注意的地方：&lt;/p&gt;
+
+  &lt;p&gt;​	由于本主题是基于 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll 3.8.1&lt;/code&gt; 开发 ，jekyll的版本差异也许会导致相关显示效果的差异。详情请参考官方文档：&lt;a href=&quot;https://jekyllrb.com/news/&quot;&gt;news&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;配置文档&quot;&gt;配置文档&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;开始
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#关于博客&quot;&gt;关于博客&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#写文章&quot;&gt;写文章&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;组件
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#博主个人信息&quot;&gt;博主个人信息&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#社交媒体&quot;&gt;社交媒体&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#首页显示信息&quot;&gt;首页显示信息&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#导航栏&quot;&gt;导航栏&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#分页&quot;&gt;分页&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#代码高亮主题&quot;&gt;代码高亮主题&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#友情链接&quot;&gt;友情链接&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#页脚&quot;&gt;页脚&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;第三方服务
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#评论系统的切换&quot;&gt;评论系统的切换&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#文章分享的路口&quot;&gt;文章分享的路口&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#网站流量追综的配置&quot;&gt;网站流量追综的配置&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;​	通用修改 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 文件，你便可以轻松搭建属于你自己的个人博客。&lt;/p&gt;
+
+  &lt;p&gt;​	一部分配置，默认已经是配置好的，你只需要修改下面列出的内容即可完成搭建。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;关于博客&quot;&gt;关于博客&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Site settings 配置站点&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;title'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;description'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;keywords&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;keywords,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;another&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;keywords'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://abc.github.io'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# your host&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt; ：用于页面的 title 标签的显示内容&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;description&lt;/code&gt; ：网站的简介&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keywords&lt;/code&gt; ：网站的关键词&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;url&lt;/code&gt; ：网站域名&lt;/p&gt;
+
+&lt;h4 id=&quot;写文章&quot;&gt;写文章&lt;/h4&gt;
+
+&lt;p&gt;​	博客通过解析 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;markdown&lt;/code&gt; 文件来部署文章页面的，所以用户写文章只需要写一篇markdown，并放置在站点根目录下的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_post&lt;/code&gt; 文件夹即可。具体的markdown语法自行上网搜索学习，或使用markdown编辑器进行写作。推荐一款 markdown编辑器：&lt;a href=&quot;https://www.typora.io&quot;&gt;typora&lt;/a&gt; 。支持 windows 、mac OSX 、Linux 。&lt;/p&gt;
+
+&lt;p&gt;关于文章 YAML头信息：&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;title&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;subtitle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;subtitle'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;2018-05-29 08:44:13&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;html js css&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;rgb(154,133,255)'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;cover&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;关于color：&lt;/p&gt;
+
+&lt;p&gt;​	此处的color用于post页面的顶部位置的背景色。如上面展示图所示为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgb(154,133,255)&lt;/code&gt; 色。&lt;/p&gt;
+
+&lt;p&gt;​	对于color的书写，如果颜色代码为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgb&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgba&lt;/code&gt; 又或是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;英文单词&lt;/code&gt; 的话，可以不用引号包裹，但如果颜色代码为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#123456&lt;/code&gt; 这种16进制码的话，就必须使用引号包裹。所以，在使用中，推荐一致都使用引号，以免错误使用。&lt;/p&gt;
+
+&lt;p&gt;​	当然，如果你在书写文章时，忘记写color的值的话，主题默认会为你填写 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgb(154,133,255)&lt;/code&gt; 色。就是上图显示的颜色。虽然不影响页面的显示，但如果想要更多彩的页面效果的话，建议在每一篇的头信息里写上 color 值。&lt;/p&gt;
+
+&lt;p&gt;关于cover：&lt;/p&gt;
+
+&lt;p&gt;​	此处需填写某一张图片的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;url&lt;/code&gt; ，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;url&lt;/code&gt; 值可以是线上的某张图片，也可以是博客目录下的图片。关键是要书写正确。这张图片用于在首页下博客列表里显示，如下图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot/5.png&quot; alt=&quot;5&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;博主个人信息&quot;&gt;博主个人信息&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 博主&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;name'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;NickName&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;nickname'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;webtitle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;webtitle'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;awesome&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bio'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;about&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;aboutyou&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;introduction'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;portraits&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/assets/profile.jpeg'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# your portraits image file path&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	该部分显示在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;关于博主&lt;/code&gt; 页面，与 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;社交媒体&lt;/code&gt; 一同在下图显示。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot/6.png&quot; alt=&quot;6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;关于author：&lt;/p&gt;
+
+&lt;p&gt;​	使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 来打开或关闭博主信息卡片，默认 true ，最佳体验也是 true 。&lt;/p&gt;
+
+&lt;p&gt;关于about：&lt;/p&gt;
+
+&lt;p&gt;​	使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 来打开或关闭博主关于信息，即是否显示 aboutyou 部分的信息。默认 true ，该部分需要在 aboutyou 中输入相关信息，支持在此填写html代码。&lt;/p&gt;
+
+&lt;h4 id=&quot;社交媒体&quot;&gt;社交媒体&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# SNS&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;SNS&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;SNS-icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;mail&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;mailto:abc@gmail.com'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;weixin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 你的微信二维码存放的地址&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;qq&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&amp;amp;uin='你的QQ号'&amp;amp;site=qq&amp;amp;menu=yes&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Codepen&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;weibo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;instagram&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Dribbble&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Facebook&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Google&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;zhihu&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;juejin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;twitch&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	&lt;del&gt;主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;​	在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SNS&lt;/code&gt; 后填写  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 来打开或者关闭这一部分。&lt;/p&gt;
+
+&lt;p&gt;2018/09/28 更新：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot/sns-icon.png&quot; alt=&quot;7&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;更新社交图标为 线上地址 ，便于管理与修改。&lt;/li&gt;
+  &lt;li&gt;添加 &lt;strong&gt;Codepen&lt;/strong&gt; 图标&lt;/li&gt;
+  &lt;li&gt;修改原来的圆形图标为不规则图标&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;首页显示信息&quot;&gt;首页显示信息&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;default&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;your awesome title&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;page-title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;awesome page-title.&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;home-title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;awesome home-title.&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	该部分位于 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; 页面，修改 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt; 、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;page-title&lt;/code&gt; 、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;home-title&lt;/code&gt;  、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;description&lt;/code&gt;为个人想要的信息，默认配置的显示效果如下图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot/7.png&quot; alt=&quot;7&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;导航栏&quot;&gt;导航栏&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# nav 中文字符空格：&amp;amp;emsp;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;nav&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 最佳体验 六个标签 且最好每个标签不超过4中文字&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;首页&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/'&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;标签&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/tags.html'&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;时间线&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/timeline.html'&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;关于博主&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/about.html'&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;友情链接&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/friendLink.html'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	默认全部开启他们，当然如果想要自己添加，按照格式填在下方即可，当然页面显示顺序与每一行的位置有关。&lt;/p&gt;
+
+&lt;h4 id=&quot;分页&quot;&gt;分页&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 分页&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;paginate&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;paginatepath&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;page:num'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	随个人爱好在，在上面填写你需要的在首页一页最多显示多少篇博客的数字。&lt;/p&gt;
+
+&lt;p&gt;​	本地部署的需要使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install jekyll-paginate&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install jekyll-paginate&lt;/code&gt; 安装Jekyll的分页插件。&lt;/p&gt;
+
+&lt;h4 id=&quot;代码高亮主题&quot;&gt;代码高亮主题&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 代码高亮 使用rouge&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;highlighter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rouge&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;pygmentsTheme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;default'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	代码高亮使用 jekyll3.0 之后的默认高亮引擎 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rouge&lt;/code&gt; 。关于主题，只需要在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pygmentsTheme&lt;/code&gt; 后填写喜欢的主题名称即可。共有9款主题可选，主题名见上文。&lt;/p&gt;
+
+&lt;p&gt;​	代码高亮的写法：&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt; css
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2018/09/28 更新：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot/博客代码高亮例子.png&quot; alt=&quot;7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图为 &lt;strong&gt;代码高亮试例图&lt;/strong&gt; ，仅以 html 作为参考例子，其他代码参考 上图，或自行切换测试选择自己喜欢的代码高亮主题&lt;/p&gt;
+
+&lt;h4 id=&quot;友情链接&quot;&gt;友情链接&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 友情链接&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;friends&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://www.jekyll.com.cn/'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	按格式填写即可，排序与配置文件里的排序有关。&lt;/p&gt;
+
+&lt;h4 id=&quot;页脚&quot;&gt;页脚&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# since&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;footer&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;since&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2018&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	用于页脚显示时间。&lt;/p&gt;
+
+&lt;h4 id=&quot;评论系统的切换&quot;&gt;评论系统的切换&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 评论 最佳体验 在disqus、livere和Gitment之间三选一&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# disqus 评论&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;disqus&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;disqus_url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# https://abc.disqus.com/embed.js&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 来必力评论&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;livere&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;livere_uid&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;MTAyMC8zNDI2OS8xMDgwNg=='&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# MTAyMC8zNDI2OS8xMDgwNg==&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Gitment评论 OAuth Application&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Gitment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Gitment_owner&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# github用户名&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Gitment_repo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# github博客存放的仓库名&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;client_id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 注册 OAuth Application 后获得的 client_id&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;client_secret&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 注册 OAuth Application 后获得的 client_secret&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	按申请第三方评论是获取的相关信息在配置文件中进行填写即可。&lt;/p&gt;
+
+&lt;p&gt;​	共有三款评论可供选择，使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 开启或关闭某个评论系统。可开启多个甚至全开。当然，最佳体验，开一个即可。&lt;/p&gt;
+
+&lt;p&gt;​	三款评论的样式如下图：&lt;/p&gt;
+
+&lt;p&gt;dispus：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot/8.png&quot; alt=&quot;8&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;来必力：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot/9.png&quot; alt=&quot;9&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gitment评论：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot/10.png&quot; alt=&quot;10&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;​	三款评论各有各的优势与坏处。出于显示样式与中国大陆网络环境考虑，主题默认开启 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;来必力&lt;/code&gt; 评论为最佳体验。当然需要填写好相关的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;livere_uid&lt;/code&gt; 代码。&lt;/p&gt;
+
+&lt;h4 id=&quot;文章分享的路口&quot;&gt;文章分享的路口&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;social-share&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;social-share-items&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;qq'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;wechat'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;weibo'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;twitter'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;facebook'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	为了让文章更方便地分享，使用了第三方分享插件&lt;a href=&quot;http://overtrue.github.io/share.js/&quot;&gt;Share.js&lt;/a&gt;，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。&lt;/p&gt;
+
+&lt;p&gt;​	只需要填写相关的名称在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;social-share-items&lt;/code&gt; 后即可，显示顺序与书写顺序有关。&lt;/p&gt;
+
+&lt;h4 id=&quot;网站流量追综的配置&quot;&gt;网站流量追综的配置&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 百度统计 在baidu-url里填写自己相关的url代码&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;baidu&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;baidu-url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;google&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;google-ID&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;baidu-url&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google-ID&lt;/code&gt; 分别填上注册获取的相关信息。使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; 或者 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 开启或关闭他们。出于中国大陆网络环境，默认开启 百度统计 ，当然可以多开。&lt;/p&gt;
+
+&lt;h3 id=&quot;license-许可证&quot;&gt;License 许可证&lt;/h3&gt;
+
+&lt;p&gt;HardCandy-Jekyll is licensed under &lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll/blob/master/LICENSE&quot;&gt;MIT&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jekyll</name></author><category term="jekyll" /><category term="gitbub" /><category term="linux" /><category term="markdown" /><summary type="html">主题特性 主题基于 jekyll 3.8.1 开发 响应式布局 文章标签索引 文章时间线索引 博主个人信息展示 支持9种代码高亮主题色 支持 dispus 、 来必力 、 Gitment 三种评论系统 支持 百度统计 、谷歌分析 两种网站追踪系统 支持13款不同社交平台图标及链接地址指向 支持11个不同平台的文章分享路口 开始使用 线上部署 ​ 首先在 github 上开启一个仓库起名为 你的github用户名.github.io 。并 clone 你的仓库到本地。 然后下载 HardCandy-Jekyll 的 源码 到本地之后， Gemfile 文件代码最后加上 gem “github-pages”, group: :jekyll_plugins 将 _config.yml 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 github 线上仓库，即可通过域名 https://你的github用户名.github.io 访问看到自己的博客页面。 本地部署 ​ 首先在本地安装 Jekyll 详情请戳 ​ 安装完成之后，使用命令 jekyll -v 查看 jekyll版本号 ，若低于 jekyll 3.x.x 则需要升级至 jekyll 3.x.x 。 ​ 使用 gem install jekyll-paginate 或 sudo gem install jekyll-paginate 安装Jekyll的分页插件。 ​ 将源码 clone 到本地后，在终端进入 HardCandy-Jekyll 根目录，运行 jekyll server 或 bundle exec jekyll serve ，即可开启jekyll的服务。通过浏览器访问 http://localhost:4000 ，即可看到本地部署的 HardCandy-Jekyll 博客了。 warning！值得注意的地方： ​ 由于本主题是基于 jekyll 3.8.1 开发 ，jekyll的版本差异也许会导致相关显示效果的差异。详情请参考官方文档：news 配置文档 开始 关于博客 写文章 组件 博主个人信息 社交媒体 首页显示信息 导航栏 分页 代码高亮主题 友情链接 页脚 第三方服务 评论系统的切换 文章分享的路口 网站流量追综的配置 ​ 通用修改 _config.yml 文件，你便可以轻松搭建属于你自己的个人博客。 ​ 一部分配置，默认已经是配置好的，你只需要修改下面列出的内容即可完成搭建。 关于博客 --- # Site settings 配置站点 title: 'your awesome title' description: 'your web description' keywords: 'your web keywords, another keywords' url: 'https://abc.github.io' # your host --- title ：用于页面的 title 标签的显示内容 description ：网站的简介 keywords ：网站的关键词 url ：网站域名 写文章 ​ 博客通过解析 markdown 文件来部署文章页面的，所以用户写文章只需要写一篇markdown，并放置在站点根目录下的 _post 文件夹即可。具体的markdown语法自行上网搜索学习，或使用markdown编辑器进行写作。推荐一款 markdown编辑器：typora 。支持 windows 、mac OSX 、Linux 。 关于文章 YAML头信息： layout: post title: &quot;post title&quot; subtitle: 'post subtitle' date: 2018-05-29 08:44:13 tags: html js css description: '' color: 'rgb(154,133,255)' cover: '' 关于color： ​ 此处的color用于post页面的顶部位置的背景色。如上面展示图所示为 rgb(154,133,255) 色。 ​ 对于color的书写，如果颜色代码为 rgb 或 rgba 又或是 英文单词 的话，可以不用引号包裹，但如果颜色代码为 #123456 这种16进制码的话，就必须使用引号包裹。所以，在使用中，推荐一致都使用引号，以免错误使用。 ​ 当然，如果你在书写文章时，忘记写color的值的话，主题默认会为你填写 rgb(154,133,255) 色。就是上图显示的颜色。虽然不影响页面的显示，但如果想要更多彩的页面效果的话，建议在每一篇的头信息里写上 color 值。 关于cover： ​ 此处需填写某一张图片的 url ，url 值可以是线上的某张图片，也可以是博客目录下的图片。关键是要书写正确。这张图片用于在首页下博客列表里显示，如下图。 博主个人信息 # 博主 author: true name: 'your awesome name' NickName: 'your awesome nickname' webtitle: 'your awesome webtitle' bio: 'your awesome bio' about: true aboutyou: 'your introduction' portraits: '/assets/profile.jpeg' # your portraits image file path ​ 该部分显示在 关于博主 页面，与 社交媒体 一同在下图显示。 关于author： ​ 使用 true 或者 false 来打开或关闭博主信息卡片，默认 true ，最佳体验也是 true 。 关于about： ​ 使用 true 或者 false 来打开或关闭博主关于信息，即是否显示 aboutyou 部分的信息。默认 true ，该部分需要在 aboutyou 中输入相关信息，支持在此填写html代码。 社交媒体 # SNS SNS: true SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen'] mail: 'mailto:abc@gmail.com' weixin: '' # 你的微信二维码存放的地址 qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&amp;amp;uin='你的QQ号'&amp;amp;site=qq&amp;amp;menu=yes github: '' Codepen: '' weibo: '' instagram: '' Twitter: '' Dribbble: '' Facebook: '' Google: '' zhihu: '' juejin: '' twitch: '' ​ 主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 # 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。 ​ 在 SNS 后填写 true 或者 false 来打开或者关闭这一部分。 2018/09/28 更新： 更新社交图标为 线上地址 ，便于管理与修改。 添加 Codepen 图标 修改原来的圆形图标为不规则图标 首页显示信息 --- layout: default title: your awesome title page-title: awesome page-title. home-title: awesome home-title. description: description --- ​ 该部分位于 index.html 页面，修改 title 、page-title 、home-title 、description为个人想要的信息，默认配置的显示效果如下图。 导航栏 # nav 中文字符空格：&amp;amp;emsp; nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字 首页: '/' 标签: '/tags.html' 时间线: '/timeline.html' 关于博主: '/about.html' 友情链接: '/friendLink.html' ​ 默认全部开启他们，当然如果想要自己添加，按照格式填在下方即可，当然页面显示顺序与每一行的位置有关。 分页 # 分页 paginate: 2 paginatepath: ['page:num'] ​ 随个人爱好在，在上面填写你需要的在首页一页最多显示多少篇博客的数字。 ​ 本地部署的需要使用 gem install jekyll-paginate 或 sudo gem install jekyll-paginate 安装Jekyll的分页插件。 代码高亮主题 # 代码高亮 使用rouge highlighter: rouge # 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中 pygmentsTheme: 'default' ​ 代码高亮使用 jekyll3.0 之后的默认高亮引擎 rouge 。关于主题，只需要在 pygmentsTheme 后填写喜欢的主题名称即可。共有9款主题可选，主题名见上文。 ​ 代码高亮的写法： ``` css *{ margin:0; padding:0; } ``` 2018/09/28 更新： 上图为 代码高亮试例图 ，仅以 html 作为参考例子，其他代码参考 上图，或自行切换测试选择自己喜欢的代码高亮主题 友情链接 # 友情链接 friends: jekyll: 'https://www.jekyll.com.cn/' ​ 按格式填写即可，排序与配置文件里的排序有关。 页脚 # since footer: since: 2018 ​ 用于页脚显示时间。 评论系统的切换 # 评论 最佳体验 在disqus、livere和Gitment之间三选一 # disqus 评论 disqus: false disqus_url: '' # https://abc.disqus.com/embed.js # 来必力评论 livere: true livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg== # Gitment评论 OAuth Application Gitment: false Gitment_owner: '' # github用户名 Gitment_repo: '' # github博客存放的仓库名 client_id: '' # 注册 OAuth Application 后获得的 client_id client_secret: '' # 注册 OAuth Application 后获得的 client_secret ​ 按申请第三方评论是获取的相关信息在配置文件中进行填写即可。 ​ 共有三款评论可供选择，使用 true 或者 false 开启或关闭某个评论系统。可开启多个甚至全开。当然，最佳体验，开一个即可。 ​ 三款评论的样式如下图： dispus： 来必力： Gitment评论： ​ 三款评论各有各的优势与坏处。出于显示样式与中国大陆网络环境考虑，主题默认开启 来必力 评论为最佳体验。当然需要填写好相关的 livere_uid 代码。 文章分享的路口 # Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google social-share: true social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook'] ​ 为了让文章更方便地分享，使用了第三方分享插件Share.js，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。 ​ 只需要填写相关的名称在 social-share-items 后即可，显示顺序与书写顺序有关。 网站流量追综的配置 # 百度统计 在baidu-url里填写自己相关的url代码 baidu: true baidu-url: '' # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID google: false google-ID: '' ​ 在 baidu-url 和 google-ID 分别填上注册获取的相关信息。使用 true 或者 false 开启或关闭他们。出于中国大陆网络环境，默认开启 百度统计 ，当然可以多开。 License 许可证 HardCandy-Jekyll is licensed under MIT.</summary></entry><entry><title type="html">算法面试题</title><link href="http://localhost:4000/2018/01/01/mainshi-saunfa.html" rel="alternate" type="text/html" title="算法面试题" /><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><id>http://localhost:4000/2018/01/01/mainshi-saunfa</id><content type="html" xml:base="http://localhost:4000/2018/01/01/mainshi-saunfa.html">&lt;h1 id=&quot;算法面试题&quot;&gt;算法面试题&lt;/h1&gt;
 
 &lt;p&gt;算法相关的题在前端面试中的比重越来越高,当然最有效的方法是去LeetCode上刷题,关于JavaScript版的LeetCode解题思路可以参考此项目&lt;a href=&quot;https://github.com/azl397985856/leetcode&quot;&gt;leetcode题解，记录自己的leetcode解题之路&lt;/a&gt;&lt;/p&gt;
 
@@ -1849,16 +1867,4 @@
 最差情况：T(n) = O(n)
 平均情况：T(n) = O(n)&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>ma_meng</name></author><category term="算法" /><category term="JavaScript" /><category term="复杂度" /><category term="linux" /><category term="markdown" /><summary type="html">算法面试题</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/2017/11/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-11-05T14:05:21+08:00</published><updated>2017-11-05T14:05:21+08:00</updated><id>http://localhost:4000/2017/11/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2017/11/05/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>true</name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;hr /&gt;</content><author><name>ma_meng</name></author><category term="算法" /><category term="JavaScript" /><category term="复杂度" /><category term="linux" /><category term="markdown" /><summary type="html">算法面试题</summary></entry></feed>
