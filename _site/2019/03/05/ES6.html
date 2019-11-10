@@ -1,0 +1,1112 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>ES6 基础知识</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(255,215,0) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(255,215,0);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">ES6 基础知识</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(255,215,0);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="/2019/04/01/ES7.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,215,0)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,215,0);"><sapn class="main">ES7 新增内容简介</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">ES6 基础知识</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/03/04/es6-promise.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,215,0)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,215,0);"><sapn class="main">ES6 Promise async/await</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="/2019/04/01/ES7.html" class="leftchange" style="border-right: 1px solid rgb(255,215,0);border-bottom: 2px solid rgb(255,215,0);"><span>上一篇<br><br>ES7 新增内容简介</span></a>
+    
+    
+      <a href="/2019/03/04/es6-promise.html" class="rightchange" style="border-left: 1px solid rgb(255,215,0);border-bottom: 2px solid rgb(255,215,0);"><span>下一篇<br><br>ES6 Promise async/await</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(255,215,0); border-right: 8px solid rgb(255,215,0)">
+        Hello ES6
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <h1 id="hello-es6">hello-es6</h1>
+
+<p>ES6 各种新语法 入门了解  石川blue讲解</p>
+
+<p>视频地址</p>
+
+<ul>
+  <li><a href="https://www.bilibili.com/video/av20327829/">b站：深入解读ES6系列</a></li>
+</ul>
+
+<p>看视频整理要点笔记:</p>
+
+<hr />
+
+<ul>
+  <li><a href="#hello-es6">hello-es6</a>
+    <ul>
+      <li><a href="#1es6%E6%80%8E%E4%B9%88%E6%9D%A5%E7%9A%84">1.ES6怎么来的</a></li>
+      <li><a href="#2es6%E5%85%BC%E5%AE%B9%E6%80%A7">2.ES6兼容性</a></li>
+      <li><a href="#3%E5%8F%98%E9%87%8F-let-%E5%92%8C-%E5%B8%B8%E9%87%8F-const">3.变量 let 和 常量 const</a></li>
+      <li><a href="#4%E5%87%BD%E6%95%B0-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0">4.函数-箭头函数</a></li>
+      <li><a href="#5%E5%87%BD%E6%95%B0-%E5%8F%82%E6%95%B0">5.函数-参数</a></li>
+      <li><a href="#6%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC">6.解构赋值</a></li>
+      <li><a href="#7%E6%95%B0%E7%BB%84">7.数组</a></li>
+      <li><a href="#8%E5%AD%97%E7%AC%A6%E4%B8%B2">8.字符串</a></li>
+      <li><a href="#9%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-%E5%9F%BA%E7%A1%80">9.面向对象-基础</a></li>
+      <li><a href="#10%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%BA%94%E7%94%A8">10.面向对象应用</a></li>
+      <li><a href="#11json">11.json</a></li>
+      <li><a href="#12promise">12.Promise</a></li>
+      <li><a href="#13generator-%E8%AE%A4%E8%AF%86%E7%94%9F%E6%88%90%E5%99%A8%E5%87%BD%E6%95%B0">13.generator-认识生成器函数</a></li>
+      <li><a href="#14generator-yield%E6%98%AF%E5%95%A5">14.generator-yield是啥</a></li>
+      <li><a href="#15generator-%E5%AE%9E%E4%BE%8B">15.generator-实例</a></li>
+      <li><a href="#16es7-%E9%A2%84%E8%A7%88">16.ES7 预览</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="1es6怎么来的">1.ES6怎么来的</h2>
+
+<ul>
+  <li>ECMAScript 和 JavaScript
+    <ul>
+      <li>ECMA 是标准，JS 是实现</li>
+      <li>ECMAScript 简称 ECMA 或 ES</li>
+    </ul>
+  </li>
+  <li>历史版本
+    <ul>
+      <li>1996, ES1.0 Netscape 将 JS 提交给 ECMA 组织，ES 正式出现</li>
+      <li>1999, ES3.0 被广泛支持</li>
+      <li>2011, ES5.1 成为 ISO 国际标准</li>
+      <li>2015, ES6.0 正式发布</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="2es6兼容性">2.ES6兼容性</h2>
+
+<ul>
+  <li>ES6(ES2015) 支持的环境 IE10+, Chrome, FireFox, 移动端, NodeJS</li>
+  <li>解决不兼容办法，编译、转换
+    <ul>
+      <li>在线转换</li>
+      <li>或者提前编译</li>
+    </ul>
+  </li>
+  <li><a href="https://www.babeljs.cn">Babel 中文网</a>
+    <ul>
+      <li><a href="http://www.ruanyifeng.com/blog/2016/01/babel.html">Babel 入门教程 阮一峰</a></li>
+      <li>Babel 是一个 JavaScript 编译器</li>
+      <li>一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行</li>
+      <li>现在就用 ES6 编写程序，而不用担心现有环境是否支持</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3变量-let-和-常量-const">3.变量 let 和 常量 const</h2>
+
+<ul>
+  <li>var 的问题
+    <ul>
+      <li>可以重复声明，没有报错和警告</li>
+      <li>无法限制修改</li>
+      <li>没有块级作用域， <code class="language-plaintext highlighter-rouge">{ }</code></li>
+    </ul>
+  </li>
+  <li>let 和 const
+    <ul>
+      <li>不能重复声明</li>
+      <li>都是块级作用域, <code class="language-plaintext highlighter-rouge">{ }</code> 块内声明的，块外无效</li>
+      <li>let 是变量，可以修改</li>
+      <li>const 是常量，不能修改</li>
+    </ul>
+  </li>
+  <li>块级作用域举例
+    <ul>
+      <li>原来用 var 的方式，结果弹出的都是 3</li>
+      <li>或者将变量 封装到函数里，限制作用域，但比较麻烦</li>
+      <li>用 let 最简单，直接 var 改 let，解决作用域问题</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"ie=edge"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span><span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="cm">/*
+            var aBtn = document.getElementsByTagName('input')
+            for (var i=0; i &lt; aBtn.length; i++) {
+                aBtn[i].onclick = function () {
+                    alert(i)
+                }
+            }*/</span>
+            <span class="kd">var</span> <span class="nx">aBtn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">input</span><span class="dl">'</span><span class="p">)</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">aBtn</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">aBtn</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                    <span class="nx">alert</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="cm">/*
+            var aBtn = document.getElementsByTagName('input')
+            for (var i = 0; i &lt; aBtn.length; i++) {
+                // 封装到函数里，限制作用域
+                (function (i) {
+                    aBtn[i].onclick = function () {
+                        alert(i)
+                    }
+                })(i)
+            }*/</span>
+        <span class="p">}</span>
+    <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"按钮1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"按钮2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"按钮3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="4函数-箭头函数">4.函数-箭头函数</h2>
+
+<ul>
+  <li>箭头函数，就是函数的简写
+    <ul>
+      <li>如果只有一个参数，<code class="language-plaintext highlighter-rouge">()</code> 可以省</li>
+      <li>如果只有一个<code class="language-plaintext highlighter-rouge">return</code>，<code class="language-plaintext highlighter-rouge">{}</code>可以省</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 普通函数</span>
+<span class="kd">function</span> <span class="nx">name</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="p">}</span>
+<span class="c1">// 箭头函数，去掉 function， 加上 =&gt;</span>
+<span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">show1</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">abc</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">show2</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">abc</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">show1</span><span class="p">()</span> <span class="c1">// 调用函数</span>
+<span class="nx">show2</span><span class="p">()</span>
+
+<span class="kd">let</span> <span class="nx">show4</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">a</span><span class="o">*</span><span class="mi">2</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">show5</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">=&gt;</span> <span class="nx">a</span> <span class="o">*</span> <span class="mi">2</span>  <span class="c1">//简洁，类似python lambda 函数</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">show4</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">show5</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="5函数-参数">5.函数-参数</h2>
+
+<ul>
+  <li>参数扩展／展开 <code class="language-plaintext highlighter-rouge">...args</code>
+    <ul>
+      <li>收集剩余的参数，必须当到最后一个参数位置</li>
+      <li>展开数组，简写，效果和直接把数组的内容写在这儿一样</li>
+    </ul>
+  </li>
+  <li>默认参数</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">show</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="p">...</span><span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">show</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="kd">let</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="kd">let</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="kd">let</span> <span class="nx">arr3</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">arr1</span><span class="p">,</span> <span class="p">...</span><span class="nx">arr2</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr3</span><span class="p">)</span>
+
+<span class="kd">function</span> <span class="nx">show2</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="nx">c</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">show2</span><span class="p">(</span><span class="mi">88</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="6解构赋值">6.解构赋值</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="p">{</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span><span class="p">}</span> <span class="o">=</span> <span class="p">{</span><span class="na">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">y</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">z</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="p">[</span><span class="nx">json</span><span class="p">,</span> <span class="nx">arr</span><span class="p">,</span> <span class="nx">num</span><span class="p">,</span> <span class="nx">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">8</span><span class="p">,</span> <span class="dl">'</span><span class="s1">str</span><span class="dl">'</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">json</span><span class="p">,</span> <span class="nx">arr</span><span class="p">,</span> <span class="nx">num</span><span class="p">,</span> <span class="nx">str</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>解构赋值
+    <ul>
+      <li>左右两个边结构必须一样</li>
+      <li>右边必须是个东西</li>
+      <li>声明和赋值赋值不能分开，必须在一句话里</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="7数组">7.数组</h2>
+
+<ul>
+  <li>新增4个方法</li>
+  <li>map 映射  一个对一个</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">item</span><span class="o">*</span><span class="mi">2</span>
+<span class="p">})</span>
+<span class="kd">let</span> <span class="nx">result2</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">item</span><span class="o">=&gt;</span><span class="nx">item</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span> <span class="c1">// 简写</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result2</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">score</span> <span class="o">=</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+<span class="kd">let</span> <span class="nx">result3</span> <span class="o">=</span> <span class="nx">score</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">item</span> <span class="o">=&gt;</span> <span class="nx">item</span> <span class="o">&gt;=</span> <span class="mi">60</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">及格</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">不及格</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result3</span><span class="p">)</span>
+
+<span class="c1">// 结果</span>
+<span class="p">[</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">16</span> <span class="p">]</span>
+<span class="p">[</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">16</span> <span class="p">]</span>
+<span class="p">[</span> <span class="dl">'</span><span class="s1">不及格</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">及格</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">及格</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">不及格</span><span class="dl">'</span> <span class="p">]</span>
+</code></pre></div></div>
+
+<ul>
+  <li>reduce 汇总  一堆出来一个
+    <ul>
+      <li>用于比如，算个总数，算个平均</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">tmp</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//tmp 上次结果，item当前数，index次数1开始</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tmp</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">tmp</span> <span class="o">+</span> <span class="nx">item</span>
+<span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">tmp</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">!=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 不是最后一次</span>
+        <span class="k">return</span> <span class="nx">tmp</span> <span class="o">+</span> <span class="nx">item</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nx">tmp</span> <span class="o">+</span> <span class="nx">item</span><span class="p">)</span><span class="o">/</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>  <span class="c1">// 平均值</span>
+</code></pre></div></div>
+
+<ul>
+  <li>filter 过滤器 保留为true的</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">item</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">item</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">?</span> <span class="kc">true</span> <span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">item</span> <span class="o">=&gt;</span> <span class="nx">item</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">苹果</span><span class="dl">'</span><span class="p">,</span> <span class="na">price</span><span class="p">:</span> <span class="mi">10</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">西瓜</span><span class="dl">'</span><span class="p">,</span> <span class="na">price</span><span class="p">:</span> <span class="mi">20</span> <span class="p">},</span>
+<span class="p">]</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">json</span> <span class="o">=&gt;</span> <span class="nx">json</span><span class="p">.</span><span class="nx">price</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>forEach 循环迭代</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">item</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">))</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span><span class="o">=&gt;</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="8字符串">8.字符串</h2>
+
+<ul>
+  <li>多了两个新方法
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">startsWith</code></li>
+      <li><code class="language-plaintext highlighter-rouge">endsWith</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://qq.com</span><span class="dl">'</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">url</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="dl">'</span><span class="s1">http</span><span class="dl">'</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">url</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="dl">'</span><span class="s1">com</span><span class="dl">'</span><span class="p">))</span>
+<span class="c1">// 都是 true</span>
+</code></pre></div></div>
+
+<ul>
+  <li>字符串模版
+    <ul>
+      <li>使用反引号，<code class="language-plaintext highlighter-rouge">${变量}</code></li>
+      <li>可以折行</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="kd">let</span> <span class="nx">str1</span> <span class="o">=</span> <span class="s2">`asdf</span><span class="p">${</span><span class="nx">a</span><span class="p">}</span><span class="s2">`</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str1</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">title</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">标题</span><span class="dl">'</span>
+<span class="kd">let</span> <span class="nx">content</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">内容</span><span class="dl">'</span>
+<span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">`&lt;div&gt;
+&lt;h1&gt;</span><span class="p">${</span><span class="nx">title</span><span class="p">}</span><span class="s2">&lt;/h1&gt;
+&lt;p&gt;</span><span class="p">${</span><span class="nx">content</span><span class="p">}</span><span class="s2">&lt;/p&gt;
+`</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="err">标题</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="err">内容</span><span class="o">&lt;</span><span class="sr">/p</span><span class="err">&gt;
+</span></code></pre></div></div>
+
+<h2 id="9面向对象-基础">9.面向对象-基础</h2>
+
+<ul>
+  <li>原来写法
+    <ul>
+      <li>类和构造函数一样</li>
+      <li>属性和方法分开写的</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 老版本</span>
+<span class="kd">function</span> <span class="nx">User</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">pass</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">pass</span> <span class="o">=</span> <span class="nx">pass</span>
+<span class="p">}</span>
+
+<span class="nx">User</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">showName</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">User</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">showPass</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">pass</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">u1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">(</span><span class="dl">'</span><span class="s1">able</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1233</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">u1</span><span class="p">.</span><span class="nx">showName</span><span class="p">()</span>
+<span class="nx">u1</span><span class="p">.</span><span class="nx">showPass</span><span class="p">()</span>
+<span class="c1">// 老版本继承</span>
+<span class="kd">function</span> <span class="nx">VipUser</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">pass</span><span class="p">,</span> <span class="nx">level</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">User</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">pass</span><span class="p">)</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">level</span> <span class="o">=</span> <span class="nx">level</span>
+<span class="p">}</span>
+<span class="nx">VipUser</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">()</span>
+<span class="nx">VipUser</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="kd">constructor</span> <span class="o">=</span> <span class="nx">VipUser</span>
+<span class="nx">VipUser</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">showLevel</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">level</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">v1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">VipUser</span><span class="p">(</span><span class="dl">'</span><span class="s1">blue</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1234</span><span class="dl">'</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nx">v1</span><span class="p">.</span><span class="nx">showName</span><span class="p">()</span>
+<span class="nx">v1</span><span class="p">.</span><span class="nx">showLevel</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>新版面向对象
+    <ul>
+      <li>有了 class 关键字、构造器</li>
+      <li>class 里面直接加方法</li>
+      <li>继承，super 超类==父类</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">User</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">pass</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">pass</span> <span class="o">=</span> <span class="nx">pass</span>
+    <span class="p">}</span>
+
+    <span class="nx">showName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="nx">showPass</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">pass</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">u1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">(</span><span class="dl">'</span><span class="s1">able2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">111</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">u1</span><span class="p">.</span><span class="nx">showName</span><span class="p">()</span>
+<span class="nx">u1</span><span class="p">.</span><span class="nx">showPass</span><span class="p">()</span>
+
+<span class="c1">// 新版本继承</span>
+<span class="kd">class</span> <span class="nx">VipUser</span> <span class="kd">extends</span> <span class="nx">User</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">pass</span><span class="p">,</span> <span class="nx">level</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">pass</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">level</span> <span class="o">=</span> <span class="nx">level</span>
+    <span class="p">}</span>
+    <span class="nx">showLevel</span><span class="p">(){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">level</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">v1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">VipUser</span><span class="p">(</span><span class="dl">'</span><span class="s1">blue</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">123</span><span class="dl">'</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nx">v1</span><span class="p">.</span><span class="nx">showLevel</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="10面向对象应用">10.面向对象应用</h2>
+
+<ul>
+  <li><a href="https://www.reactjscn.com">React</a>
+    <ul>
+      <li>用于构建用户界面的 JavaScript 库</li>
+      <li>组件化，一个组件就是一个 class</li>
+      <li>JSX == bable == browser.js</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="11json">11.json</h2>
+
+<ul>
+  <li>JSON 格式
+    <ul>
+      <li>JavaScript Object Notation 的缩写，是一种用于数据交换的文本格式</li>
+      <li>JSON 是 JS对象 的严格子集</li>
+      <li>JSON 的标准写法</li>
+      <li>只能用双引号</li>
+      <li>所有的key都必须用双引号包起来</li>
+    </ul>
+  </li>
+  <li>JSON 对象
+    <ul>
+      <li>JSON 对象是 JavaScript 的原生对象，用来处理 JSON 格式数据，有两个静态方法</li>
+      <li>JSON.parse(string) ：接受一个 <strong>JSON 字符串</strong>并将其转换成一个 JavaScript <strong>对象</strong>。</li>
+      <li>JSON.stringify(obj) ：接受一个 JavaScript <strong>对象</strong>并将其转换为一个 <strong>JSON 字符串</strong>。</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">json</span> <span class="o">=</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+<span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">hi,</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">json</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://www.xx.com/</span><span class="dl">'</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">json</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">{"a": 12, "b": 4, "c": "abc"}</span><span class="dl">'</span>
+<span class="kd">var</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">json</span><span class="p">)</span>
+<span class="nx">hi</span><span class="p">,{</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span><span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">:</span><span class="mi">5</span><span class="p">}</span>
+<span class="nl">http</span><span class="p">:</span><span class="c1">//www.xx.com/%7B%22a%22%3A12%2C%22b%22%3A5%7D</span>
+<span class="p">{</span> <span class="nl">a</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">c</span><span class="p">:</span> <span class="dl">'</span><span class="s1">abc</span><span class="dl">'</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>对象（object）
+    <ul>
+      <li>是 JavaScript 语言的核心概念，也是最重要的数据类型</li>
+      <li>对象就是一组“键值对”（key-value）的集合，是一种无序的复合数据集合</li>
+      <li>对象的所有键名都是字符串, 所以加不加引号都可以</li>
+      <li>如果键名是数值，会被自动转为字符串</li>
+      <li>对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型</li>
+      <li>如果一个属性的值为函数，通常把这个属性称为“方法”，它可以像函数那样调用</li>
+      <li>in 运算符用于检查对象是否包含某个属性（注意，检查的是键名，不是键值</li>
+      <li>for…in循环用来遍历一个对象的全部属性</li>
+    </ul>
+  </li>
+  <li>对象 简写
+    <ul>
+      <li>key-value 一样时可以简写</li>
+      <li>里面函数可以简写, 去掉</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span><span class="na">a</span><span class="p">:</span><span class="nx">a</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span><span class="nx">b</span><span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="na">c</span><span class="p">:</span><span class="dl">"</span><span class="s2">c</span><span class="dl">"</span><span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">show</span><span class="p">(){</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">)</span> <span class="p">}})</span>
+<span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}</span>
+<span class="p">{</span> <span class="nl">a</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}</span>
+<span class="p">{</span> <span class="nl">a</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">c</span><span class="p">:</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span> <span class="p">}</span>
+<span class="p">{</span> <span class="nl">a</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">show</span><span class="p">:</span> <span class="p">[</span><span class="nb">Function</span><span class="p">:</span> <span class="nx">show</span><span class="p">]</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="12promise">12.Promise</h2>
+
+<ul>
+  <li>异步和同步
+    <ul>
+      <li>异步，操作之间没有关系，同时执行多个操作， 代码复杂</li>
+      <li>同步，同时只能做一件事，代码简单</li>
+    </ul>
+  </li>
+  <li>Promise 对象
+    <ul>
+      <li>用同步的方式来书写异步代码</li>
+      <li>Promise 让异步操作写起来，像在写同步操作的流程，不必一层层地嵌套回调函数</li>
+      <li>改善了可读性，对于多层嵌套的回调函数很方便</li>
+      <li>充当异步操作与回调函数之间的中介，使得异步操作具备同步操作的接口</li>
+    </ul>
+  </li>
+  <li>Promise 也是一个构造函数
+    <ul>
+      <li>接受一个回调函数f1作为参数，f1里面是异步操作的代码</li>
+      <li>返回的p1就是一个 Promise 实例</li>
+      <li>所有异步任务都返回一个 Promise 实例</li>
+      <li>Promise 实例有一个then方法，用来指定下一步的回调函数</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">f1</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 异步代码...</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="nx">f1</span><span class="p">);</span>
+<span class="nx">p1</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">f2</span><span class="p">);</span> <span class="c1">// f1的异步操作执行完成，就会执行f2。</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Promise 使得异步流程可以写成同步流程</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 传统写法</span>
+<span class="nx">step1</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">value1</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">step2</span><span class="p">(</span><span class="nx">value1</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">step3</span><span class="p">(</span><span class="nx">value2</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value3</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">step4</span><span class="p">(</span><span class="nx">value3</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value4</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// ...</span>
+      <span class="p">});</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="c1">// Promise 的写法</span>
+<span class="p">(</span><span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="nx">step1</span><span class="p">))</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">step2</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">step3</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">step4</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Promise.all(promiseArray)方法
+    <ul>
+      <li>将多个Promise对象实例包装，生成并返回一个新的Promise实例</li>
+      <li>promise数组中所有的promise实例都变为resolve的时候，该方法才会返回</li>
+      <li>并将所有结果传递results数组中</li>
+      <li>promise数组中任何一个promise为reject的话，则整个Promise.all调用会立即终止，并返回一个reject的新的promise对象</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">p1</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+    <span class="nx">p2</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
+    <span class="nx">p3</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">([</span><span class="nx">p1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">,</span> <span class="nx">p3</span><span class="p">]).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">results</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">results</span><span class="p">);</span>  <span class="c1">// [1, 2, 3]</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Promise.race([p1, p2, p3])
+    <ul>
+      <li>Promse.race就是赛跑的意思</li>
+      <li>哪个结果获得的快，就返回那个结果</li>
+      <li>不管结果本身是成功状态还是失败状态</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="13generator-认识生成器函数">13.generator-认识生成器函数</h2>
+
+<ul>
+  <li>generator 生成器函数
+    <ul>
+      <li>普通函数，一路到底</li>
+      <li>generator函数，中间可以停，到哪停呢，用 yield 配合，交出执行权</li>
+      <li>yield 有 放弃、退让、退位的意思</li>
+      <li>需要调用next()方法启动执行，需要遇到 yield 停, 踹一脚走一步</li>
+      <li>generator函数前面加一个 <code class="language-plaintext highlighter-rouge">*</code> 两边可以有空格，或靠近函数或<code class="language-plaintext highlighter-rouge">function</code></li>
+      <li>背后实际生成多个小函数，实现走走停停</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">show</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">show</span><span class="p">()</span> <span class="c1">// 普通函数</span>
+
+<span class="kd">function</span> <span class="o">*</span><span class="nx">show2</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">)</span>
+    <span class="k">yield</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">genObj</span> <span class="o">=</span> <span class="nx">show2</span><span class="p">()</span>
+<span class="nx">genObj</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span> <span class="c1">// 1</span>
+<span class="nx">genObj</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span> <span class="c1">// 2</span>
+<span class="nx">genObj</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span> <span class="c1">// 最后了，没有结果</span>
+</code></pre></div></div>
+
+<h2 id="14generator-yield是啥">14.generator-yield是啥</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">yield</code>
+    <ul>
+      <li>既可传参，又可以返回</li>
+      <li>第一个<code class="language-plaintext highlighter-rouge">next()</code>传参无效，只用来启动</li>
+    </ul>
+  </li>
+  <li>如果函数前漏掉 <code class="language-plaintext highlighter-rouge">*</code>
+    <ul>
+      <li>就是普通函数</li>
+      <li>如果有<code class="language-plaintext highlighter-rouge">yield</code>会报错， <code class="language-plaintext highlighter-rouge">ReferenceError: yield is not defined</code></li>
+      <li>yield 只能在Generator函数内部使用</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="o">*</span> <span class="nx">show</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">yield</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// yield 传参</span>
+<span class="kd">var</span> <span class="nx">gen</span> <span class="o">=</span> <span class="nx">show</span><span class="p">()</span>
+<span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span> <span class="c1">// 1</span>
+<span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span> <span class="c1">// 2 和 undefined 因为没有传参，yield没有返回值</span>
+<span class="kd">var</span> <span class="nx">gen</span> <span class="o">=</span> <span class="nx">show</span><span class="p">()</span>
+<span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1">// 1 第一次执行到yield，但没有执行赋值</span>
+<span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="c1">// 2 和 20</span>
+
+<span class="kd">function</span><span class="o">*</span> <span class="nx">show2</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="mi">10</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// yield 返回</span>
+<span class="kd">var</span> <span class="nx">gen</span> <span class="o">=</span> <span class="nx">show2</span><span class="p">()</span>
+<span class="kd">var</span> <span class="nx">res1</span> <span class="o">=</span> <span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res1</span><span class="p">)</span> <span class="c1">// { value: 10, done: false }</span>
+<span class="kd">var</span> <span class="nx">res2</span> <span class="o">=</span> <span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res2</span><span class="p">)</span>
+<span class="c1">// { value: undefined, done: true } 最后的value需要return返回</span>
+</code></pre></div></div>
+
+<h2 id="15generator-实例">15.generator-实例</h2>
+
+<ul>
+  <li>Promise 适合一次读一组</li>
+  <li>generator 适合逻辑性的</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 带逻辑-generator</span>
+<span class="nx">runner</span><span class="p">(</span><span class="kd">function</span> <span class="o">*</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">userData</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><span class="na">url</span><span class="p">:</span> <span class="dl">'</span><span class="s1">getUserData</span><span class="dl">'</span><span class="p">})</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">userData</span><span class="p">.</span><span class="nx">type</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">VIP</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">items</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><span class="na">url</span><span class="p">:</span> <span class="dl">'</span><span class="s1">getVIPItems</span><span class="dl">'</span><span class="p">})</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">items</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><span class="na">url</span><span class="p">:</span> <span class="dl">'</span><span class="s1">getItems</span><span class="dl">'</span><span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// yield 实例，用同步方式写异步</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="kd">function</span> <span class="o">*</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">db</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">`select * from user_table`</span><span class="p">)</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">body</span> <span class="o">=</span> <span class="nx">data</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h2 id="16es7-预览">16.ES7 预览</h2>
+
+<ul>
+  <li>数组
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">arr.includes()</code> 数组是否包含某个东西</li>
+      <li>数组的 arr.keys(), arr,entries()</li>
+      <li>for … in 遍历数组 下标 key</li>
+      <li>for … of 遍历数组 值 value, 不能用于json</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="c1">// 循环的时下标 key</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="c1">// 循环的是值 value</span>
+<span class="p">}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">keys</span><span class="p">())</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">&gt;</span><span class="dl">'</span><span class="o">+</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="p">[</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">]</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">entries</span><span class="p">())</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">&gt;</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">key</span> <span class="o">+</span> <span class="nx">value</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">json</span> <span class="o">=</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="na">c</span><span class="p">:</span> <span class="mi">7</span> <span class="p">}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">json</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>字符串
+    <ul>
+      <li>padStart()/padEnd() 指定宽度，不够就补空格或指定字符</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">=</span><span class="dl">'</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">abcd</span><span class="dl">'</span><span class="p">.</span><span class="nx">padStart</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">)</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">=</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">=</span><span class="dl">'</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">abcd</span><span class="dl">'</span><span class="p">.</span><span class="nx">padEnd</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">)</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">=</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">=</span><span class="mi">00</span><span class="nx">abcd</span><span class="o">=</span>
+<span class="o">=</span><span class="nx">abcd00</span><span class="o">=</span>
+</code></pre></div></div>
+
+<ul>
+  <li>容忍度
+    <ul>
+      <li>[1, 2, 3,] 老版数组最后不能有逗号，新的可以有</li>
+      <li>函数参数最后多的逗号也可以</li>
+    </ul>
+  </li>
+  <li>async await
+    <ul>
+      <li>和 generator yield 类似</li>
+      <li>generator 不可以写成箭头函数， async 可以</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">show</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">await</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2019/03/05/ES6', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2019
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
