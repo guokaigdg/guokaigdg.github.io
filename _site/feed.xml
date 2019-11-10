@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-10T15:53:35+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">啊哈 礼物</title><link href="http://localhost:4000/2019/11/08/picture.html" rel="alternate" type="text/html" title="啊哈 礼物" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/picture</id><content type="html" xml:base="http://localhost:4000/2019/11/08/picture.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-10T19:10:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">啊哈 礼物</title><link href="http://localhost:4000/2019/11/08/picture.html" rel="alternate" type="text/html" title="啊哈 礼物" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/picture</id><content type="html" xml:base="http://localhost:4000/2019/11/08/picture.html">&lt;blockquote&gt;
   &lt;p&gt;啊哈 收到女朋友亲手画的礼物了开心&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -370,20 +370,42 @@
 &lt;blockquote&gt;
   &lt;p&gt;辛巴: 这个是佩奇亲儿子, 我从出第一天开始一把屎一把尿拉扯大, 刚生下来时候不到巴掌大小, 现在已经有五斤了  希望多运动千万不要长成大白那样&lt;/p&gt;
 &lt;/blockquote&gt;</content><author><name>Jekyll</name></author><category term="cat" /><category term="猫" /><category term="英短" /><category term="美短" /><summary type="html">家里猫咪介绍🐈: 佩奇: 英短 1.5岁 大白: 美短 2岁 辛巴: 英短 4个月</summary></entry><entry><title type="html">走啊 去看白鲸</title><link href="http://localhost:4000/2019/08/17/ocean.html" rel="alternate" type="text/html" title="走啊 去看白鲸" /><published>2019-08-17T20:00:21+08:00</published><updated>2019-08-17T20:00:21+08:00</updated><id>http://localhost:4000/2019/08/17/ocean</id><content type="html" xml:base="http://localhost:4000/2019/08/17/ocean.html">&lt;blockquote&gt;
+  &lt;p&gt;水母&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110165029152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
+      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/shuimu-1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110185614723.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
+      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/shuimu-2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;白鲸&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot;&gt;
-      &lt;source id=&quot;mp4&quot; src=&quot;http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110185915949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
+      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/baijing.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;海龟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110170321996.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
+      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/haigui.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 &lt;!-- &lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;http://media.w3.org/2010/05/sintel/poster.png&quot;&gt;
       &lt;source id=&quot;mp4&quot; src=&quot;http://media.w3.org/2010/05/sintel/trailer.mp4&quot; type=&quot;video/mp4&quot;&gt;
       &lt;source id=&quot;webm&quot; src=&quot;http://media.w3.org/2010/05/sintel/trailer.webm&quot; type=&quot;video/webm&quot;&gt;
       &lt;source id=&quot;ogv&quot; src=&quot;http://media.w3.org/2010/05/sintel/trailer.ogv&quot; type=&quot;video/ogg&quot;&gt;
-&lt;/video&gt; --&gt;</content><author><name>ma_meng</name></author><category term="海洋馆" /><category term="白鲸" /><category term="海龟" /><category term="企鹅" /><summary type="html">白鲸</summary></entry><entry><title type="html">跑跑 逮虾户</title><link href="http://localhost:4000/2019/08/10/paopaokadingche.html" rel="alternate" type="text/html" title="跑跑 逮虾户" /><published>2019-08-10T20:00:21+08:00</published><updated>2019-08-10T20:00:21+08:00</updated><id>http://localhost:4000/2019/08/10/paopaokadingche</id><content type="html" xml:base="http://localhost:4000/2019/08/10/paopaokadingche.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110154057245.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;/video&gt; --&gt;</content><author><name>ma_meng</name></author><category term="海洋馆" /><category term="白鲸" /><category term="海龟" /><category term="企鹅" /><summary type="html">水母</summary></entry><entry><title type="html">跑跑 逮虾户</title><link href="http://localhost:4000/2019/08/10/paopaokadingche.html" rel="alternate" type="text/html" title="跑跑 逮虾户" /><published>2019-08-10T20:00:21+08:00</published><updated>2019-08-10T20:00:21+08:00</updated><id>http://localhost:4000/2019/08/10/paopaokadingche</id><content type="html" xml:base="http://localhost:4000/2019/08/10/paopaokadingche.html">&lt;blockquote&gt;
   &lt;p&gt;滨海风景 2分03&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>ma_meng</name></author><category term="跑跑卡丁车" /><category term="逮虾户" /><summary type="html">滨海风景 2分03</summary></entry><entry><title type="html">ES7 新增内容简介</title><link href="http://localhost:4000/2019/04/01/ES7.html" rel="alternate" type="text/html" title="ES7 新增内容简介" /><published>2019-04-01T05:00:21+08:00</published><updated>2019-04-01T05:00:21+08:00</updated><id>http://localhost:4000/2019/04/01/ES7</id><content type="html" xml:base="http://localhost:4000/2019/04/01/ES7.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191109023636487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110154057245.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
+      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/paopao-binhaifengjing.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;</content><author><name>ma_meng</name></author><category term="跑跑卡丁车" /><category term="逮虾户" /><summary type="html">滨海风景 2分03</summary></entry><entry><title type="html">ES7 新增内容简介</title><link href="http://localhost:4000/2019/04/01/ES7.html" rel="alternate" type="text/html" title="ES7 新增内容简介" /><published>2019-04-01T05:00:21+08:00</published><updated>2019-04-01T05:00:21+08:00</updated><id>http://localhost:4000/2019/04/01/ES7</id><content type="html" xml:base="http://localhost:4000/2019/04/01/ES7.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191109023636487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;ES7 出来了 ES8 也定稿了 ES9 ES10规范也都浮出水面的 我的老天鹅啊&lt;/p&gt;
 &lt;/blockquote&gt;

@@ -53,7 +53,7 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   # twitch: ''
 
 # 分页
-paginate: 5
+paginate: 8
 paginatepath: ['page:num']
 
 # since
