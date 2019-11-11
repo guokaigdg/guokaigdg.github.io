@@ -1,0 +1,423 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>css布局 水平居中</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(0, 192, 252) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(0, 192, 252);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">css布局 水平居中</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(0, 192, 252);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="/2019/08/10/paopaokadingche.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(0, 192, 252)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(0, 192, 252);"><sapn class="main">跑跑 逮虾户</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">css布局 水平居中</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/04/01/ES7.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(0, 192, 252)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(0, 192, 252);"><sapn class="main">ES7 新增内容简介</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="/2019/08/10/paopaokadingche.html" class="leftchange" style="border-right: 1px solid rgb(0, 192, 252);border-bottom: 2px solid rgb(0, 192, 252);"><span>上一篇<br><br>跑跑 逮虾户</span></a>
+    
+    
+      <a href="/2019/04/01/ES7.html" class="rightchange" style="border-left: 1px solid rgb(0, 192, 252);border-bottom: 2px solid rgb(0, 192, 252);"><span>下一篇<br><br>ES7 新增内容简介</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(0, 192, 252); border-right: 8px solid rgb(0, 192, 252)">
+        常用的css水平居中布局方式 
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <h2 id="水平居中">水平居中</h2>
+
+<ol>
+  <li>行内元素: 给父元素设置 <code class="language-plaintext highlighter-rouge">text-align:center</code> 即可 例如<span></span></li>
+  <li>块元素: 给该元素设置 <code class="language-plaintext highlighter-rouge">margin:0 auto</code>即可, 如果有absolute参考第七条</li>
+  <li>元素包含 float:left 属性, 为了让子元素水平居中, 则可让父元素宽度设置为<code class="language-plaintext highlighter-rouge">fit-content</code>,并且配合margin:
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">parent</span><span class="p">{</span>
+ <span class="nl">width</span><span class="p">:</span><span class="nx">fit</span><span class="o">-</span><span class="nx">content</span><span class="p">;</span>
+ <span class="nl">margin</span><span class="p">:</span><span class="mi">0</span> <span class="nx">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>flex:
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">son</span><span class="p">{</span>
+ <span class="nl">display</span><span class="p">:</span> <span class="nx">flex</span><span class="p">;</span>
+ <span class="nx">justify</span><span class="o">-</span><span class="nx">content</span><span class="p">:</span> <span class="nx">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>transform属性:
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">son</span><span class="p">{</span>
+ <span class="nl">position</span><span class="p">:</span><span class="nx">absolute</span><span class="p">;</span>
+   <span class="nl">left</span><span class="p">:</span><span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+   <span class="nl">transform</span><span class="p">:</span><span class="nx">translate</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="o">%</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>absolute 绝对定位:  设置父元素相对定位<code class="language-plaintext highlighter-rouge">(position:relative)</code>
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">son</span><span class="p">{</span>
+ <span class="nl">position</span><span class="p">:</span><span class="nx">absolute</span><span class="p">;</span>
+ <span class="nl">width</span><span class="p">:</span><span class="err">固定</span><span class="p">;</span>
+ <span class="nl">left</span><span class="p">:</span><span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+ <span class="nx">margin</span><span class="o">-</span><span class="nx">left</span><span class="p">:</span><span class="o">-</span><span class="mf">0.5</span><span class="err">宽度</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>absolute 绝对定位: 设置父元素相对定位<code class="language-plaintext highlighter-rouge">(position:relative)</code>
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">son</span><span class="p">{</span>
+ <span class="nl">position</span><span class="p">:</span><span class="nx">absolute</span><span class="p">;</span>
+ <span class="nl">width</span><span class="p">:</span><span class="err">固定</span><span class="p">;</span>
+ <span class="nl">left</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span>
+ <span class="nl">right</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span>
+ <span class="nl">margin</span><span class="p">:</span><span class="mi">0</span> <span class="nx">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="垂直居中">垂直居中</h2>
+<ol>
+  <li>单行文本, 则可设 <code class="language-plaintext highlighter-rouge">line-height</code> 等于父元素高度</li>
+  <li>若元素是行内块级元素, 基本思想是使用display: inline-block, vertical-align: middle和一个伪元素让内容块处于容器中央.</li>
+</ol>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">parent</span><span class="p">::</span><span class="nx">after</span><span class="p">,</span> <span class="p">.</span><span class="nx">son</span><span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span><span class="nx">inline</span><span class="o">-</span><span class="nx">block</span><span class="p">;</span>
+    <span class="nx">vertical</span><span class="o">-</span><span class="nx">align</span><span class="p">:</span><span class="nx">middle</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nx">parent</span><span class="p">::</span><span class="nx">after</span><span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span><span class="dl">''</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span><span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ol>
+  <li>flex:
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">parent</span><span class="p">{</span>
+ <span class="nl">display</span><span class="p">:</span><span class="nx">flex</span><span class="p">;</span>
+ <span class="nx">align</span><span class="o">-</span><span class="nx">items</span><span class="p">:</span> <span class="nx">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>transform: 设置父元素相对定位<code class="language-plaintext highlighter-rouge">(position:relative)</code>
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">son</span><span class="p">{</span>
+ <span class="nl">position</span><span class="p">:</span><span class="nx">absolute</span><span class="p">;</span>
+ <span class="nl">top</span><span class="p">:</span><span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+ <span class="nl">transform</span><span class="p">:</span> <span class="nx">translate</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">50</span><span class="o">%</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>absolute 绝对定位: 设置父元素相对定位<code class="language-plaintext highlighter-rouge">(position:relative)</code>
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">son</span><span class="p">{</span>
+ <span class="nl">position</span><span class="p">:</span><span class="nx">absolute</span><span class="p">;</span>
+ <span class="nl">top</span><span class="p">:</span><span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+ <span class="nl">height</span><span class="p">:</span><span class="err">固定</span><span class="p">;</span>
+ <span class="nx">margin</span><span class="o">-</span><span class="nx">top</span><span class="p">:</span><span class="o">-</span><span class="mf">0.5</span><span class="err">高度</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>absolute 绝对定位: 设置父元素相对定位<code class="language-plaintext highlighter-rouge">(position:relative)</code>
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">son</span><span class="p">{</span>
+ <span class="nl">position</span><span class="p">:</span><span class="nx">absolute</span><span class="p">;</span>
+ <span class="nl">height</span><span class="p">:</span> <span class="err">固定</span><span class="p">;</span>
+ <span class="nl">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+ <span class="nl">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+ <span class="nl">margin</span><span class="p">:</span> <span class="nx">auto</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2019/05/01/css', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2019
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
