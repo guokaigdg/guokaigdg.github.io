@@ -71,6 +71,8 @@ pygmentsTheme: 'default'
 
 # 友情链接
 friends:
+  尹冲: 'https://swifterchong.com/'
+  壁纸: 'https://unsplash.com/t/wallpapers'
   jekyll: 'https://www.jekyll.com.cn/'
 
 # 评论 最佳体验 在disqus、livere和Gitment之间三选一
