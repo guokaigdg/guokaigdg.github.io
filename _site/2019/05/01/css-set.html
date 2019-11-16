@@ -26,7 +26,7 @@
 <link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
 <!-- Android Lolipop Theme Color -->
 <!-- <meta name="theme-color" content="#1464FB"> -->
-<title>css布局 水平居中</title>
+<title>css布局 水平/垂直/水平垂直居中</title>
 <!-- 百度统计 -->
 
 <script>
@@ -100,7 +100,7 @@ var _hmt = _hmt || [];
 <!-- 引入博文顶部样式 -->
 <!-- 版本一 垃圾 -->
 <!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
-    <span class="wow fadeInUp" data-wow-delay="0.2s">css布局 水平居中</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">css布局 水平/垂直/水平垂直居中</span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span>
@@ -117,7 +117,7 @@ var _hmt = _hmt || [];
     
   </div>
   <div class="post-titlearea">
-    <span class="wow fadeInUp" data-wow-delay="0.2s">css布局 水平居中</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">css布局 水平/垂直/水平垂直居中</span>
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span> -->
@@ -252,6 +252,90 @@ var _hmt = _hmt || [];
   </li>
 </ol>
 
+<h2 id="水平垂直居中">水平垂直居中</h2>
+
+<h3 id="方法1绝对定位与负边距实现已知高度宽度">方法1：绝对定位与负边距实现（已知高度宽度）</h3>
+
+<ul>
+  <li>这种方式需要知道被垂直居中元素的高和宽，才能计算出margin值，兼容所有浏览器。</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="err">#</span><span class="nx">container</span> <span class="p">{</span>
+      <span class="nl">position</span><span class="p">:</span> <span class="nx">relative</span><span class="p">;</span>
+    <span class="p">}</span>
+ <span class="err">#</span><span class="nx">center</span> <span class="p">{</span>
+      <span class="nl">position</span><span class="p">:</span> <span class="nx">absolute</span><span class="p">;</span>
+      <span class="nl">top</span><span class="p">:</span> <span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+      <span class="nl">left</span><span class="p">:</span> <span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="o">-</span><span class="mi">50</span><span class="nx">px</span> <span class="mi">0</span> <span class="mi">0</span> <span class="o">-</span><span class="mi">50</span><span class="nx">px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="方法2绝对定位与marginauto已知高度宽度">方法2：绝对定位与margin:auto（已知高度宽度）</h3>
+
+<ul>
+  <li>这种方式无需知道被垂直居中元素的高和宽，但不能兼容低版本的IE浏览器。
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="err">#</span><span class="nx">container</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nx">relative</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span><span class="mi">100</span><span class="nx">px</span><span class="p">;</span><span class="c1">//必须有个高度</span>
+  <span class="p">}</span>
+ <span class="err">#</span><span class="nx">center</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nx">absolute</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nl">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nl">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="nx">auto</span><span class="p">;</span><span class="c1">//注意此处的写法</span>
+  <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="方法3绝对定位css3未知元素的高宽">方法3：绝对定位+CSS3(未知元素的高宽)</h3>
+
+<ul>
+  <li>利用Css3的transform，可以轻松的在未知元素的高宽的情况下实现元素的垂直居中。
+CSS3的transform固然好用，但在项目的实际运用中必须考虑兼容问题，大量的hack代码可能会导致得不偿失。</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="err">#</span><span class="nx">container</span> <span class="p">{</span>
+      <span class="nl">position</span><span class="p">:</span> <span class="nx">relative</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="err">#</span><span class="nx">center</span> <span class="p">{</span>
+      <span class="nl">position</span><span class="p">:</span> <span class="nx">absolute</span><span class="p">;</span>
+      <span class="nl">top</span><span class="p">:</span> <span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+      <span class="nl">left</span><span class="p">:</span> <span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+      <span class="nl">transform</span><span class="p">:</span> <span class="nx">translate</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="o">%</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="o">%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="方法4flex布局">方法4：flex布局</h3>
+<ul>
+  <li>利用flex布局，其中justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式；而align-items属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。不能兼容低版本的IE浏览器。
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="err">#</span><span class="nx">container</span> <span class="p">{</span><span class="c1">//直接在父容器设置即可</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="mi">100</span><span class="nx">vh</span><span class="p">;</span><span class="c1">//必须有高度</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nx">flex</span><span class="p">;</span>
+    <span class="nx">justify</span><span class="o">-</span><span class="nx">content</span><span class="p">:</span> <span class="nx">center</span><span class="p">;</span>
+    <span class="nx">align</span><span class="o">-</span><span class="nx">items</span><span class="p">:</span> <span class="nx">center</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="方法5flexgrid与marginauto最简单写法">方法5：flex/grid与margin:auto(最简单写法)</h3>
+
+<ul>
+  <li>容器元素设为 flex 布局或是grid布局，子元素只要写 margin: auto 即可,不能兼容低版本的IE浏览器。
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span><span class="nx">container</span> <span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="mi">100</span><span class="nx">vh</span><span class="p">;</span><span class="c1">//必须有高度</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nx">grid</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="err">#</span><span class="nx">center</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="nx">auto</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
   <!-- 引入share模块 -->
   
