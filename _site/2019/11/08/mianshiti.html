@@ -1,0 +1,357 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>上周一个面试题目-将数字转成汉字(js实现)</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?https://hm.baidu.com/hm.js?b90ff0cb5d651ae884103df9b00f4fa2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(255,210,32) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(255,210,32);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">上周一个面试题目-将数字转成汉字(js实现)</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(255,210,32);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">上周一个面试题目-将数字转成汉字(js实现)</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/11/08/webAll.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">前端知识图谱</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2019/11/08/webAll.html" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>下一篇<br><br>前端知识图谱</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(255,210,32); border-right: 8px solid rgb(255,210,32)">
+        上周一个面试题目
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <h3 id="题目是把数字转成汉字表示-比如-10245转成-一碗零二百四十五-js实现">题目是把数字转成汉字表示, 比如 10245转成 一碗零二百四十五 (js实现)</h3>
+
+<blockquote>
+  <p>思路:</p>
+  <ul>
+    <li>数字 =&gt; 字符串</li>
+    <li>字符串对应数字 =&gt; 汉字 (特别要注意此处插入顺序跟正常正好相反, 要倒序处理)</li>
+    <li>汉字中插入数值单位(万/千/百 …)</li>
+    <li>对连续了零进行处理</li>
+  </ul>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">handleNumberToChinese</span> <span class="o">=</span> <span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="o">=&gt;</span><span class="p">{</span>
+      <span class="kd">let</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">零</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">一</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">二</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">三</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">四</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">五</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">六</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">七</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">八</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">九</span><span class="dl">'</span><span class="p">];</span>
+      <span class="kd">let</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[</span><span class="dl">''</span><span class="p">,</span> <span class="dl">'</span><span class="s1">十</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">百</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">千</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">万</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">十</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">百</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">千</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">亿</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">十</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">百</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">千</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">万</span><span class="dl">'</span><span class="p">];</span>
+      <span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="nx">num</span><span class="p">;</span>
+      <span class="kd">let</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">);</span>
+      <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
+      <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">newArr</span><span class="p">.</span><span class="nx">length</span> <span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">){</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr2</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="nx">result</span><span class="p">;</span>
+        <span class="kd">let</span> <span class="nx">reverse</span> <span class="o">=</span> <span class="nx">newArr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="nx">i</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">//倒序处理</span>
+        <span class="kd">let</span> <span class="nx">arr1_index</span> <span class="o">=</span> <span class="nx">newArr</span><span class="p">[</span><span class="nx">reverse</span><span class="p">];</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr1</span><span class="p">[</span><span class="nx">arr1_index</span><span class="p">]</span> <span class="o">+</span> <span class="nx">result</span><span class="p">;</span>
+      <span class="p">}</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/零</span><span class="se">(</span><span class="sr">千|百|十</span><span class="se">)</span><span class="sr">/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">零</span><span class="dl">'</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/十零/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">十</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/零+/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">零</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/零亿/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">亿</span><span class="dl">'</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/零万/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">万</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/亿万/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">亿</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/零+$/</span><span class="p">,</span> <span class="dl">''</span><span class="p">);</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^一十/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">十</span><span class="dl">'</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+      <span class="p">}</span>
+</code></pre></div></div>
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2019/11/08/mianshiti', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2019
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
