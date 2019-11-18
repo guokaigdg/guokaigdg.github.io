@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-17T16:25:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">上周一个面试题目-将数字转成汉字(js实现)</title><link href="http://localhost:4000/2019/11/08/mianshiti.html" rel="alternate" type="text/html" title="上周一个面试题目-将数字转成汉字(js实现)" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/mianshiti</id><content type="html" xml:base="http://localhost:4000/2019/11/08/mianshiti.html">&lt;h3 id=&quot;题目是把数字转成汉字表示-比如-10245转成-一碗零二百四十五-js实现&quot;&gt;题目是把数字转成汉字表示, 比如 10245转成 一碗零二百四十五 (js实现)&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-18T20:34:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">上周一个面试题目-将数字转成汉字(js实现)</title><link href="http://localhost:4000/2019/11/08/mianshiti.html" rel="alternate" type="text/html" title="上周一个面试题目-将数字转成汉字(js实现)" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/mianshiti</id><content type="html" xml:base="http://localhost:4000/2019/11/08/mianshiti.html">&lt;h3 id=&quot;题目是把数字转成汉字表示-比如-10245转成-一碗零二百四十五-js实现&quot;&gt;题目是把数字转成汉字表示, 比如 10245转成 一碗零二百四十五 (js实现)&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;思路:&lt;/p&gt;
@@ -35,25 +35,7 @@
 
 &lt;p&gt;Github地址: &lt;a href=&quot;https://github.com/guokaigdg&quot;&gt;https://github.com/guokaigdg&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;CSDN地址: &lt;a href=&quot;https://blog.csdn.net/guokaigdg&quot;&gt;https://blog.csdn.net/guokaigdg&lt;/a&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="简历" /><summary type="html"></summary></entry><entry><title type="html">啊哈 礼物</title><link href="http://localhost:4000/2019/11/08/picture.html" rel="alternate" type="text/html" title="啊哈 礼物" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/picture</id><content type="html" xml:base="http://localhost:4000/2019/11/08/picture.html">&lt;blockquote&gt;
-  &lt;p&gt;啊哈 收到女朋友亲手画的礼物了开心&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035200443.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035204881.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019111003521165.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035216720.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;上墙效果&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035155856.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035148307.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="画" /><category term="油画" /><category term="女朋友" /><summary type="html">啊哈 收到女朋友亲手画的礼物了开心</summary></entry><entry><title type="html">前端知识图谱</title><link href="http://localhost:4000/2019/11/08/webAll.html" rel="alternate" type="text/html" title="前端知识图谱" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/webAll</id><content type="html" xml:base="http://localhost:4000/2019/11/08/webAll.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191115233500554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;CSDN地址: &lt;a href=&quot;https://blog.csdn.net/guokaigdg&quot;&gt;https://blog.csdn.net/guokaigdg&lt;/a&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="简历" /><summary type="html"></summary></entry><entry><title type="html">前端知识图谱</title><link href="http://localhost:4000/2019/11/08/webAll.html" rel="alternate" type="text/html" title="前端知识图谱" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/webAll</id><content type="html" xml:base="http://localhost:4000/2019/11/08/webAll.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191115233500554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;a href=&quot;https://naotu.baidu.com/file/f84a4e993dce89e938d0cb141de28861&quot;&gt;点击查看前端知识图谱链接&lt;/a&gt;&lt;/p&gt;
@@ -67,7 +49,67 @@
 
 ![HTML](https://img-blog.csdnimg.cn/20191115231016543.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70)
 
-&gt;JavaScript --&gt;</content><author><name>ma_meng</name></author><category term="前端知识图谱" /><summary type="html"></summary></entry><entry><title type="html">《天气之子》——即便此后无晴，不要紧，活下去</title><link href="http://localhost:4000/2019/11/07/tianqizhizi.html" rel="alternate" type="text/html" title="《天气之子》——即便此后无晴，不要紧，活下去" /><published>2019-11-07T20:00:21+08:00</published><updated>2019-11-07T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/07/tianqizhizi</id><content type="html" xml:base="http://localhost:4000/2019/11/07/tianqizhizi.html">&lt;blockquote&gt;
+&gt;JavaScript --&gt;</content><author><name>ma_meng</name></author><category term="前端知识图谱" /><summary type="html"></summary></entry><entry><title type="html">熟悉的Smartisan又回来了</title><link href="http://localhost:4000/2019/11/07/Smartisan.html" rel="alternate" type="text/html" title="熟悉的Smartisan又回来了" /><published>2019-11-07T22:00:21+08:00</published><updated>2019-11-07T22:00:21+08:00</updated><id>http://localhost:4000/2019/11/07/Smartisan</id><content type="html" xml:base="http://localhost:4000/2019/11/07/Smartisan.html">&lt;h3 id=&quot;时隔400天坚果手机到底还是来了&quot;&gt;“时隔400天坚果手机到底还是来了”&lt;/h3&gt;
+&lt;h4 id=&quot;这已经是第三次参见发布会了-2017-2018-2019-&quot;&gt;这已经是第三次参见发布会了, 2017/ 2018 /2019 …&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019110702402059.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;2019北京工业大学贼冷&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107025149113.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;2018 鸟巢贼热&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107025110864.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;2017 深圳 春茧体育馆贼远&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;还是以前的门票风格-熟悉的配方熟悉的味道-熟悉的红白配色-我一度怀疑这个白色信封就是上次剩下的&quot;&gt;还是以前的门票风格, 熟悉的配方熟悉的味道 熟悉的红白配色, 我一度怀疑这个白色信封就是上次剩下的&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024614340.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;还是以前的门票风格, 甚至怀疑这个信封是上次剩下的&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;来北京理工大学蹭了饭出发去现场&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225449336.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;最细喜欢的还是这个手机壳&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024101149.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;手机壳子&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024113994.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;手机壳&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024504573.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024511909.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;发布会结束回家唠, 意料之中 外观比较失望, 我不太喜欢刘海屏&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225522717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019110722552995.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;放几张大佬拍的美图&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225416742.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225406863.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225429626.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225422263.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;最低2699的售价,硬件方面来说就是你花的钱对得起你买的料, 常规旗舰骁龙855+, 12GDDR4x内存, 256G ufs3.0 跟市面上旗舰机型大差不差, 核心亮点在os上  新的大爆炸, 一步, TNT, 吹一下无线TNT真的有点吊, 不过最实用的还是一步…. 所以你会买吗??? 嗯 我还是等明年的5G R系列吧, 毕竟现在一加7pro还比较香&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>ma_meng</name></author><category term="Smartisan" /><category term="OS" /><category term="Android" /><category term="字节跳动" /><summary type="html">“时隔400天坚果手机到底还是来了” 这已经是第三次参见发布会了, 2017/ 2018 /2019 … 2019北京工业大学贼冷</summary></entry><entry><title type="html">《天气之子》——即便此后无晴，不要紧，活下去</title><link href="http://localhost:4000/2019/11/07/tianqizhizi.html" rel="alternate" type="text/html" title="《天气之子》——即便此后无晴，不要紧，活下去" /><published>2019-11-07T20:00:21+08:00</published><updated>2019-11-07T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/07/tianqizhizi</id><content type="html" xml:base="http://localhost:4000/2019/11/07/tianqizhizi.html">&lt;blockquote&gt;
   &lt;p&gt;“所有人都只拥有自己的世界，在那个世界里拼命生活着，扮演自己的角色，背负着某种责任，把自己唯一的生命从今天运作到明天，不仅仅是阳菜而已。所有人都挣扎着，生存在那种自我的世界里。我明白有他人在近处看着自己这一切带来的信心和安心感。‘在看着我’、‘知道我的小世界’、‘有人牵挂着我不要紧’——我明白这是莫大的支持。而当看见无可替代的那个重要的人在挣扎的情景时，就会希望自己变成这个人的‘不要紧（だいじょうぶ ）’。”&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -168,67 +210,7 @@
 只要活下去。” &lt;br /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i0.hdslb.com/bfs/article/5d62508c4edfc0c7584ff945561add66455d3f8e.jpg@1320w_744h.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="天气之子" /><category term="新海诚" /><category term="动漫" /><summary type="html">“所有人都只拥有自己的世界，在那个世界里拼命生活着，扮演自己的角色，背负着某种责任，把自己唯一的生命从今天运作到明天，不仅仅是阳菜而已。所有人都挣扎着，生存在那种自我的世界里。我明白有他人在近处看着自己这一切带来的信心和安心感。‘在看着我’、‘知道我的小世界’、‘有人牵挂着我不要紧’——我明白这是莫大的支持。而当看见无可替代的那个重要的人在挣扎的情景时，就会希望自己变成这个人的‘不要紧（だいじょうぶ ）’。”</summary></entry><entry><title type="html">熟悉的Smartisan又回来了</title><link href="http://localhost:4000/2019/11/07/Smartisan.html" rel="alternate" type="text/html" title="熟悉的Smartisan又回来了" /><published>2019-11-07T00:00:00+08:00</published><updated>2019-11-07T00:00:00+08:00</updated><id>http://localhost:4000/2019/11/07/Smartisan</id><content type="html" xml:base="http://localhost:4000/2019/11/07/Smartisan.html">&lt;h3 id=&quot;时隔400天坚果手机到底还是来了&quot;&gt;“时隔400天坚果手机到底还是来了”&lt;/h3&gt;
-&lt;h4 id=&quot;这已经是第三次参见发布会了-2017-2018-2019-&quot;&gt;这已经是第三次参见发布会了, 2017/ 2018 /2019 …&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019110702402059.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;2019北京工业大学贼冷&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107025149113.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;2018 鸟巢贼热&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107025110864.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;2017 深圳 春茧体育馆贼远&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;还是以前的门票风格-熟悉的配方熟悉的味道-熟悉的红白配色-我一度怀疑这个白色信封就是上次剩下的&quot;&gt;还是以前的门票风格, 熟悉的配方熟悉的味道 熟悉的红白配色, 我一度怀疑这个白色信封就是上次剩下的&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024614340.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;还是以前的门票风格, 甚至怀疑这个信封是上次剩下的&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;来北京理工大学蹭了饭出发去现场&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225449336.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;最细喜欢的还是这个手机壳&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024101149.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;手机壳子&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024113994.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;手机壳&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024504573.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107024511909.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;发布会结束回家唠, 意料之中 外观比较失望, 我不太喜欢刘海屏&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225522717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019110722552995.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;放几张大佬拍的美图&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225416742.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225406863.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225429626.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191107225422263.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;最低2699的售价,硬件方面来说就是你花的钱对得起你买的料, 常规旗舰骁龙855+, 12GDDR4x内存, 256G ufs3.0 跟市面上旗舰机型大差不差, 核心亮点在os上  新的大爆炸, 一步, TNT, 吹一下无线TNT真的有点吊, 不过最实用的还是一步…. 所以你会买吗??? 嗯 我还是等明年的5G R系列吧, 毕竟现在一加7pro还比较香&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>ma_meng</name></author><category term="Smartisan" /><category term="OS" /><category term="Android" /><category term="字节跳动" /><summary type="html">“时隔400天坚果手机到底还是来了” 这已经是第三次参见发布会了, 2017/ 2018 /2019 … 2019北京工业大学贼冷</summary></entry><entry><title type="html">WebRTC 音视频流</title><link href="http://localhost:4000/2019/11/06/webRTC.html" rel="alternate" type="text/html" title="WebRTC 音视频流" /><published>2019-11-06T05:00:21+08:00</published><updated>2019-11-06T05:00:21+08:00</updated><id>http://localhost:4000/2019/11/06/webRTC</id><content type="html" xml:base="http://localhost:4000/2019/11/06/webRTC.html">&lt;p&gt;官方文档: https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-supported-constraints&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i0.hdslb.com/bfs/article/5d62508c4edfc0c7584ff945561add66455d3f8e.jpg@1320w_744h.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="天气之子" /><category term="新海诚" /><category term="动漫" /><summary type="html">“所有人都只拥有自己的世界，在那个世界里拼命生活着，扮演自己的角色，背负着某种责任，把自己唯一的生命从今天运作到明天，不仅仅是阳菜而已。所有人都挣扎着，生存在那种自我的世界里。我明白有他人在近处看着自己这一切带来的信心和安心感。‘在看着我’、‘知道我的小世界’、‘有人牵挂着我不要紧’——我明白这是莫大的支持。而当看见无可替代的那个重要的人在挣扎的情景时，就会希望自己变成这个人的‘不要紧（だいじょうぶ ）’。”</summary></entry><entry><title type="html">WebRTC 音视频流</title><link href="http://localhost:4000/2019/11/06/webRTC.html" rel="alternate" type="text/html" title="WebRTC 音视频流" /><published>2019-11-06T05:00:21+08:00</published><updated>2019-11-06T05:00:21+08:00</updated><id>http://localhost:4000/2019/11/06/webRTC</id><content type="html" xml:base="http://localhost:4000/2019/11/06/webRTC.html">&lt;p&gt;官方文档: https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-supported-constraints&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;WebRTC是一个免费的开放项目，它通过简单的API为浏览器和移动应用程序提供实时通信（RTC）功能。WebRTC组件已经过优化，可以最好地满足此目的。&lt;/p&gt;
@@ -399,7 +381,25 @@
 &lt;span class=&quot;nx&quot;&gt;Blog&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;About&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>true</name></author><category term="GoogLe" /><category term="WebRTC" /><summary type="html">官方文档: https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-supported-constraints</summary></entry><entry><title type="html">我家成员介绍</title><link href="http://localhost:4000/2019/11/06/mycat.html" rel="alternate" type="text/html" title="我家成员介绍" /><published>2019-11-06T02:00:21+08:00</published><updated>2019-11-06T02:00:21+08:00</updated><id>http://localhost:4000/2019/11/06/mycat</id><content type="html" xml:base="http://localhost:4000/2019/11/06/mycat.html">&lt;h4 id=&quot;家里猫咪介绍&quot;&gt;家里猫咪介绍🐈:&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>true</name></author><category term="GoogLe" /><category term="WebRTC" /><summary type="html">官方文档: https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-supported-constraints</summary></entry><entry><title type="html">啊哈 礼物</title><link href="http://localhost:4000/2019/11/05/picture.html" rel="alternate" type="text/html" title="啊哈 礼物" /><published>2019-11-05T20:00:21+08:00</published><updated>2019-11-05T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/05/picture</id><content type="html" xml:base="http://localhost:4000/2019/11/05/picture.html">&lt;blockquote&gt;
+  &lt;p&gt;啊哈 收到女朋友亲手画的礼物了开心&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035200443.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035204881.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019111003521165.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035216720.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;上墙效果&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035155856.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035148307.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="画" /><category term="油画" /><category term="女朋友" /><summary type="html">啊哈 收到女朋友亲手画的礼物了开心</summary></entry><entry><title type="html">我家成员介绍</title><link href="http://localhost:4000/2019/11/04/mycat.html" rel="alternate" type="text/html" title="我家成员介绍" /><published>2019-11-04T02:00:21+08:00</published><updated>2019-11-04T02:00:21+08:00</updated><id>http://localhost:4000/2019/11/04/mycat</id><content type="html" xml:base="http://localhost:4000/2019/11/04/mycat.html">&lt;h4 id=&quot;家里猫咪介绍&quot;&gt;家里猫咪介绍🐈:&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;佩奇: 英短 1.5岁&lt;/li&gt;
   &lt;li&gt;大白: 美短 2岁&lt;/li&gt;
