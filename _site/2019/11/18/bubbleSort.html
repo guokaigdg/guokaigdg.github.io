@@ -197,7 +197,7 @@ var _hmt = _hmt || [];
 
 <h3 id="3传统冒泡排序中每一趟排序操作只能找到一个最大值或最小值我们考虑利用在每趟排序中进行正向和反向两遍冒泡的方法一次可以得到两个最终值最大者和最小者--从而使排序趟数几乎减少了一半">3.传统冒泡排序中每一趟排序操作只能找到一个最大值或最小值,我们考虑利用在每趟排序中进行正向和反向两遍冒泡的方法一次可以得到两个最终值(最大者和最小者) , 从而使排序趟数几乎减少了一半。</h3>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">bubbleSort3</span><span class="p">(</span><span class="nx">arr3</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">bubbleSort3</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">low</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">high</span><span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">//设置变量的初始值</span>
     <span class="kd">var</span> <span class="nx">tmp</span><span class="p">,</span><span class="nx">j</span><span class="p">;</span>
@@ -215,7 +215,7 @@ var _hmt = _hmt || [];
         <span class="o">++</span><span class="nx">low</span><span class="p">;</span>                  <span class="c1">//修改low值,后移一位</span>
     <span class="p">}</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">timeEnd</span><span class="p">(</span><span class="dl">'</span><span class="s1">2.改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
-    <span class="k">return</span> <span class="nx">arr3</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
@@ -323,7 +323,7 @@ var _hmt = _hmt || [];
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: '/2019/11/18/maopao', // 可选。默认为 location.href
+  id: '/2019/11/18/bubbleSort', // 可选。默认为 location.href
   owner: 'guokaigdg',
   repo: 'guokaigdg.github.io',
   oauth: {

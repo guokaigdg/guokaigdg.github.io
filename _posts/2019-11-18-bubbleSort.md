@@ -55,7 +55,7 @@ function bubbleSort2(arr) {
 ### 3.传统冒泡排序中每一趟排序操作只能找到一个最大值或最小值,我们考虑利用在每趟排序中进行正向和反向两遍冒泡的方法一次可以得到两个最终值(最大者和最小者) , 从而使排序趟数几乎减少了一半。
 
 ```js
-function bubbleSort3(arr3) {
+function bubbleSort3(arr) {
     var low = 0;
     var high= arr.length-1; //设置变量的初始值
     var tmp,j;
@@ -73,6 +73,6 @@ function bubbleSort3(arr3) {
         ++low;                  //修改low值,后移一位
     }
     console.timeEnd('2.改进后冒泡排序耗时');
-    return arr3;
+    return arr;
 }
 ```
