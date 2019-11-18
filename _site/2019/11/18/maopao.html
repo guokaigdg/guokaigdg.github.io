@@ -1,0 +1,389 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>冒泡排序也可以这么玩</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?https://hm.baidu.com/hm.js?b90ff0cb5d651ae884103df9b00f4fa2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(135,206,250) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(135,206,250);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">冒泡排序也可以这么玩</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(135,206,250);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(135,206,250)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(135,206,250);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">冒泡排序也可以这么玩</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/11/16/mianshiti.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(135,206,250)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(135,206,250);"><sapn class="main">上周一个面试题目-将数字转成汉字(js实现)</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(135,206,250);border-bottom: 2px solid rgb(135,206,250);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2019/11/16/mianshiti.html" class="rightchange" style="border-left: 1px solid rgb(135,206,250);border-bottom: 2px solid rgb(135,206,250);"><span>下一篇<br><br>上周一个面试题目-将数字转成汉字(js实现)</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(135,206,250); border-right: 8px solid rgb(135,206,250)">
+        没错这又是面试题目
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <blockquote>
+  <p>面试遇到一个算法题, 其中有个排序用冒泡解决的, 然后问还能优化吗, 一开始就想出一个缩短比对范围的, 别的想不起来了, 之后就一脸蒙蔽 好吧现在来讨论下, 时间复杂度为O(n²) 还能怎么优化 :</p>
+</blockquote>
+
+<h3 id="1-如果本来就是有序的-判断下之后就不用再排序了-就这么简单">1. 如果本来就是有序的, 判断下之后就不用再排序了, 就这么简单:</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">var</span> <span class="nx">flag</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>   <span class="c1">//标志位</span>
+  <span class="kd">function</span> <span class="nx">bubblesort</span><span class="p">(</span><span class="nx">a</span><span class="p">){</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+      <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="nx">i</span><span class="p">;</span><span class="nx">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">&gt;=</span><span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
+                <span class="kd">let</span> <span class="nx">temp</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+                <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span>
+                  <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span><span class="p">;</span>
+                  <span class="nx">flag</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+              <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">flag</span><span class="p">){</span> <span class="c1">//第一次循环如果没有位置交换, 说明原来就是有序的,直接返回原来数组就完事</span>
+              <span class="k">break</span><span class="p">;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="k">return</span> <span class="nx">a</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<h3 id="2设置一标志性变量pos用于记录每趟排序中最后一次进行交换的位置由于pos位置之后的记录均已交换到位故在进行下一趟排序时只要扫描到pos位置即可">2.设置一标志性变量pos,用于记录每趟排序中最后一次进行交换的位置。由于pos位置之后的记录均已交换到位,故在进行下一趟排序时只要扫描到pos位置即可</h3>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">bubbleSort2</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">time</span><span class="p">(</span><span class="dl">'</span><span class="s1">改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>  <span class="c1">//初始时,最后位置保持不变</span>
+    <span class="k">while</span> <span class="p">(</span> <span class="nx">i</span><span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">pos</span><span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//每趟开始时,无记录交换</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span> <span class="nx">i</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+                <span class="nx">pos</span><span class="o">=</span> <span class="nx">j</span><span class="p">;</span> <span class="c1">//记录交换的位置</span>
+                <span class="kd">var</span> <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">=</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nx">tmp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nx">i</span><span class="o">=</span> <span class="nx">pos</span><span class="p">;</span> <span class="c1">//为下一趟排序作准备</span>
+     <span class="p">}</span>
+     <span class="nx">console</span><span class="p">.</span><span class="nx">timeEnd</span><span class="p">(</span><span class="dl">'</span><span class="s1">改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
+     <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3传统冒泡排序中每一趟排序操作只能找到一个最大值或最小值我们考虑利用在每趟排序中进行正向和反向两遍冒泡的方法一次可以得到两个最终值最大者和最小者--从而使排序趟数几乎减少了一半">3.传统冒泡排序中每一趟排序操作只能找到一个最大值或最小值,我们考虑利用在每趟排序中进行正向和反向两遍冒泡的方法一次可以得到两个最终值(最大者和最小者) , 从而使排序趟数几乎减少了一半。</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">bubbleSort3</span><span class="p">(</span><span class="nx">arr3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">low</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">high</span><span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">//设置变量的初始值</span>
+    <span class="kd">var</span> <span class="nx">tmp</span><span class="p">,</span><span class="nx">j</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">time</span><span class="p">(</span><span class="dl">'</span><span class="s1">2.改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">low</span> <span class="o">&lt;</span> <span class="nx">high</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="nx">j</span><span class="o">=</span> <span class="nx">low</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span> <span class="nx">high</span><span class="p">;</span> <span class="o">++</span><span class="nx">j</span><span class="p">)</span> <span class="c1">//正向冒泡,找到最大者</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+                <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">=</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nx">tmp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="o">--</span><span class="nx">high</span><span class="p">;</span>                 <span class="c1">//修改high值, 前移一位</span>
+        <span class="k">for</span> <span class="p">(</span><span class="nx">j</span><span class="o">=</span><span class="nx">high</span><span class="p">;</span> <span class="nx">j</span><span class="o">&gt;</span><span class="nx">low</span><span class="p">;</span> <span class="o">--</span><span class="nx">j</span><span class="p">)</span> <span class="c1">//反向冒泡,找到最小者</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">&lt;</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+                <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span><span class="o">=</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nx">tmp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="o">++</span><span class="nx">low</span><span class="p">;</span>                  <span class="c1">//修改low值,后移一位</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">timeEnd</span><span class="p">(</span><span class="dl">'</span><span class="s1">2.改进后冒泡排序耗时</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">arr3</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2019/11/18/maopao', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2019
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
