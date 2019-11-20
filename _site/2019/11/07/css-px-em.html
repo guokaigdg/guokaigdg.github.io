@@ -1,0 +1,399 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>CSS长度单位你了解多少</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?https://hm.baidu.com/hm.js?b90ff0cb5d651ae884103df9b00f4fa2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(135,206,250) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(135,206,250);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">CSS长度单位你了解多少</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(135,206,250);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="/2019/11/07/Smartisan.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(135,206,250)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(135,206,250);"><sapn class="main">熟悉的Smartisan又回来了</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">CSS长度单位你了解多少</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/11/07/tianqizhizi.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(135,206,250)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(135,206,250);"><sapn class="main">《天气之子》——即便此后无晴，不要紧，活下去</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="/2019/11/07/Smartisan.html" class="leftchange" style="border-right: 1px solid rgb(135,206,250);border-bottom: 2px solid rgb(135,206,250);"><span>上一篇<br><br>熟悉的Smartisan又回来了</span></a>
+    
+    
+      <a href="/2019/11/07/tianqizhizi.html" class="rightchange" style="border-left: 1px solid rgb(135,206,250);border-bottom: 2px solid rgb(135,206,250);"><span>下一篇<br><br>《天气之子》——即便此后无晴，不要紧，活下去</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(135,206,250); border-right: 8px solid rgb(135,206,250)">
+         px em rem vh vw
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <blockquote>
+  <p>9021年了你是不是还常用px % 然后就没有然后了
+好吧今天来总结一下, css还有哪些你不常用的长度单位</p>
+</blockquote>
+
+<p><img src="https://img-blog.csdnimg.cn/20191120151729275.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="" /></p>
+
+<h3 id="css中长度单位有哪些">css中长度单位有哪些?</h3>
+<blockquote>
+  <p>px、mm、cm、pt、pc、in、em、rem、ch、ex、vh、vw、vmin、vmax，%<br />
+以上就是css全部的长度单位, 接下来咱们详细聊聊</p>
+</blockquote>
+
+<h2 id="绝对单位">绝对单位:</h2>
+<hr />
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">px</code>: 像素, 这个是最常用的, 即屏幕图形显示的一个点（最小单位），这个点有它的位置、颜色等信息，从这个意义上来说 px 是绝对单位；但每一屏幕上的最小单位1像素对应物理单位是可以变化的，比如1px=1mm、1px=1cm，这取决于设备，所以也会有说它是相对单位的情况。</li>
+  <li><code class="language-plaintext highlighter-rouge">mm</code>: 毫米</li>
+  <li><code class="language-plaintext highlighter-rouge">cm</code>: 厘米</li>
+  <li><code class="language-plaintext highlighter-rouge">in</code>: 英寸（2.54厘米）</li>
+  <li><code class="language-plaintext highlighter-rouge">pt</code>: 磅（1/72 英寸）</li>
+  <li><code class="language-plaintext highlighter-rouge">pc</code>: 12 点活字 (1 pc 等于 12 点)</li>
+</ul>
+
+<h2 id="相对单位相对字体">相对单位(相对字体):</h2>
+<hr />
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">em</code>: 表示与当前元素字体的宽度，准确来说是一个大写字母M的宽度</li>
+  <li><code class="language-plaintext highlighter-rouge">rem</code>: 则表示默认字体大小的宽度，同样实质上也是一个大写字母M的宽度</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">1ex</code>: 表示一个小写字母 x 的高度。但它的表现不像 em 那样稳定， 比如在 IE 下 ex 正好是 em 的一半，在火狐下更接近字体的实际高度，所以我们一半认为 ex ≈ em / 2 。</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">1ch</code>: 表示一个数字 0 的宽度。</li>
+</ul>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">em</code>与<code class="language-plaintext highlighter-rouge">rem</code>两者的差别只是 rem 总是以根节点 (html) 的字体大小作为参考，你看命名 rem 就是 root em，而 em 则以当前元素的字体大小作为参考。
+而 flexible 方案的实质，就是 hack 实现根据不同设备 dpr ，动态改写  标签以及  标签的 data-dpr 属性 和 font-size 值。这样达到的效果就是不同设备分辨率下界面上内容是完全等比缩放的。
+前面说了“em”是相对于其父元素来设置字体大小的，这样就会存在一个问题，进行任何元素设置，都有可能需要知道他父元素的大小，在我们多次使用时，就会带来无法预知的错误风险。而rem是相对于根元素，这样就意味着，我们只需要在根元素确定一个参考值。</p>
+</blockquote>
+
+<h2 id="相对单位相对视窗">相对单位(相对视窗):</h2>
+<hr />
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">1vw</code>: 表示视口宽度的 1%</li>
+  <li><code class="language-plaintext highlighter-rouge">1vh</code>: 表示视口高度的 1%</li>
+  <li><code class="language-plaintext highlighter-rouge">1vmin</code>: 选取1vw和1vh中最<code class="language-plaintext highlighter-rouge">小</code>的那个</li>
+  <li><code class="language-plaintext highlighter-rouge">1vmax</code>: 选取1vw和1vh中最<code class="language-plaintext highlighter-rouge">大</code>的那个。</li>
+</ul>
+
+<blockquote>
+  <p>具体使用参考我的另一篇文章<a href="https://blog.csdn.net/guokaigdg/article/details/102493902">视口单位属性 vx vh vmin vmax</a></p>
+</blockquote>
+
+<h3 id="css3-其他新特性的搭配使用">CSS3 其他新特性的搭配使用</h3>
+<hr />
+<h4 id="1-css-搭配calc计算">1. CSS 搭配<code class="language-plaintext highlighter-rouge">calc()</code>计算</h4>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="nx">box</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nx">calc</span><span class="p">(</span><span class="mi">100</span><span class="nx">vw</span> <span class="o">-</span> <span class="mi">40</span><span class="nx">px</span><span class="p">);</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">20</span><span class="nx">px</span><span class="p">;</span>
+    <span class="nx">box</span><span class="o">-</span><span class="nx">sizing</span><span class="p">:</span> <span class="nx">border</span><span class="o">-</span><span class="nx">box</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h4 id="2-css-变量与js搭配使用">2. CSS 变量与<code class="language-plaintext highlighter-rouge">JS</code>搭配使用</h4>
+<p>切换主题直接改 css 中的变量</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">changeTheme</span> <span class="p">(</span><span class="nx">color</span><span class="p">)</span>
+    <span class="kd">const</span> <span class="nx">docStyle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">style</span><span class="p">;</span>
+    <span class="nx">docStyle</span><span class="p">.</span><span class="nx">setProperty</span><span class="p">(</span><span class="dl">'</span><span class="s1">--theme-color</span><span class="dl">'</span><span class="p">,</span> <span class="nx">color</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">--</span><span class="nx">theme</span><span class="o">-</span><span class="nx">color</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#fff</span><span class="dl">'</span>
+
+<span class="p">.</span><span class="nx">some</span><span class="o">-</span><span class="nx">dom</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="kd">var</span><span class="p">(</span><span class="o">--</span><span class="nx">heme</span><span class="o">-</span><span class="nx">color</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2019/11/07/css-px-em', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2019
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

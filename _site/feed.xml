@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-18T21:25:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">冒泡排序也可以这么玩</title><link href="http://localhost:4000/2019/11/18/bubbleSort.html" rel="alternate" type="text/html" title="冒泡排序也可以这么玩" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/bubbleSort</id><content type="html" xml:base="http://localhost:4000/2019/11/18/bubbleSort.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-20T15:56:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">冒泡排序也可以这么玩</title><link href="http://localhost:4000/2019/11/18/bubbleSort.html" rel="alternate" type="text/html" title="冒泡排序也可以这么玩" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/bubbleSort</id><content type="html" xml:base="http://localhost:4000/2019/11/18/bubbleSort.html">&lt;blockquote&gt;
   &lt;p&gt;面试遇到一个算法题, 其中有个排序用冒泡解决的, 然后问还能优化吗, 一开始就想出一个缩短比对范围的, 别的想不起来了, 之后就一脸蒙蔽 好吧现在来讨论下, 时间复杂度为O(n²) 还能怎么优化 :&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -174,7 +174,82 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;最低2699的售价,硬件方面来说就是你花的钱对得起你买的料, 常规旗舰骁龙855+, 12GDDR4x内存, 256G ufs3.0 跟市面上旗舰机型大差不差, 核心亮点在os上  新的大爆炸, 一步, TNT, 吹一下无线TNT真的有点吊, 不过最实用的还是一步…. 所以你会买吗??? 嗯 我还是等明年的5G R系列吧, 毕竟现在一加7pro还比较香&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>ma_meng</name></author><category term="Smartisan" /><category term="OS" /><category term="Android" /><category term="字节跳动" /><summary type="html">“时隔400天坚果手机到底还是来了” 这已经是第三次参见发布会了, 2017/ 2018 /2019 … 2019北京工业大学贼冷</summary></entry><entry><title type="html">《天气之子》——即便此后无晴，不要紧，活下去</title><link href="http://localhost:4000/2019/11/07/tianqizhizi.html" rel="alternate" type="text/html" title="《天气之子》——即便此后无晴，不要紧，活下去" /><published>2019-11-07T20:00:21+08:00</published><updated>2019-11-07T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/07/tianqizhizi</id><content type="html" xml:base="http://localhost:4000/2019/11/07/tianqizhizi.html">&lt;blockquote&gt;
+&lt;/blockquote&gt;</content><author><name>ma_meng</name></author><category term="Smartisan" /><category term="OS" /><category term="Android" /><category term="字节跳动" /><summary type="html">“时隔400天坚果手机到底还是来了” 这已经是第三次参见发布会了, 2017/ 2018 /2019 … 2019北京工业大学贼冷</summary></entry><entry><title type="html">CSS长度单位你了解多少</title><link href="http://localhost:4000/2019/11/07/css-px-em.html" rel="alternate" type="text/html" title="CSS长度单位你了解多少" /><published>2019-11-07T21:00:21+08:00</published><updated>2019-11-07T21:00:21+08:00</updated><id>http://localhost:4000/2019/11/07/css-px-em</id><content type="html" xml:base="http://localhost:4000/2019/11/07/css-px-em.html">&lt;blockquote&gt;
+  &lt;p&gt;9021年了你是不是还常用px % 然后就没有然后了
+好吧今天来总结一下, css还有哪些你不常用的长度单位&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191120151729275.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;css中长度单位有哪些&quot;&gt;css中长度单位有哪些?&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;px、mm、cm、pt、pc、in、em、rem、ch、ex、vh、vw、vmin、vmax，%&lt;br /&gt;
+以上就是css全部的长度单位, 接下来咱们详细聊聊&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;绝对单位&quot;&gt;绝对单位:&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;px&lt;/code&gt;: 像素, 这个是最常用的, 即屏幕图形显示的一个点（最小单位），这个点有它的位置、颜色等信息，从这个意义上来说 px 是绝对单位；但每一屏幕上的最小单位1像素对应物理单位是可以变化的，比如1px=1mm、1px=1cm，这取决于设备，所以也会有说它是相对单位的情况。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mm&lt;/code&gt;: 毫米&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cm&lt;/code&gt;: 厘米&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;in&lt;/code&gt;: 英寸（2.54厘米）&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pt&lt;/code&gt;: 磅（1/72 英寸）&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pc&lt;/code&gt;: 12 点活字 (1 pc 等于 12 点)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;相对单位相对字体&quot;&gt;相对单位(相对字体):&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em&lt;/code&gt;: 表示与当前元素字体的宽度，准确来说是一个大写字母M的宽度&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rem&lt;/code&gt;: 则表示默认字体大小的宽度，同样实质上也是一个大写字母M的宽度&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1ex&lt;/code&gt;: 表示一个小写字母 x 的高度。但它的表现不像 em 那样稳定， 比如在 IE 下 ex 正好是 em 的一半，在火狐下更接近字体的实际高度，所以我们一半认为 ex ≈ em / 2 。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1ch&lt;/code&gt;: 表示一个数字 0 的宽度。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em&lt;/code&gt;与&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rem&lt;/code&gt;两者的差别只是 rem 总是以根节点 (html) 的字体大小作为参考，你看命名 rem 就是 root em，而 em 则以当前元素的字体大小作为参考。
+而 flexible 方案的实质，就是 hack 实现根据不同设备 dpr ，动态改写  标签以及  标签的 data-dpr 属性 和 font-size 值。这样达到的效果就是不同设备分辨率下界面上内容是完全等比缩放的。
+前面说了“em”是相对于其父元素来设置字体大小的，这样就会存在一个问题，进行任何元素设置，都有可能需要知道他父元素的大小，在我们多次使用时，就会带来无法预知的错误风险。而rem是相对于根元素，这样就意味着，我们只需要在根元素确定一个参考值。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;相对单位相对视窗&quot;&gt;相对单位(相对视窗):&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1vw&lt;/code&gt;: 表示视口宽度的 1%&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1vh&lt;/code&gt;: 表示视口高度的 1%&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1vmin&lt;/code&gt;: 选取1vw和1vh中最&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;小&lt;/code&gt;的那个&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1vmax&lt;/code&gt;: 选取1vw和1vh中最&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;大&lt;/code&gt;的那个。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;具体使用参考我的另一篇文章&lt;a href=&quot;https://blog.csdn.net/guokaigdg/article/details/102493902&quot;&gt;视口单位属性 vx vh vmin vmax&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;css3-其他新特性的搭配使用&quot;&gt;CSS3 其他新特性的搭配使用&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-css-搭配calc计算&quot;&gt;1. CSS 搭配&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calc()&lt;/code&gt;计算&lt;/h4&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;vw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sizing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;2-css-变量与js搭配使用&quot;&gt;2. CSS 变量与&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JS&lt;/code&gt;搭配使用&lt;/h4&gt;
+&lt;p&gt;切换主题直接改 css 中的变量&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;changeTheme&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;docStyle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;documentElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;docStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setProperty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;--theme-color&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;some&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dom&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;heme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="CSS长度单位" /><summary type="html">9021年了你是不是还常用px % 然后就没有然后了 好吧今天来总结一下, css还有哪些你不常用的长度单位</summary></entry><entry><title type="html">《天气之子》——即便此后无晴，不要紧，活下去</title><link href="http://localhost:4000/2019/11/07/tianqizhizi.html" rel="alternate" type="text/html" title="《天气之子》——即便此后无晴，不要紧，活下去" /><published>2019-11-07T20:00:21+08:00</published><updated>2019-11-07T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/07/tianqizhizi</id><content type="html" xml:base="http://localhost:4000/2019/11/07/tianqizhizi.html">&lt;blockquote&gt;
   &lt;p&gt;“所有人都只拥有自己的世界，在那个世界里拼命生活着，扮演自己的角色，背负着某种责任，把自己唯一的生命从今天运作到明天，不仅仅是阳菜而已。所有人都挣扎着，生存在那种自我的世界里。我明白有他人在近处看着自己这一切带来的信心和安心感。‘在看着我’、‘知道我的小世界’、‘有人牵挂着我不要紧’——我明白这是莫大的支持。而当看见无可替代的那个重要的人在挣扎的情景时，就会希望自己变成这个人的‘不要紧（だいじょうぶ ）’。”&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -485,34 +560,4 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;辛巴: 这个是佩奇亲儿子, 我从出第一天开始一把屎一把尿拉扯大, 刚生下来时候不到巴掌大小, 现在已经有五斤了  希望多运动千万不要长成大白那样&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Jekyll</name></author><category term="cat" /><category term="猫" /><category term="英短" /><category term="美短" /><summary type="html">家里猫咪介绍🐈: 佩奇: 英短 1.5岁 大白: 美短 2岁 辛巴: 英短 4个月</summary></entry><entry><title type="html">走啊 去看白鲸</title><link href="http://localhost:4000/2019/08/17/ocean.html" rel="alternate" type="text/html" title="走啊 去看白鲸" /><published>2019-08-17T20:00:21+08:00</published><updated>2019-08-17T20:00:21+08:00</updated><id>http://localhost:4000/2019/08/17/ocean</id><content type="html" xml:base="http://localhost:4000/2019/08/17/ocean.html">&lt;blockquote&gt;
-  &lt;p&gt;水母&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110165029152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
-      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/shuimu-1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110185614723.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
-      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/shuimu-2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;白鲸&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110185915949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
-      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/baijing.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;海龟&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://img-blog.csdnimg.cn/20191110170321996.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; width=&quot;100%&quot;&gt;
-      &lt;source id=&quot;mp4&quot; src=&quot;http://localhost:4000/assets/video/haigui.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-&lt;!-- &lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;http://media.w3.org/2010/05/sintel/poster.png&quot;&gt;
-      &lt;source id=&quot;mp4&quot; src=&quot;http://media.w3.org/2010/05/sintel/trailer.mp4&quot; type=&quot;video/mp4&quot;&gt;
-      &lt;source id=&quot;webm&quot; src=&quot;http://media.w3.org/2010/05/sintel/trailer.webm&quot; type=&quot;video/webm&quot;&gt;
-      &lt;source id=&quot;ogv&quot; src=&quot;http://media.w3.org/2010/05/sintel/trailer.ogv&quot; type=&quot;video/ogg&quot;&gt;
-&lt;/video&gt; --&gt;</content><author><name>ma_meng</name></author><category term="海洋馆" /><category term="白鲸" /><category term="海龟" /><category term="企鹅" /><summary type="html">水母</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>Jekyll</name></author><category term="cat" /><category term="猫" /><category term="英短" /><category term="美短" /><summary type="html">家里猫咪介绍🐈: 佩奇: 英短 1.5岁 大白: 美短 2岁 辛巴: 英短 4个月</summary></entry></feed>
