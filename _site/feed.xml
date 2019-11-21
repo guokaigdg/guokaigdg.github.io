@@ -1,33 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-20T20:16:00+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">关于a.x = a = {n:2} 的思考 [快手]</title><link href="http://localhost:4000/2019/11/18/kuaishou.html" rel="alternate" type="text/html" title="关于a.x = a = {n:2} 的思考 [快手]" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/kuaishou</id><content type="html" xml:base="http://localhost:4000/2019/11/18/kuaishou.html">&lt;h3 id=&quot;面试遇到的一个题目-分享下&quot;&gt;面试遇到的一个题目, 分享下&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-21T17:27:45+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">死锁是什么</title><link href="http://localhost:4000/2019/11/18/sisuo.html" rel="alternate" type="text/html" title="死锁是什么" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/sisuo</id><content type="html" xml:base="http://localhost:4000/2019/11/18/sisuo.html">&lt;p&gt;&lt;img src=&quot;https://pic3.zhimg.com/v2-f7fa36e6c82fa59e83d8c0a7523bb964_1200x500.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用个通俗的例子讲一讲死锁&lt;/p&gt;
+
+&lt;p&gt;死锁是进程死锁的简称，是由Dijkstra于1965年研究银行家算法时首先提出来的。它是计算机系统乃至并发程序设计中最难处理的问题之一。实际上，死锁问题不仅在计算机系统中存在，在我们日常生活中它也广泛存在。这里，我想抛开语言，用一个例子来聊一聊死锁问题，聊一聊它是怎么产生的？应该怎么防止？&lt;/p&gt;
+
+&lt;p&gt;假设我们有一把蓝钥匙，可以打开一扇蓝色的门；以及一把红钥匙，可以打开一扇红色的门。两把钥匙被保存在一个皮箱里。同时我们定义六种行为：获取蓝钥匙，打开蓝色门，归还蓝钥匙，获取红钥匙，打开红色门，归还红钥匙。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pic4.zhimg.com/80/v2-823088df49d849ebbcb52739ec20333b_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;游戏规则是：一个人（线程）必须通过排列六种指令的顺序，打开两扇门，最后归还钥匙。&lt;/p&gt;
+
+&lt;p&gt;随便排一下就好了啊，只要注意同一颜色的三种指令的先后顺序是“取钥匙 -&amp;gt; 开门 -&amp;gt; 还钥匙”就可以了。比如下面这种执行顺序：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pic1.zhimg.com/80/v2-47148333a7ad551e6e7598118290ac64_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;计算下我们可以知道，可能的解法一共有20种（ [公式] ），这里画出其中的6种：
+&lt;img src=&quot;https://pic1.zhimg.com/80/v2-1a3491eb9bcf99612863a4be404e57f4_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;同样的规则，只不过换成两个线程同时进行这个游戏，每个线程都有各自的两扇门需要打开，但是两个线程共享一副红蓝钥匙。如果某个线程取钥匙时发现钥匙已被另一个线程取走了，它会等着，等到另一个线程归还了钥匙之后再继续。&lt;/p&gt;
+
+&lt;p&gt;我们从单人模式的6组解中随机全取两组：解法3和解法4。
+&lt;img src=&quot;https://pic2.zhimg.com/80/v2-021292616c89207b9868f3991be7d699_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;把这两组解分别作为线程A和线程B，并且同时开始执行这两组指令：
+&lt;img src=&quot;https://pic3.zhimg.com/80/v2-0ddef2bf3fe48044006b54d942c57f06_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;由于线程B在第四步的时候，需要等线程A运行到第六步归还了蓝钥匙之后才能继续，所以最后线程A先跑完，线程B后跑完，但是两个线程都成功的完成了任务。&lt;/p&gt;
+
+&lt;p&gt;那是不是从6组解法中任意选出两组解法都可以呢？&lt;/p&gt;
+
+&lt;p&gt;我们这次选解法3和解法5作为线程A和线程B试一试：
+&lt;img src=&quot;https://pic2.zhimg.com/80/v2-4423d2645e0d0ef610cf63d34013792d_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;同时开始运行线程A和线程B：
+&lt;img src=&quot;https://pic4.zhimg.com/80/v2-08a5a1993bfa2468f2a40f7cb9864b67_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;可以看到，当两个线程都运行到第三步的时候，线程A在等线程B归还红钥匙，线程B在等线程A归还蓝钥匙，因而两个线程都永远卡在那里无法前进。&lt;/p&gt;
+
+&lt;p&gt;这就是形成了死锁。&lt;/p&gt;
+
+&lt;p&gt;在全部的20种可能线程解法中，随机选出两组线程，有一定的几率会出现死锁的情况（有兴趣的知友可以算一算这个几率是多少？如果是选三组线程呢？）。一般来说死锁的出现必须满足以下四个必要条件：&lt;/p&gt;
+
 &lt;blockquote&gt;
-  &lt;p&gt;关于js中连续赋值的问题, 一般情况写不要随便写连续赋值, 容易出问题
-考虑下一下会输出什么内容, 先思考下, 然后上机测试下看看考虑的对不对&lt;/p&gt;
-  &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
-  &lt;hr /&gt;
-  &lt;h3 id=&quot;答案&quot;&gt;答案:&lt;/h3&gt;
+  &lt;p&gt;互斥条件：指进程对所分配到的资源进行排它性使用，即在一段时间内某资源只由一个进程占用。如果此时还有其它进程请求资源，则请求者只能等待，直至占有资源的进程用毕释放。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//a指向了一个新地址&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//a.x原来中的a还是指向原来位置,所以 a.x =  a = {n:2} 等于实现了 a.x = {n:2}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//undefined , 原因是此时a 因为a = {n:2}操作, a的指向已经变了, 现在a跟之前的a.n中的a不是一个指向了&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//{n:2} &lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//{n:2}  a指向了一个新地址&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//{n:1 x:{n:2} //a.x原来中的ah还是指向原来位置 a.x =  a = {n:2} 等于实现了 a.x = {n:2}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="快手" /><category term="js连续赋值" /><summary type="html">面试遇到的一个题目, 分享下 关于js中连续赋值的问题, 一般情况写不要随便写连续赋值, 容易出问题 考虑下一下会输出什么内容, 先思考下, 然后上机测试下看看考虑的对不对 var a = { n:1, } var b =a ; a.x = a = {n:2} console.log(a.x); console.log(b.x); console.log(a); console.log(b); 答案:</summary></entry><entry><title type="html">冒泡排序也可以这么玩</title><link href="http://localhost:4000/2019/11/18/bubbleSort.html" rel="alternate" type="text/html" title="冒泡排序也可以这么玩" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/bubbleSort</id><content type="html" xml:base="http://localhost:4000/2019/11/18/bubbleSort.html">&lt;blockquote&gt;
+&lt;p&gt;——只有一副钥匙&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;请求和保持条件：指进程已经保持至少一个资源，但又提出了新的资源请求，而该资源已被其它进程占有，此时请求进程阻塞，但又对自己已获得的其它资源保持不放。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;——拿着红钥匙的人在没有归还红钥匙的情况下，又提出要蓝钥匙&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;不剥夺条件：指进程已获得的资源，在未使用完之前，不能被剥夺，只能在使用完时由自己释放。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;——人除非归还了钥匙，不然一直占用着钥匙&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;环路等待条件：指在发生死锁时，必然存在一个进程——资源的环形链，即进程集合{P0，P1，P2，···，Pn}中的P0正在等待一个P1占用的资源；P1正在等待P2占用的资源，……，Pn正在等待已被P0占用的资源。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;——拿着红钥匙的人在等蓝钥匙，同时那个拿着蓝钥匙的人在等红钥匙&lt;/p&gt;
+
+&lt;p&gt;要避免出现死锁的问题，只需要破坏四个条件中的任何一个就可以了。&lt;/p&gt;
+
+&lt;h4 id=&quot;我们来看看常见的避免死锁的方法&quot;&gt;我们来看看常见的避免死锁的方法。&lt;/h4&gt;
+
+&lt;p&gt;—方法一 . 破坏互斥条件—&lt;/p&gt;
+
+&lt;p&gt;只有一副钥匙，这是形成死锁的最关键的原因。显然，如果我们能在两个线程跑之前，能给每个线程单独拷贝一份钥匙的副本，就能有效的避免死锁了。
+&lt;img src=&quot;https://pic1.zhimg.com/80/v2-6245ebc4fa33da062dd3269696c757d0_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当然，这种方法试用范围并不广。因为有时如果系统拷贝那副钥匙的成本极高，而线程又很多的话，这种方法就不适用了。&lt;/p&gt;
+
+&lt;p&gt;—方法二. 破坏环路等待条件—&lt;/p&gt;
+
+&lt;p&gt;会出现死锁的两两组合，一定都是一个线程先取了红钥匙而另一个线程先取了蓝钥匙，从而导致了可能形成了“环路等待”。所以我们可以强制规定任何线程取钥匙的顺序只能是 “先取蓝钥匙再取红钥匙”的话，就能避免死锁了。（六组解也就只剩下前三组解是有效的了）
+&lt;img src=&quot;https://pic1.zhimg.com/80/v2-360a73cf950da233cf277a95db8147a4_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;—方法三.破坏不剥夺条件—&lt;/p&gt;
+
+&lt;p&gt;除非线程自己还钥匙，否则线程会一直占有钥匙，是形成不可剥夺条件的原因。这里，我们可以通过设置一个”最长占用时间“的阈值来解决这个问题——如果过了10分钟仍然没有进入下一个步骤，则归还已有的钥匙。这样的话，两个线程都能取到所需的钥匙继续下去了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pic3.zhimg.com/80/v2-581b37523034b9c383be05a2bc3d46b2_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;—方法四.破坏请求和保持条件—&lt;/p&gt;
+
+&lt;p&gt;任何一个线程“贪心”，都可能会导致死锁。大致就是说有了一把钥匙还没还就要另一把。这里我们可以通过规定在任何情况下，一个线程获取一把钥匙之后，必须归还了钥匙之后才能请求另一把钥匙，就可以有效解决这个问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pic3.zhimg.com/80/v2-5897c4b4a827a3a55886d4eed142c282_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我经常用这个取钥匙开门的例子来讲解死锁，一个原因是讲解的过程中可以用人和实物来亲自示范，比较容易给人留下印象。更重要的一点是，这个例子对应的几种避免死锁的方法和思想可以很容易地运用到实际的编程当中。&lt;/p&gt;
+
+&lt;p&gt;死锁是一个很有意思的话题，实际工作中接触到的频率还蛮高的。所有的死锁问题中，SQL数据库的死锁问题其实是被讨论的最多的。下一次有机会专门来聊一聊SQL DB的死锁问题。&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="死锁" /><summary type="html"></summary></entry><entry><title type="html">冒泡排序也可以这么玩</title><link href="http://localhost:4000/2019/11/18/bubbleSort.html" rel="alternate" type="text/html" title="冒泡排序也可以这么玩" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/bubbleSort</id><content type="html" xml:base="http://localhost:4000/2019/11/18/bubbleSort.html">&lt;blockquote&gt;
   &lt;p&gt;面试遇到一个算法题, 其中有个排序用冒泡解决的, 然后问还能优化吗, 一开始就想出一个缩短比对范围的, 别的想不起来了, 之后就一脸蒙蔽 好吧现在来讨论下, 时间复杂度为O(n²) 还能怎么优化 :&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -92,7 +160,36 @@
     &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;timeEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;2.改进后冒泡排序耗时&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="面试题" /><summary type="html">面试遇到一个算法题, 其中有个排序用冒泡解决的, 然后问还能优化吗, 一开始就想出一个缩短比对范围的, 别的想不起来了, 之后就一脸蒙蔽 好吧现在来讨论下, 时间复杂度为O(n²) 还能怎么优化 :</summary></entry><entry><title type="html">上周一个面试题目-将数字转成汉字(js实现)</title><link href="http://localhost:4000/2019/11/16/mianshiti.html" rel="alternate" type="text/html" title="上周一个面试题目-将数字转成汉字(js实现)" /><published>2019-11-16T20:00:21+08:00</published><updated>2019-11-16T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/16/mianshiti</id><content type="html" xml:base="http://localhost:4000/2019/11/16/mianshiti.html">&lt;h3 id=&quot;题目是把数字转成汉字表示-比如-10245转成-一碗零二百四十五-js实现&quot;&gt;题目是把数字转成汉字表示, 比如 10245转成 一碗零二百四十五 (js实现)&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="面试题" /><summary type="html">面试遇到一个算法题, 其中有个排序用冒泡解决的, 然后问还能优化吗, 一开始就想出一个缩短比对范围的, 别的想不起来了, 之后就一脸蒙蔽 好吧现在来讨论下, 时间复杂度为O(n²) 还能怎么优化 :</summary></entry><entry><title type="html">关于a.x = a = {n:2} 的思考 [快手]</title><link href="http://localhost:4000/2019/11/18/kuaishou.html" rel="alternate" type="text/html" title="关于a.x = a = {n:2} 的思考 [快手]" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/kuaishou</id><content type="html" xml:base="http://localhost:4000/2019/11/18/kuaishou.html">&lt;h3 id=&quot;面试遇到的一个题目-分享下&quot;&gt;面试遇到的一个题目, 分享下&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;关于js中连续赋值的问题, 一般情况写不要随便写连续赋值, 容易出问题
+考虑下一下会输出什么内容, 先思考下, 然后上机测试下看看考虑的对不对&lt;/p&gt;
+  &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+  &lt;hr /&gt;
+  &lt;h3 id=&quot;答案&quot;&gt;答案:&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//a指向了一个新地址&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//a.x原来中的a还是指向原来位置,所以 a.x =  a = {n:2} 等于实现了 a.x = {n:2}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//undefined , 原因是此时a 因为a = {n:2}操作, a的指向已经变了, 现在a跟之前的a.n中的a不是一个指向了&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//{n:2} &lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//{n:2}  a指向了一个新地址&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//{n:1 x:{n:2} //a.x原来中的ah还是指向原来位置 a.x =  a = {n:2} 等于实现了 a.x = {n:2}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="js连续赋值" /><summary type="html">面试遇到的一个题目, 分享下 关于js中连续赋值的问题, 一般情况写不要随便写连续赋值, 容易出问题 考虑下一下会输出什么内容, 先思考下, 然后上机测试下看看考虑的对不对 var a = { n:1, } var b =a ; a.x = a = {n:2} console.log(a.x); console.log(b.x); console.log(a); console.log(b); 答案:</summary></entry><entry><title type="html">上周一个面试题目-将数字转成汉字(js实现)</title><link href="http://localhost:4000/2019/11/16/mianshiti.html" rel="alternate" type="text/html" title="上周一个面试题目-将数字转成汉字(js实现)" /><published>2019-11-16T20:00:21+08:00</published><updated>2019-11-16T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/16/mianshiti</id><content type="html" xml:base="http://localhost:4000/2019/11/16/mianshiti.html">&lt;h3 id=&quot;题目是把数字转成汉字表示-比如-10245转成-一碗零二百四十五-js实现&quot;&gt;题目是把数字转成汉字表示, 比如 10245转成 一碗零二百四十五 (js实现)&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;思路:&lt;/p&gt;
@@ -550,22 +647,4 @@
 &lt;span class=&quot;nx&quot;&gt;Blog&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;About&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>true</name></author><category term="GoogLe" /><category term="WebRTC" /><summary type="html">官方文档: https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-supported-constraints</summary></entry><entry><title type="html">啊哈 礼物</title><link href="http://localhost:4000/2019/11/05/picture.html" rel="alternate" type="text/html" title="啊哈 礼物" /><published>2019-11-05T20:00:21+08:00</published><updated>2019-11-05T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/05/picture</id><content type="html" xml:base="http://localhost:4000/2019/11/05/picture.html">&lt;blockquote&gt;
-  &lt;p&gt;啊哈 收到女朋友亲手画的礼物了开心&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035200443.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035204881.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019111003521165.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035216720.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;上墙效果&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035155856.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191110035148307.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="画" /><category term="油画" /><category term="女朋友" /><summary type="html">啊哈 收到女朋友亲手画的礼物了开心</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>true</name></author><category term="GoogLe" /><category term="WebRTC" /><summary type="html">官方文档: https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-supported-constraints</summary></entry></feed>
