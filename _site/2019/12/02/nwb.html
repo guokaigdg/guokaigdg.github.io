@@ -153,6 +153,7 @@ var _hmt = _hmt || [];
 
   <!-- 文章内容 -->
   <p><img src="https://img-blog.csdnimg.cn/20191203230246711.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+
 <h3 id="nwb-是什么">nwb 是什么?</h3>
 <blockquote>
   <p>一个用于npm模块的工具包, 支持</p>
@@ -163,60 +164,147 @@ var _hmt = _hmt || [];
 
 <h3 id="1-nwb安装">1. nwb安装:</h3>
 <ul>
-  <li>全局安装nwb, 使用npm或者cnpm</li>
+  <li>全局安装nwb, 使用npm或者cnpm
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g nwb  //全局安装nwb
+</code></pre></div>    </div>
+  </li>
 </ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g nwb  //全局安装nwb
-</code></pre></div></div>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cnpm install -g nwb  //全局安装nwb
 </code></pre></div></div>
 
 <h3 id="2创建组件-nwb">2.创建组件 nwb</h3>
-<blockquote>
-  <p>nwb 项目里面还有一个demo文件夹，可以在里面直接引用你自己写的组件</p>
-</blockquote>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nwb new react-component yunshang
 cd yunshang/
 </code></pre></div></div>
 
-<h4 id="srcindexjs文件存组件如图">src/index.js文件存组件（如图）</h4>
+<ul>
+  <li>nwb 项目里有一个./demo/src/index.js文件，这个文件可以理解为测试你开发组件的文件
+```js
+import React, {Component} from ‘react’
+import {render} from ‘react-dom’
+import Button from ‘../../src/index’;</li>
+</ul>
 
-<p><img src="https://img-blog.csdnimg.cn/20191203230518462.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<p>class Demo extends Component {
+  handleClick =  ()=&gt; {
+    console.log(“已点击”);
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;Button 
+          onClick = {()=&gt;{this.handleClick()}} 
+          disabled = {false}
+        &gt;
+          登陆
+        &lt;/Button&gt;
+        &lt;Button disabled = {true} &gt;禁用&lt;/Button&gt;
+        <button></button>
+      &lt;/div&gt;
+    )
+  }
+}
+render(<Demo></Demo>, document.querySelector(‘#demo’))</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- 还有一个./src/index.js文件，这个是自己开发组件的文件
 
-<h3 id="3构建出可以发布的内容-npm-run-build">3.构建出可以发布的内容 npm run build</h3>
-<p>发布之前确认跟上次版本号不一样，不然会版本号重复报错</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build
+```js
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import CX from 'classnames';
+import './index.css';
+
+class Button extends Component {
+  state = {
+    active: false,
+  }
+  render() {
+    const { children, onClick, disabled} = this.props;
+    console.log(disabled);
+    return (
+      &lt;span
+        className = {CX({
+          btn:true,
+          "btn-disabled": disabled === true ,
+        })}
+        onClick = {onClick}
+      &gt;
+        &lt;span className = 'btn-content'&gt;
+          {children}
+        &lt;/span&gt;
+      &lt;/span&gt;
+    )
+  }
+}
+
+Button.propTypes = {
+  children: PropTypes.string,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool,
+}
+Button.defaultProps = {
+  children:"Button",
+  onClick: () =&gt; {return null},
+  disabled : false,
+}
+export default Button
 </code></pre></div></div>
+
+<h3 id="3-构建出可以发布的内容-npm-run-build">3. 🔨构建出可以发布的内容 npm run build</h3>
+<ul>
+  <li>发布之前确认跟上次版本号不一样，不然会版本号重复报错
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build
+</code></pre></div>    </div>
+  </li>
+  <li>build模块– –copy-files 可将css打包进npm包( 默认是不打包css文件的 )
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build -- --copy-files
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h3 id="4发布npm包--npm-publish">4.发布npm包  npm publish</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm publish
 </code></pre></div></div>
-<h5 id="httpswwwnpmjscom-查看有没有发布成功">https://www.npmjs.com 查看有没有发布成功</h5>
+
+<ul>
+  <li>https://www.npmjs.com 查看有没有发布成功</li>
+</ul>
 
 <h3 id="5删除npm包">5.删除npm包</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm unpublish yunshang --force
 </code></pre></div></div>
 
-<h3 id="6如何使用上传的npm包">6.如何使用上传的npm包</h3>
-<p>在react项目中安装</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i guokai
-</code></pre></div></div>
-<h4 id="appjs">App.js</h4>
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<h3 id="6测试下载使用npm包">6.测试下载使用npm包</h3>
+<ul>
+  <li>在react项目中安装
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i noo-ui   // 或者cnpm inoo-ui
+</code></pre></div>    </div>
+    <h4 id="appjs">App.js</h4>
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">YsButton</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">guokai</span><span class="dl">'</span><span class="p">;</span>  <span class="c1">//引入刚才上传的npm包</span>
+<span class="k">import</span> <span class="nx">Button</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">noo-ui</span><span class="dl">'</span><span class="p">;</span>  <span class="c1">//引入刚才上传的npm包</span>
 <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">div</span> <span class="o">&gt;</span>
-       <span class="o">&lt;</span><span class="nx">YsButton</span><span class="o">/&gt;</span>
-    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>  <span class="p">);</span>
+<span class="k">return</span> <span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">div</span> <span class="o">&gt;</span>
+       <span class="o">&lt;</span><span class="nx">Button</span> 
+        <span class="nx">onClick</span> <span class="o">=</span> <span class="p">{()</span><span class="o">=&gt;</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">()}}</span> 
+        <span class="nx">disabled</span> <span class="o">=</span> <span class="p">{</span><span class="kc">false</span><span class="p">}</span>
+      <span class="o">&gt;</span>
+        <span class="err">登陆</span>
+      <span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">disabled</span> <span class="o">=</span> <span class="p">{</span><span class="kc">true</span><span class="p">}</span> <span class="o">&gt;</span><span class="err">禁用</span><span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">Button</span> <span class="o">/&gt;</span>
+  <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="k">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/12/5/16ed206b8609db2c?w=690&amp;h=352&amp;f=gif&amp;s=2354559" alt="" /></p>
 
 
   <!-- 引入share模块 -->

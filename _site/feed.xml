@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-03T23:07:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">使用nwb发布你的第一个npm组件</title><link href="http://localhost:4000/2019/12/02/nwb.html" rel="alternate" type="text/html" title="使用nwb发布你的第一个npm组件" /><published>2019-12-02T20:00:21+08:00</published><updated>2019-12-02T20:00:21+08:00</updated><id>http://localhost:4000/2019/12/02/nwb</id><content type="html" xml:base="http://localhost:4000/2019/12/02/nwb.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191203230246711.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-05T02:00:31+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">使用nwb发布你的第一个npm组件</title><link href="http://localhost:4000/2019/12/02/nwb.html" rel="alternate" type="text/html" title="使用nwb发布你的第一个npm组件" /><published>2019-12-02T20:00:21+08:00</published><updated>2019-12-02T20:00:21+08:00</updated><id>http://localhost:4000/2019/12/02/nwb</id><content type="html" xml:base="http://localhost:4000/2019/12/02/nwb.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191203230246711.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;nwb-是什么&quot;&gt;nwb 是什么?&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;一个用于npm模块的工具包, 支持&lt;/p&gt;
@@ -9,60 +10,147 @@
 
 &lt;h3 id=&quot;1-nwb安装&quot;&gt;1. nwb安装:&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;全局安装nwb, 使用npm或者cnpm&lt;/li&gt;
+  &lt;li&gt;全局安装nwb, 使用npm或者cnpm
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g nwb  //全局安装nwb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g nwb  //全局安装nwb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cnpm install -g nwb  //全局安装nwb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;2创建组件-nwb&quot;&gt;2.创建组件 nwb&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;nwb 项目里面还有一个demo文件夹，可以在里面直接引用你自己写的组件&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nwb new react-component yunshang
 cd yunshang/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;srcindexjs文件存组件如图&quot;&gt;src/index.js文件存组件（如图）&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;nwb 项目里有一个./demo/src/index.js文件，这个文件可以理解为测试你开发组件的文件
+```js
+import React, {Component} from ‘react’
+import {render} from ‘react-dom’
+import Button from ‘../../src/index’;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191203230518462.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;class Demo extends Component {
+  handleClick =  ()=&amp;gt; {
+    console.log(“已点击”);
+  }
+  render() {
+    return (
+      &amp;lt;div&amp;gt;
+        &amp;lt;Button 
+          onClick = {()=&amp;gt;{this.handleClick()}} 
+          disabled = {false}
+        &amp;gt;
+          登陆
+        &amp;lt;/Button&amp;gt;
+        &amp;lt;Button disabled = {true} &amp;gt;禁用&amp;lt;/Button&amp;gt;
+        &lt;button&gt;&lt;/button&gt;
+      &amp;lt;/div&amp;gt;
+    )
+  }
+}
+render(&lt;Demo&gt;&lt;/Demo&gt;, document.querySelector(‘#demo’))&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 还有一个./src/index.js文件，这个是自己开发组件的文件
 
-&lt;h3 id=&quot;3构建出可以发布的内容-npm-run-build&quot;&gt;3.构建出可以发布的内容 npm run build&lt;/h3&gt;
-&lt;p&gt;发布之前确认跟上次版本号不一样，不然会版本号重复报错&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm run build
+```js
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import CX from 'classnames';
+import './index.css';
+
+class Button extends Component {
+  state = {
+    active: false,
+  }
+  render() {
+    const { children, onClick, disabled} = this.props;
+    console.log(disabled);
+    return (
+      &amp;lt;span
+        className = {CX({
+          btn:true,
+          &quot;btn-disabled&quot;: disabled === true ,
+        })}
+        onClick = {onClick}
+      &amp;gt;
+        &amp;lt;span className = 'btn-content'&amp;gt;
+          {children}
+        &amp;lt;/span&amp;gt;
+      &amp;lt;/span&amp;gt;
+    )
+  }
+}
+
+Button.propTypes = {
+  children: PropTypes.string,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool,
+}
+Button.defaultProps = {
+  children:&quot;Button&quot;,
+  onClick: () =&amp;gt; {return null},
+  disabled : false,
+}
+export default Button
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3-构建出可以发布的内容-npm-run-build&quot;&gt;3. 🔨构建出可以发布的内容 npm run build&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;发布之前确认跟上次版本号不一样，不然会版本号重复报错
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm run build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;build模块– –copy-files 可将css打包进npm包( 默认是不打包css文件的 )
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm run build -- --copy-files
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;4发布npm包--npm-publish&quot;&gt;4.发布npm包  npm publish&lt;/h3&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm publish
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h5 id=&quot;httpswwwnpmjscom-查看有没有发布成功&quot;&gt;https://www.npmjs.com 查看有没有发布成功&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://www.npmjs.com 查看有没有发布成功&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;5删除npm包&quot;&gt;5.删除npm包&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm unpublish yunshang --force
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;6如何使用上传的npm包&quot;&gt;6.如何使用上传的npm包&lt;/h3&gt;
-&lt;p&gt;在react项目中安装&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i guokai
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;appjs&quot;&gt;App.js&lt;/h4&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;h3 id=&quot;6测试下载使用npm包&quot;&gt;6.测试下载使用npm包&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;在react项目中安装
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i noo-ui   // 或者cnpm inoo-ui
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h4 id=&quot;appjs&quot;&gt;App.js&lt;/h4&gt;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./App.css&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;YsButton&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;guokai&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//引入刚才上传的npm包&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;noo-ui&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//引入刚才上传的npm包&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-       &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;YsButton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+       &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Button&lt;/span&gt; 
+        &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()}}&lt;/span&gt; 
+        &lt;span class=&quot;nx&quot;&gt;disabled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;err&quot;&gt;登陆&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;disabled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;禁用&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="npm包" /><summary type="html">nwb 是什么? 一个用于npm模块的工具包, 支持 React、Preact、Inferno &amp;amp; vanilla JS应用程序、React库和其他web</summary></entry><entry><title type="html">老人与海 黑科技发布会</title><link href="http://localhost:4000/2019/11/23/luoyonghao.html" rel="alternate" type="text/html" title="老人与海 黑科技发布会" /><published>2019-11-23T20:00:21+08:00</published><updated>2019-11-23T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/23/luoyonghao</id><content type="html" xml:base="http://localhost:4000/2019/11/23/luoyonghao.html">&lt;blockquote&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-gold-cdn.xitu.io/2019/12/5/16ed206b8609db2c?w=690&amp;amp;h=352&amp;amp;f=gif&amp;amp;s=2354559&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="npm包" /><summary type="html"></summary></entry><entry><title type="html">老人与海 黑科技发布会</title><link href="http://localhost:4000/2019/11/23/luoyonghao.html" rel="alternate" type="text/html" title="老人与海 黑科技发布会" /><published>2019-11-23T20:00:21+08:00</published><updated>2019-11-23T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/23/luoyonghao</id><content type="html" xml:base="http://localhost:4000/2019/11/23/luoyonghao.html">&lt;blockquote&gt;
   &lt;p&gt;11月22日下午,收到了发布会邀请确认 心里想着卧槽又可以听相声了&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -394,8 +482,92 @@ cd yunshang/
 
 ![HTML](https://img-blog.csdnimg.cn/20191115231016543.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70)
 
-&gt;JavaScript --&gt;</content><author><name>ma_meng</name></author><category term="前端知识图谱" /><summary type="html"></summary></entry><entry><title type="html">个人简历</title><link href="http://localhost:4000/2019/11/08/readme.html" rel="alternate" type="text/html" title="个人简历" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/readme</id><content type="html" xml:base="http://localhost:4000/2019/11/08/readme.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019111114240266.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+&gt;JavaScript --&gt;</content><author><name>ma_meng</name></author><category term="前端知识图谱" /><summary type="html"></summary></entry><entry><title type="html">个人简历</title><link href="http://localhost:4000/2019/11/08/readme.html" rel="alternate" type="text/html" title="个人简历" /><published>2019-11-08T20:00:21+08:00</published><updated>2019-11-08T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/08/readme</id><content type="html" xml:base="http://localhost:4000/2019/11/08/readme.html">&lt;!-- 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019111114240266.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70) --&gt;
+&lt;h3 id=&quot;郭凯&quot;&gt;郭凯&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;133-3363-0417&lt;/td&gt;
+          &lt;td&gt;guokaigdg@gmail.com&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Beijing&lt;/td&gt;
+          &lt;td&gt;WeChat: guokaigdg&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;at any duty&lt;/td&gt;
+          &lt;td&gt;Objective: front-end development&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;skills-list&quot;&gt;SKILLS LIST&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;developers familiar with the front end base (JavaScript, HTML, CSS3)&lt;/li&gt;
+  &lt;li&gt;familiar with the w3c standard, ES6, understand ES7&lt;/li&gt;
+  &lt;li&gt;familiar React to conduct business component development, redux&lt;/li&gt;
+  &lt;li&gt;familiar with the principles of the Internet, HTTP protocol TCP protocol&lt;/li&gt;
+  &lt;li&gt;familiar with the Git version control&lt;/li&gt;
+  &lt;li&gt;Learn node.js npm&lt;/li&gt;
+  &lt;li&gt;Learn common data structure algorithms&lt;/li&gt;
+  &lt;li&gt;understood eslint, the code written specification&lt;/li&gt;
+  &lt;li&gt;Learn Linux common commands&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;professional-experience&quot;&gt;PROFESSIONAL EXPERIENCE&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;client: new 1VN classroom&lt;/p&gt;
+
+&lt;p&gt;Introduction: a web-based classroom WebRTC provided teacher video broadcast, desktop sharing, ppt, crossed, voice, chat&lt;/p&gt;
+
+&lt;p&gt;is responsible for: developing new classroom features
+Technology: React Mobox JavaScript CSS3&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Classroom to develop students answer function&lt;/li&gt;
+  &lt;li&gt;Students took the floor functional development&lt;/li&gt;
+  &lt;li&gt;Preparation of project documentation&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;tracking-repair-bug&quot;&gt;Tracking repair bug&lt;/h2&gt;
+    &lt;p&gt;mobile terminal: nuts R1, nuts 3, nut pro2s&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;PC end: TNT workstation&lt;/p&gt;
+
+&lt;p&gt;Description: Mobile PC terminal functional automation testing&lt;/p&gt;
+
+&lt;p&gt;is responsible Description: The product to automate testing
+Technology: web Python uiautomator&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;cloud test sites, develop new features;&lt;/li&gt;
+  &lt;li&gt;maintain automated test software design of automatic test script, turn to the cloud automated test automation library;&lt;/li&gt;
+  &lt;li&gt;Test analysis / test execution / tracking test results;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;education&quot;&gt;EDUCATION&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;University NYIST
+Graduation Date
+Bachelor software design software INSTITUTE&lt;/p&gt;
 
 &lt;p&gt;Github地址: &lt;a href=&quot;https://github.com/guokaigdg&quot;&gt;https://github.com/guokaigdg&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;CSDN地址: &lt;a href=&quot;https://blog.csdn.net/guokaigdg&quot;&gt;https://blog.csdn.net/guokaigdg&lt;/a&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="简历" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;CSDN地址: &lt;a href=&quot;https://blog.csdn.net/guokaigdg&quot;&gt;https://blog.csdn.net/guokaigdg&lt;/a&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="简历" /><summary type="html">郭凯 133-3363-0417 guokaigdg@gmail.com Beijing WeChat: guokaigdg at any duty Objective: front-end development</summary></entry></feed>
