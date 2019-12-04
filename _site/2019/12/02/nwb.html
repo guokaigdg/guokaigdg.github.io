@@ -174,81 +174,84 @@ var _hmt = _hmt || [];
 </code></pre></div></div>
 
 <h3 id="2创建组件-nwb">2.创建组件 nwb</h3>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nwb new react-component yunshang
 cd yunshang/
 </code></pre></div></div>
 
 <ul>
-  <li>nwb 项目里有一个./demo/src/index.js文件，这个文件可以理解为测试你开发组件的文件
-```js
-import React, {Component} from ‘react’
-import {render} from ‘react-dom’
-import Button from ‘../../src/index’;</li>
+  <li>nwb 项目里有一个./demo/src/index.js文件，这个文件可以理解为测试你开发组件的文件</li>
 </ul>
 
-<p>class Demo extends Component {
-  handleClick =  ()=&gt; {
-    console.log(“已点击”);
-  }
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;Button 
-          onClick = {()=&gt;{this.handleClick()}} 
-          disabled = {false}
-        &gt;
-          登陆
-        &lt;/Button&gt;
-        &lt;Button disabled = {true} &gt;禁用&lt;/Button&gt;
-        <button></button>
-      &lt;/div&gt;
-    )
-  }
-}
-render(<Demo></Demo>, document.querySelector(‘#demo’))</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-- 还有一个./src/index.js文件，这个是自己开发组件的文件
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">render</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-dom</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Button</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../../src/index</span><span class="dl">'</span><span class="p">;</span>
 
-```js
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import CX from 'classnames';
-import './index.css';
+<span class="kd">class</span> <span class="nx">Demo</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">handleClick</span> <span class="o">=</span>  <span class="p">()</span><span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">已点击</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Button</span> 
+          <span class="nx">onClick</span> <span class="o">=</span> <span class="p">{()</span><span class="o">=&gt;</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">()}}</span> 
+          <span class="nx">disabled</span> <span class="o">=</span> <span class="p">{</span><span class="kc">false</span><span class="p">}</span>
+        <span class="o">&gt;</span>
+          <span class="err">登陆</span>
+        <span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">disabled</span> <span class="o">=</span> <span class="p">{</span><span class="kc">true</span><span class="p">}</span> <span class="o">&gt;</span><span class="err">禁用</span><span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">Button</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Demo</span><span class="o">/&gt;</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#demo</span><span class="dl">'</span><span class="p">))</span>
+</code></pre></div></div>
 
-class Button extends Component {
-  state = {
-    active: false,
-  }
-  render() {
-    const { children, onClick, disabled} = this.props;
-    console.log(disabled);
-    return (
-      &lt;span
-        className = {CX({
-          btn:true,
-          "btn-disabled": disabled === true ,
-        })}
-        onClick = {onClick}
-      &gt;
-        &lt;span className = 'btn-content'&gt;
-          {children}
-        &lt;/span&gt;
-      &lt;/span&gt;
-    )
-  }
-}
+<ul>
+  <li>还有一个./src/index.js文件，这个是自己开发组件的文件</li>
+</ul>
 
-Button.propTypes = {
-  children: PropTypes.string,
-  onClick: PropTypes.func,
-  disabled: PropTypes.bool,
-}
-Button.defaultProps = {
-  children:"Button",
-  onClick: () =&gt; {return null},
-  disabled : false,
-}
-export default Button
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">PropTypes</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">prop-types</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">CX</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">classnames</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">./index.css</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nx">Button</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="p">}</span>
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="p">{</span> <span class="nx">children</span><span class="p">,</span> <span class="nx">onClick</span><span class="p">,</span> <span class="nx">disabled</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">disabled</span><span class="p">);</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">span</span>
+        <span class="nx">className</span> <span class="o">=</span> <span class="p">{</span><span class="nx">CX</span><span class="p">({</span>
+          <span class="na">btn</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">btn-disabled</span><span class="dl">"</span><span class="p">:</span> <span class="nx">disabled</span> <span class="o">===</span> <span class="kc">true</span> <span class="p">,</span>
+        <span class="p">})}</span>
+        <span class="nx">onClick</span> <span class="o">=</span> <span class="p">{</span><span class="nx">onClick</span><span class="p">}</span>
+      <span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">span</span> <span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">btn-content</span><span class="dl">'</span><span class="o">&gt;</span>
+          <span class="p">{</span><span class="nx">children</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="sr">/span</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="sr">/span</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">Button</span><span class="p">.</span><span class="nx">propTypes</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">children</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">string</span><span class="p">,</span>
+  <span class="na">onClick</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">func</span><span class="p">,</span>
+  <span class="na">disabled</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">bool</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="nx">Button</span><span class="p">.</span><span class="nx">defaultProps</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">children</span><span class="p">:</span><span class="dl">"</span><span class="s2">Button</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">onClick</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="k">return</span> <span class="kc">null</span><span class="p">},</span>
+  <span class="na">disabled</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Button</span>
 </code></pre></div></div>
 
 <h3 id="3-构建出可以发布的内容-npm-run-build">3. 🔨构建出可以发布的内容 npm run build</h3>
@@ -257,11 +260,13 @@ export default Button
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build
 </code></pre></div>    </div>
   </li>
-  <li>build模块– –copy-files 可将css打包进npm包( 默认是不打包css文件的 )
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build -- --copy-files
-</code></pre></div>    </div>
-  </li>
+  <li>build模块– –copy-files 可将css打包进npm包( 默认是不打包css文件的 )修改package.json中的build</li>
 </ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="dl">"</span><span class="s2">scripts</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">build</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">nwb build-react-component --copy-files</span><span class="dl">"</span><span class="p">,</span>
+    <span class="p">},</span>
+</code></pre></div></div>
 
 <h3 id="4发布npm包--npm-publish">4.发布npm包  npm publish</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm publish
@@ -276,12 +281,13 @@ export default Button
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm unpublish yunshang --force
 </code></pre></div></div>
 
-<h3 id="6测试下载使用npm包">6.测试下载使用npm包</h3>
+<h3 id="6调用npm包">6.调用npm包</h3>
 <ul>
   <li>在react项目中安装
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i noo-ui   // 或者cnpm inoo-ui
 </code></pre></div>    </div>
-    <h4 id="appjs">App.js</h4>
+  </li>
+  <li>App.js
     <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="nx">Button</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">noo-ui</span><span class="dl">'</span><span class="p">;</span>  <span class="c1">//引入刚才上传的npm包</span>
