@@ -1,0 +1,491 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>图解absolute relative</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?https://hm.baidu.com/hm.js?b90ff0cb5d651ae884103df9b00f4fa2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(255,210,32) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(255,210,32);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">图解absolute relative</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(255,210,32);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">图解absolute relative</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/12/02/nwb.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">使用nwb发布你的第一个npm组件</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2019/12/02/nwb.html" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>下一篇<br><br>使用nwb发布你的第一个npm组件</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(255,210,32); border-right: 8px solid rgb(255,210,32)">
+        
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <p>1. Absolute：绝对定位，是相对于最近的且不是static定位的父元素来定位</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2. Fixed：绝对定位，是相对于浏览器窗口来定位的，是固定的，不会跟屏幕一起滚动。
+
+3. Relative：相对定位，是相对于其原本的位置来定位的。
+
+4. Static：默认值，没有定位。
+
+5. Inherit：继承父元素的position值。
+</code></pre></div></div>
+
+<h1 id="初始设置四个div">初始设置四个div</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;body&gt;
+	&lt;div class="sun1"&gt;sun1&lt;/div&gt;
+	&lt;div class="sun2"&gt;sun22222&lt;/div&gt;
+	&lt;div class="sun3"&gt;sun3&lt;/div&gt;
+	&lt;div class="sun4"&gt;sun4&lt;/div&gt;
+&lt;/body&gt;
+</code></pre></div></div>
+
+<p><img src="https://img-blog.csdnimg.cn/20191220223426701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<h1 id="1-子元素absolute">1. 子元素absolute</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.sun2{
+    position: absolute;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+    background-color:cadetblue
+}
+</code></pre></div></div>
+
+<ul>
+  <li>第二个元素设置absolute, 脱离文档流，<code class="language-plaintext highlighter-rouge">宽度由文字sun2222撑开</code>，top跟left根元素即html元素来定位</li>
+</ul>
+
+<p><img src="https://img-blog.csdnimg.cn/2019122022370518.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="2" /></p>
+
+<h1 id="2子元素relative">2.子元素relative</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.sun2{
+    position: relative;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+    background-color:cadetblue
+}
+</code></pre></div></div>
+
+<ul>
+  <li>设置relative的div不会影响其他div的位置，且top和left是相对于它原本自身的位置来定位, 宽度还是<code class="language-plaintext highlighter-rouge">原来父级的宽度</code></li>
+</ul>
+
+<p><img src="https://img-blog.csdnimg.cn/20191220224057962.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+
+<h1 id="3子元素设置一个父级absolute-子元素absolute">3.子元素设置一个父级absolute, 子元素absolute</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.sun{
+      position:absolute;
+      height: 200px;
+      background-color: coral;
+    }
+    .sun2{
+      position: absolute;
+      height: 100px;
+      left: 50px;
+      top: 50px;
+      background-color:cadetblue
+    }
+
+&lt;div class="sun1"&gt;sun1&lt;/div&gt;
+      &lt;div class="sun"&gt;
+        这里是sun22222的父元素
+        &lt;div class="sun2"&gt;sun22222&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="sun3"&gt;sun3&lt;/div&gt;
+      &lt;div class="sun4"&gt;sun4&lt;/div&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>sun2就会相对于父sun的div来定位。子元素sun 宽度由文字sun22222内容撑开决定</li>
+</ul>
+
+<p><img src="https://img-blog.csdnimg.cn/20191220223731219.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="3-1" /></p>
+
+<ul>
+  <li>子元素sun2222 设置一个500px，宽度不会把父元素撑开</li>
+</ul>
+
+<p><img src="https://img-blog.csdnimg.cn/20191220223735825.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="3-2" /></p>
+
+<h1 id="4子元素设置一个父级absolute-子元素relative">4.子元素设置一个父级absolute, 子元素relative</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.sun{
+      position:absolute;
+      height: 200px;
+      background-color: coral;
+    }
+    .sun2{
+      position: absolute;
+      height: 100px;
+      left: 50px;
+      top: 50px;
+      background-color:cadetblue
+    }
+
+.sun{
+      position:absolute;
+      height: 200px;
+      background-color: coral;
+    }
+    .sun2{
+      position: relative;
+      height: 100px;
+      left: 50px;
+      top: 50px;
+      background-color:cadetblue
+    }
+</code></pre></div></div>
+
+<ul>
+  <li>sun2就会相对于父sun的div来定位。子元素sun2222 宽度与父元素相同</li>
+</ul>
+
+<p><img src="https://img-blog.csdnimg.cn/20191220223750576.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="4-1" /></p>
+
+<ul>
+  <li>父级absolute, 子元素relative，子元素sun2222 设置一个500px，<code class="language-plaintext highlighter-rouge">**子元素宽度会把父元素撑开**</code></li>
+</ul>
+
+<p><img src="https://img-blog.csdnimg.cn/20191220223756965.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="4-2" /></p>
+
+<h1 id="5子元素设置一个父级relative-子元素absolute常用">5.子元素设置一个父级relative, 子元素absolute（常用）</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.sun{
+      position: relative;
+      height: 200px;
+      background-color: coral;
+    }
+    .sun2{
+      position: absolute;
+      height: 100px;
+      width: 500px;
+      left: 50px;
+      top: 50px;
+      background-color:cadetblue
+    }
+</code></pre></div></div>
+
+<ul>
+  <li>子元素定位相对于父元素</li>
+</ul>
+
+<p><img src="https://img-blog.csdnimg.cn/20191220223759511.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="5-1" /></p>
+
+<ul>
+  <li>子元素定位相对于父元素，子元素设置宽度不会影响父元素</li>
+</ul>
+
+<p><img src="https://img-blog.csdnimg.cn/20191220223808736.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="5-2" /></p>
+
+<h2 id="总结">总结：</h2>
+
+<ul>
+  <li><strong>absolute: 会脱离文档流 ，定位是相对于离它最近的且不是static定位的父元素而言，若该元素没有设置宽度，则<code class="language-plaintext highlighter-rouge">宽度由元素里面的内容决定</code>，且宽度不会影响父元素，定位为absolution后，原来的位置相当于是空的，下面的的元素会来占据。</strong></li>
+  <li><strong>relative: 不会脱离文档流，定位是相对于原本自身的位置，若没有宽度，那么宽度为父元素宽度，该元素的宽度会影响父元素的的大小</strong></li>
+</ul>
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2019/12/10/absolute-relative', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2019
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -112,8 +112,8 @@ var _hmt = _hmt || [];
   <!-- 页面宽度大于800px -->
   <div class="left-area">
     
-      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
-      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">没有上一页咯</sapn></span></div>
+      <a href="/2019/12/10/absolute-relative.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">图解absolute relative</sapn></span></div>
     
   </div>
   <div class="post-titlearea">
@@ -132,7 +132,7 @@ var _hmt = _hmt || [];
   <!-- 页面宽度小于800px -->
   <div class="post-changearea">
     
-      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有上一篇咯</span></a>
+      <a href="/2019/12/10/absolute-relative.html" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>上一篇<br><br>图解absolute relative</span></a>
     
     
       <a href="/2019/11/23/luoyonghao.html" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>下一篇<br><br>老人与海 黑科技发布会</span></a>
@@ -154,164 +154,401 @@ var _hmt = _hmt || [];
   <!-- 文章内容 -->
   <p><img src="https://img-blog.csdnimg.cn/20191203230246711.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
 
-<h3 id="nwb-是什么">nwb 是什么?</h3>
+<h1 id="为什么要开发组件库">为什么要开发组件库?</h1>
+
+<ul>
+  <li>组件库可以与业务代码完全分开</li>
+  <li>可以独立进行开发，方便维护和拓展</li>
+  <li>组件具有独立性，组件之间可自由组合</li>
+  <li>方排查问题，某个组件出现问题，直接对组件进行处理</li>
+  <li>可以让多个项目重复又使用，提高前端开发效率和可维护性</li>
+</ul>
+
+<h1 id="nwb-是什么">nwb 是什么?</h1>
+
+<p><strong>既然组件库有这么多优势，那么如何开发一个组件库?  答案是：nwb， nwb是一个非常优秀的组件库开发工具：</strong></p>
+
+<ul>
+  <li>nwb用来开发组件库 (常用的组件库比如Bootstrap，AntDesign)</li>
+  <li>即装即用，无需配置， 简单易上手</li>
+  <li>可以直接发布到npm/cnpm</li>
+  <li>可独立进行单元测试，保证代码健壮性</li>
+</ul>
+
+<p><strong>官方文档：</strong> <a href="https://github.com/insin/nwb">insin/nwb</a></p>
+
+<h1 id="nwb安装">nwb安装</h1>
+
+<h2 id="安装之前的准备">安装之前的准备</h2>
+
+<ul>
+  <li>电脑装有：npm / cnpm / yarn
+```
+// cnpm 安装: cnpm是企业级npm私服，淘宝团队做了国内完整npm镜像叫cnpm,每次10分钟跟npm官网同步一次, 
+// npm服务器在国外，cnpm服务器在国内，cnpm替代npm安装可提高安装速度</li>
+</ul>
+
+<p>npm install -g cnpm –registry=https://registry.npm.taobao.org</p>
+
+<p>//yarn 安装：Yarn是facebook发布的一款取代npm的包管理工具</p>
+
+<p>npm install -g yarn  或者  brew install yarn</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 开始安装
+
+- 全局安装nwb, 使用npm或者cnpm
+</code></pre></div></div>
+<p>npm install -g nwb  //全局安装nwb</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- npm失败或者非常慢， 可以尝试使用cnpm安装，cnpm速度比较快
+</code></pre></div></div>
+<p>cnpm install -g nwb  //全局安装nwb</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 使用nwb创建组件 
+
+- nwb创建一个名字叫nwb-demo的项目，名字自己随意取， 这里取名nwb-demo只是做demo
+</code></pre></div></div>
+<p>nwb new react-component nwb-demo</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 之后问关于配置问题
+</code></pre></div></div>
+<p>? Do you want to create an ES modules build for use by compatible bundlers? (Y/n)
+// 回复Y ，询问是否创建 ES modules</p>
+
+<p>Do you want to create a UMD build for global usage via <script> tag? (y/N)
+// 回复Y，创建 UMD</script></p>
+
+<p>? Which global variable should the UMD build set? ()
+//回复ReactLoadingButton, 一般用React社区约定模块名称TitleCase版本，ReactLoadingButton</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- 之后自动创建文件 , 其中着重关注 `demo`   `src /index.js`    `tests`   `neb.config.js`
+```js
+nwb-demo
+  .gitignore
+  .travis.yml
+  CONTRIBUTING.md
+  nwb.config.js  //调整拓展nwb提供的默认配置
+  package.json
+  README.md
+  demo/         //demo文件夹，协助开发组件模块，不会打包进npm包
+    src/
+      index.js
+  node_modules/
+  src/
+    index.js    //构建自己的react组件模块
+  tests/        //组件测试模块
+    *.eslintrc*
+    index-test.js
+</code></pre></div></div>
+<h2 id="创建单个组件"><strong>创建单个组件</strong></h2>
+
+<ul>
+  <li>进入刚刚创建的 nwb-demo 文件
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd nwb-demo 
+</code></pre></div>    </div>
+  </li>
+  <li>在nwb-demo 项目里有一个demo( ./demo/src/index.js )文件，这个文件可以用来创建演示应用的，（你可以把他认为是一个<code class="language-plaintext highlighter-rouge">父组件</code>）你的组件可以在这个demo中测试，如果不需要可以放心的删除 （以下创建一个Button为例说明）
+```js
+//.demo/src/index.js
+import React, {Component} from ‘react’
+import {render} from ‘react-dom’
+import Button from ‘../../src/index’;</li>
+</ul>
+
+<p>class Demo extends Component {
+  handleClick =  ()=&gt; {
+    console.log(“已点击”);
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;Button 
+          onClick = {()=&gt;{this.handleClick()}} 
+          disabled = {false}
+        &gt;
+          登陆
+        &lt;/Button&gt;
+        &lt;Button disabled = {true} &gt;禁用&lt;/Button&gt;
+        <button></button>
+      &lt;/div&gt;
+    )
+  }
+}
+render(<Demo></Demo>, document.querySelector(‘#demo’))</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**安装classnames:  类选择器，react官方推荐库，用来动态判断不同状态class（类名）**
+
+ **官方文档：** [JedWatson/classnames](https://github.com/JedWatson/classnames)
+
+- 安装方式：
+</code></pre></div></div>
+<p>npm install classnames –save</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- 还有一个./src/index.js文件，这个是自己开发组件的文件（你可以把他认为是一个`子组件`）
+```js
+//./src/index.js
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import CX from 'classnames';
+import './index.css';
+
+class Button extends Component {
+  render() {
+    const { children, onClick, disabled, ...props} = this.props;
+    return (
+      &lt;span
+        className = {CX({
+          btn:true,
+          "btn-disabled": disabled === true ,
+        })}
+				{...props}
+      &gt;
+        &lt;span className = 'btn-content'&gt;
+          {children}
+        &lt;/span&gt;
+      &lt;/span&gt;
+    )
+  }
+}
+
+Button.propTypes = {
+  children: PropTypes.string,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool,
+}
+Button.defaultProps = {
+  children:"Button",
+  onClick: () =&gt; {return null},
+  disabled : false,
+}
+export default Button
+
+//./src/index.css 
+.btn{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width:56px;
+    height:32px;
+    border-radius:4px;
+    background:rgba(46,170,220,1);
+}
+.btn:hover{
+    background:rgba(7,156,205,1);
+    cursor: pointer;
+}
+
+.btn:active{
+    background:rgba(2,141,190,1);
+    opacity: 0.5;
+}
+
+.btn-disabled{
+    background:rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+
+.btn-content{
+    font-size:12px;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    line-height:32px;
+}
+</code></pre></div></div>
+<ul>
+  <li>运行单个组件
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start
+//Compiled successfully in 2854 ms.
+//The app is running at http://localhost:3000/
+</code></pre></div>    </div>
+  </li>
+  <li>之后浏览器打开 <a href="http://localhost:3000/">http://localhost:3000/</a> , 你就可以看到你写的这个Button组件了</li>
+</ul>
+
+<h2 id="创建组件库"><strong>创建组件库</strong></h2>
+
+<ul>
+  <li>以上步骤都顺利的话，这时候你已经成功写出一个button组件了，那么接下来实现一个更有意思的东西：组件库，其实不难就是多个组件的集合， 跟上面创建的单一组件区别是，以前  ./src/index.js 里面放的是一个具体button组件代码，那现在要实现组件库功能， 只需要把原来./src/index.js 里面的组件代码换成export组件集合就可以了（export写法如下）， 这里推荐每个组件单独写到一个文件夹中。</li>
+  <li>可以参考我的层级结构， 每个组件建立一个文件夹 比如Button，Input ，然后把之前Button中的index.js跟index.css 都放到新建的Button文件中，Input 文件自己可以随便写一个， 比如下面这样：
+```js
+//../src/Input/index.js
+import React, {Component} from ‘react’;</li>
+</ul>
+
+<p>class Input extends Component {
+  render() {
+    return (
+      <span><br />
+        hello
+      </span>
+    )
+  }
+}</p>
+
+<p>export default Input;</p>
+
+<p>//../src/Input/index.css
+暂时可以什么都不写， 就放一个空index.css</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 我的层级结构：
+
+![](https://user-gold-cdn.xitu.io/2019/12/11/16ef4776e762efc9?w=672&amp;h=436&amp;f=png&amp;s=43575)
+</code></pre></div></div>
+<p>//此时的 ./src/index.js 是这样的， 里面是export出的组价集合
+export Button from “./Button/index.js”;
+export Input from ‘./Input/index.js’;</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**`切记 切记 切记`** 记得引用路径一定要写对， `因为打包只打包src内部文件`，引用的路径不能超出src文件范围，也不能包含src，举例来说明下：
+</code></pre></div></div>
+<p>//错误写法，以下写法本地测试没有问题，但是打包完成之后就会将src路径一起打包进去，
+//会导致用户下载的npm包，使用时候会因为找不到src文件路径报错，
+~~export Input from ‘../src/Input/index.js’; ~~</p>
+
+<p>//正确写法，不包src路径
+export Button from “./Button/index.js”;</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 这时候你的Demo父组件就可以直接用组件库里面两个组件了,
+```js
+    //import Button from '../../src/index';改成下面是
+    import {Button ,Input} from '../../src/index.js';
+</code></pre></div></div>
+<ul>
+  <li>运行自己写的组件库
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">npm</span> <span class="nx">start</span>
+    
+  <span class="c1">// Compiled successfully in 2013 ms.</span>
+  <span class="c1">// The app is running at http://localhost:3000/</span>
+</code></pre></div>    </div>
+  </li>
+  <li>出现以上运行结果恭喜你，你已经成功完成一个了组件库，接下来就是考虑如何发布到npm， 让大家都可以使用你的组件库</li>
+</ul>
+
+<h1 id="npm账号登陆">NPM账号登陆</h1>
+
+<h3 id="npm账号注册">npm账号注册</h3>
+
+<ul>
+  <li>注册网址： <a href="https://www.npmjs.com/login">https://www.npmjs.com/</a>  , 然后记下你的Username/ Password / Email  之后终端登陆npm账号要用到</li>
+</ul>
+
+<h3 id="npm账号登录">npm账号登录</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm login 
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Username: ma_memg       //输入用户名
+Password:               //输入密码
+Email: (this IS public) //输入注册邮箱
+</code></pre></div></div>
+<ul>
+  <li>不放心可以用一下命令查一下当前npm账户是谁
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm who am i
+</code></pre></div>    </div>
+  </li>
+  <li><strong>查看结果：</strong></li>
+</ul>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/12/11/16ef47d8df2e2345?w=1398&amp;h=168&amp;f=png&amp;s=78094" alt="" /></p>
+
+<h1 id="发布到npm">发布到npm</h1>
+
+<ul>
+  <li>发布流程是先npm run build 然后 npm publish，以下详细步骤：</li>
+</ul>
+
+<h2 id="组件构建-npm--run-build">组件构建 npm  run build</h2>
+
+<ul>
+  <li>– –copy-files ：可将css打包进npm包( 默认是不打包css文件的 )修改 package.json 中的build, 修改 package. json 中“build”部分， 在后面添加一个– –copy-files
+```
+//package.json</li>
+</ul>
+
+<p>“scripts”: {
+-&gt;    “build”: “nwb build-react-component –copy-files”,
+},</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`注意 注意 注意` 发布之前确认跟上次版本号不一样，且比上一次版本号要更高， 不然会因为版本号重复或者变低导致报错，版本号在package.json中修改如下图：
+![](https://user-gold-cdn.xitu.io/2019/12/11/16ef47efff04a9ae?w=904&amp;h=462&amp;f=png&amp;s=56864)
+```js
+//package.json
+{
+-&gt;  "name": "yunshang",   //输入自己组件名称 
+-&gt;  "version": "1.0.1",   //每次推到npm前确保跟上次版本号不同
+-&gt;  "description": "button",  //简单描述项目
+    ...
+}
+</code></pre></div></div>
+<ul>
+  <li>接下来运行npm run build 开始编译的组件
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm run build
+</code></pre></div>    </div>
+  </li>
+  <li>build之后会多出四个文件
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lib：你开发的依赖模块
+es： 块构建保留使用import和export语句在代码中，但将所有其他内容转为ES5
+umd：在script标签中引用时使用（配置过会有，没有配置生成umd）
+demo/dist： 演示使用，此部分不会推到npm
+</code></pre></div>    </div>
+    <h2 id="组件推送-npm-publish">组件推送 npm publish</h2>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm publish
+</code></pre></div>    </div>
+  </li>
+  <li>发布成功： （npm publish包括了npm run build）</li>
+</ul>
+
+<hr />
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/12/11/16ef480cb9b73410?w=1500&amp;h=2016&amp;f=png&amp;s=491505" alt="" /></p>
+
+<ul>
+  <li>上传完成之后， <a href="https://www.npmjs.com/">https://www.npmjs.com</a> 查看有没有发布成功, 搜索nwb-demo可以查到自己发布的就OK了</li>
+</ul>
+
+<hr />
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/12/11/16ef480ff99f3bd9?w=2582&amp;h=1444&amp;f=png&amp;s=245394" alt="" /></p>
+
+<h1 id="删除npm包">删除npm包</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm unpublish yunshang --force   //yunshang换成自己组件名称 
+</code></pre></div></div>
+<h1 id="使用npm包">使用npm包</h1>
+
+<ul>
+  <li>在react项目中安装</li>
+</ul>
+
+<h2 id="安装">安装</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i yunshang  //yunshang换成自己组件名称 
+
+//npm失败或者非常慢， 可以尝试使用cnpm安装
+cnpm i yunshang  //yunshang换成自己组件名称 
+</code></pre></div></div>
+<h2 id="示例">示例</h2>
+
+<ul>
+  <li>引入样式
+```
+//引入单个组件
+import { Button } from ‘yunshang’;  //yunshang换成自己组件名称</li>
+</ul>
+
+<p>//引入多个组件
+import { Button, Input } from ‘yunshang’;  //yunshang换成自己组件名称</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 使用
+
+值 | 值  | 类型
+---|--- | ---
+disabled | bool | 默认: false, true为按钮禁用状态
+onClick | function | 点击事件
+children | string | 按钮内容
+
+
+# 🌰举个例子
+
+### 在项目中使用这个Button组件
+</code></pre></div></div>
+<p>&lt;Button 
+    onClick = {()=&gt;{this.handleClick()}}   //onClick
+    disabled = {false}   //disabled</p>
 <blockquote>
-  <p>一个用于npm模块的工具包, 支持</p>
-  <ul>
-    <li><code class="language-plaintext highlighter-rouge">React</code>、<code class="language-plaintext highlighter-rouge">Preact</code>、<code class="language-plaintext highlighter-rouge">Inferno</code> &amp; <code class="language-plaintext highlighter-rouge">vanilla JS</code>应用程序、<code class="language-plaintext highlighter-rouge">React库</code>和其他<code class="language-plaintext highlighter-rouge">web</code></li>
-  </ul>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>登陆  // children
+</code></pre></div>  </div>
 </blockquote>
+<p>&lt;/Button&gt;
+```</p>
 
-<h3 id="1-nwb安装">1. nwb安装:</h3>
-<ul>
-  <li>全局安装nwb, 使用npm或者cnpm
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g nwb  //全局安装nwb
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cnpm install -g nwb  //全局安装nwb
-</code></pre></div></div>
-
-<h3 id="2创建组件-nwb">2.创建组件 nwb</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nwb new react-component yunshang
-cd yunshang/
-</code></pre></div></div>
-
-<ul>
-  <li>nwb 项目里有一个./demo/src/index.js文件，这个文件可以理解为测试你开发组件的文件</li>
-</ul>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">render</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-dom</span><span class="dl">'</span>
-<span class="k">import</span> <span class="nx">Button</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../../src/index</span><span class="dl">'</span><span class="p">;</span>
-
-<span class="kd">class</span> <span class="nx">Demo</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
-  <span class="nx">handleClick</span> <span class="o">=</span>  <span class="p">()</span><span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">已点击</span><span class="dl">"</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="p">(</span>
-      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nx">Button</span> 
-          <span class="nx">onClick</span> <span class="o">=</span> <span class="p">{()</span><span class="o">=&gt;</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">()}}</span> 
-          <span class="nx">disabled</span> <span class="o">=</span> <span class="p">{</span><span class="kc">false</span><span class="p">}</span>
-        <span class="o">&gt;</span>
-          <span class="err">登陆</span>
-        <span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
-</span>        <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">disabled</span> <span class="o">=</span> <span class="p">{</span><span class="kc">true</span><span class="p">}</span> <span class="o">&gt;</span><span class="err">禁用</span><span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
-</span>        <span class="o">&lt;</span><span class="nx">Button</span> <span class="o">/&gt;</span>
-      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>    <span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-<span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Demo</span><span class="o">/&gt;</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#demo</span><span class="dl">'</span><span class="p">))</span>
-</code></pre></div></div>
-
-<ul>
-  <li>还有一个./src/index.js文件，这个是自己开发组件的文件</li>
-</ul>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">PropTypes</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">prop-types</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">CX</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">classnames</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="dl">'</span><span class="s1">./index.css</span><span class="dl">'</span><span class="p">;</span>
-
-<span class="kd">class</span> <span class="nx">Button</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
-  <span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-  <span class="p">}</span>
-  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="p">{</span> <span class="nx">children</span><span class="p">,</span> <span class="nx">onClick</span><span class="p">,</span> <span class="nx">disabled</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">disabled</span><span class="p">);</span>
-    <span class="k">return</span> <span class="p">(</span>
-      <span class="o">&lt;</span><span class="nx">span</span>
-        <span class="nx">className</span> <span class="o">=</span> <span class="p">{</span><span class="nx">CX</span><span class="p">({</span>
-          <span class="na">btn</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
-          <span class="dl">"</span><span class="s2">btn-disabled</span><span class="dl">"</span><span class="p">:</span> <span class="nx">disabled</span> <span class="o">===</span> <span class="kc">true</span> <span class="p">,</span>
-        <span class="p">})}</span>
-        <span class="nx">onClick</span> <span class="o">=</span> <span class="p">{</span><span class="nx">onClick</span><span class="p">}</span>
-      <span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nx">span</span> <span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">btn-content</span><span class="dl">'</span><span class="o">&gt;</span>
-          <span class="p">{</span><span class="nx">children</span><span class="p">}</span>
-        <span class="o">&lt;</span><span class="sr">/span</span><span class="err">&gt;
-</span>      <span class="o">&lt;</span><span class="sr">/span</span><span class="err">&gt;
-</span>    <span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="nx">Button</span><span class="p">.</span><span class="nx">propTypes</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="na">children</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">string</span><span class="p">,</span>
-  <span class="na">onClick</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">func</span><span class="p">,</span>
-  <span class="na">disabled</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">bool</span><span class="p">,</span>
-<span class="p">}</span>
-<span class="nx">Button</span><span class="p">.</span><span class="nx">defaultProps</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="na">children</span><span class="p">:</span><span class="dl">"</span><span class="s2">Button</span><span class="dl">"</span><span class="p">,</span>
-  <span class="na">onClick</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="k">return</span> <span class="kc">null</span><span class="p">},</span>
-  <span class="na">disabled</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-<span class="p">}</span>
-<span class="k">export</span> <span class="k">default</span> <span class="nx">Button</span>
-</code></pre></div></div>
-
-<h3 id="3-构建出可以发布的内容-npm-run-build">3. 🔨构建出可以发布的内容 npm run build</h3>
-<ul>
-  <li>发布之前确认跟上次版本号不一样，不然会版本号重复报错
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build
-</code></pre></div>    </div>
-  </li>
-  <li>build模块– –copy-files 可将css打包进npm包( 默认是不打包css文件的 )修改package.json中的build</li>
-</ul>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="dl">"</span><span class="s2">scripts</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-        <span class="dl">"</span><span class="s2">build</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">nwb build-react-component --copy-files</span><span class="dl">"</span><span class="p">,</span>
-    <span class="p">},</span>
-</code></pre></div></div>
-
-<h3 id="4发布npm包--npm-publish">4.发布npm包  npm publish</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm publish
-</code></pre></div></div>
-
-<ul>
-  <li>https://www.npmjs.com 查看有没有发布成功</li>
-</ul>
-
-<h3 id="5删除npm包">5.删除npm包</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm unpublish yunshang --force
-</code></pre></div></div>
-
-<h3 id="6调用npm包">6.调用npm包</h3>
-<ul>
-  <li>在react项目中安装
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i noo-ui   // 或者cnpm inoo-ui
-</code></pre></div>    </div>
-  </li>
-  <li>App.js
-    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Button</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">noo-ui</span><span class="dl">'</span><span class="p">;</span>  <span class="c1">//引入刚才上传的npm包</span>
-<span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-<span class="k">return</span> <span class="p">(</span>
-  <span class="o">&lt;</span><span class="nx">div</span> <span class="o">&gt;</span>
-       <span class="o">&lt;</span><span class="nx">Button</span> 
-        <span class="nx">onClick</span> <span class="o">=</span> <span class="p">{()</span><span class="o">=&gt;</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">()}}</span> 
-        <span class="nx">disabled</span> <span class="o">=</span> <span class="p">{</span><span class="kc">false</span><span class="p">}</span>
-      <span class="o">&gt;</span>
-        <span class="err">登陆</span>
-      <span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
-</span>      <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">disabled</span> <span class="o">=</span> <span class="p">{</span><span class="kc">true</span><span class="p">}</span> <span class="o">&gt;</span><span class="err">禁用</span><span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
-</span>      <span class="o">&lt;</span><span class="nx">Button</span> <span class="o">/&gt;</span>
-  <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="k">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<p><img src="https://user-gold-cdn.xitu.io/2019/12/5/16ed206b8609db2c?w=690&amp;h=352&amp;f=gif&amp;s=2354559" alt="" /></p>
-
+<p><img src="https://user-gold-cdn.xitu.io/2019/12/11/16ef48583bf6745b?w=690&amp;h=352&amp;f=gif&amp;s=2354559" alt="" /></p>
 
   <!-- 引入share模块 -->
   
