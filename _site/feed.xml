@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-20T22:47:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">图解absolute relative</title><link href="http://localhost:4000/2019/12/10/absolute-relative.html" rel="alternate" type="text/html" title="图解absolute relative" /><published>2019-12-10T20:00:21+08:00</published><updated>2019-12-10T20:00:21+08:00</updated><id>http://localhost:4000/2019/12/10/absolute-relative</id><content type="html" xml:base="http://localhost:4000/2019/12/10/absolute-relative.html">&lt;p&gt;1. Absolute：绝对定位，是相对于最近的且不是static定位的父元素来定位&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-28T01:31:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">14款Mac外接显卡</title><link href="http://localhost:4000/2019/12/26/R9-Nano.html" rel="alternate" type="text/html" title="14款Mac外接显卡" /><published>2019-12-26T20:00:21+08:00</published><updated>2019-12-26T20:00:21+08:00</updated><id>http://localhost:4000/2019/12/26/R9-Nano</id><content type="html" xml:base="http://localhost:4000/2019/12/26/R9-Nano.html">&lt;h2 id=&quot;配置&quot;&gt;配置&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228010832281.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;电脑： MacBook Pro (13-inch Retina Mid 2014)&lt;/li&gt;
+  &lt;li&gt;系统macOS Catalina 10.15.2&lt;/li&gt;
+  &lt;li&gt;拓展坞：技嘉 Gaming Box&lt;/li&gt;
+  &lt;li&gt;显卡： R9 nano&lt;/li&gt;
+  &lt;li&gt;线材：雷电2转雷电2 + 雷电3转雷电3(如果你电脑有雷电3直接可以连接)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;-安装&quot;&gt;📦 安装&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;关机, 然后开机按住Command + R 进入恢复模式&lt;/li&gt;
+  &lt;li&gt;在恢复模式中打开终端 输入以下命令关闭sip
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;csrutil disable
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;重启电脑&lt;/li&gt;
+  &lt;li&gt;下载安装驱动, 终端中输入以下命令&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -o ~/Desktop/automate-eGPU.sh https://raw.githubusercontent.com/goalque/automate-eGPU/master/automate-eGPU.sh &amp;amp;&amp;amp; chmod +x ~/Desktop/automate-eGPU.sh &amp;amp;&amp;amp; cd ~/Desktop &amp;amp;&amp;amp; sudo ./automate-eGPU.sh
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;重启电脑&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;如果上面安装驱动失败-尝试下面安装方式-如果成功就不用了&quot;&gt;如果上面安装驱动失败, 尝试下面安装方式, 如果成功就不用了&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo curl -s &quot;https://api.github.com/repos/mayankk2308/purge-wrangler/releases/latest&quot; | grep '&quot;browser_download_url&quot;:' | sed -E 's/.*&quot;([^&quot;]+)&quot;.*/\1/' | xargs curl -L -s -0 &amp;gt; purge-wrangler.sh &amp;amp;&amp;amp; chmod +x purge-wrangler.sh &amp;amp;&amp;amp; ./purge-wrangler.sh &amp;amp;&amp;amp; rm purge-wrangler.sh
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;如果有问题-微博私聊我家猫叫佩奇&quot;&gt;如果有问题 微博私聊@我家猫叫佩奇&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;成功之后如图所示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228011126182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;amd-yes&quot;&gt;AMD Yes&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228011133684.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228011134765.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228011145587.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228011150882.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2019122801115217.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228011200597.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228011206374.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="技嘉" /><category term="AMD" /><category term="R9" /><category term="nano" /><summary type="html">配置</summary></entry><entry><title type="html">图解absolute relative</title><link href="http://localhost:4000/2019/12/10/absolute-relative.html" rel="alternate" type="text/html" title="图解absolute relative" /><published>2019-12-10T20:00:21+08:00</published><updated>2019-12-10T20:00:21+08:00</updated><id>http://localhost:4000/2019/12/10/absolute-relative</id><content type="html" xml:base="http://localhost:4000/2019/12/10/absolute-relative.html">&lt;p&gt;1. Absolute：绝对定位，是相对于最近的且不是static定位的父元素来定位&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2. Fixed：绝对定位，是相对于浏览器窗口来定位的，是固定的，不会跟屏幕一起滚动。
 
@@ -879,18 +937,4 @@ children | string | 按钮内容
         &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/^一十/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;十&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="面试题" /><summary type="html">题目是把数字转成汉字表示, 比如 10245转成 一碗零二百四十五 (js实现)</summary></entry><entry><title type="html">前端知识图谱</title><link href="http://localhost:4000/2019/11/15/webAll.html" rel="alternate" type="text/html" title="前端知识图谱" /><published>2019-11-15T20:00:21+08:00</published><updated>2019-11-15T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/15/webAll</id><content type="html" xml:base="http://localhost:4000/2019/11/15/webAll.html">&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191115233500554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href=&quot;https://naotu.baidu.com/file/f84a4e993dce89e938d0cb141de28861&quot;&gt;点击查看前端知识图谱链接&lt;/a&gt;&lt;/p&gt;
-
-&lt;!-- ### 语言  CSS / HTML / JavaScript
-&gt;CSS
-
-![CSS](https://img-blog.csdnimg.cn/20191115230800556.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70)
-
-&gt;HTML 
-
-![HTML](https://img-blog.csdnimg.cn/20191115231016543.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70)
-
-&gt;JavaScript --&gt;</content><author><name>ma_meng</name></author><category term="前端知识图谱" /><summary type="html"></summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="面试题" /><summary type="html">题目是把数字转成汉字表示, 比如 10245转成 一碗零二百四十五 (js实现)</summary></entry></feed>
