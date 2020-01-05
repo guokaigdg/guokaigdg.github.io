@@ -1,0 +1,648 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="JUST DO IT" />
+<meta name="keywords" content="React web , JavaScript CSS cat" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>Material-UI </title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?https://hm.baidu.com/hm.js?b90ff0cb5d651ae884103df9b00f4fa2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(30,144,255) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(30,144,255);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Be happy forever</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Material-UI </span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(30,144,255);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(30,144,255)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(30,144,255);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Material-UI </span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;ma_meng</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2019/12/26/R9-Nano.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(30,144,255)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(30,144,255);"><sapn class="main">14款Mac外接显卡</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(30,144,255);border-bottom: 2px solid rgb(30,144,255);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2019/12/26/R9-Nano.html" class="rightchange" style="border-left: 1px solid rgb(30,144,255);border-bottom: 2px solid rgb(30,144,255);"><span>下一篇<br><br>14款Mac外接显卡</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid rgb(30,144,255); border-right: 8px solid rgb(30,144,255)">
+        2020拥抱 Material-UI
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <p><img src="https://img-blog.csdnimg.cn/20200105182046604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" alt="" /></p>
+
+<h1 id="说明">说明</h1>
+
+<p>Material-UI —— 世界上最受欢迎的 React UI 框架。</p>
+
+<h1 id="安装-material-ui">安装 Material-UI</h1>
+
+<ul>
+  <li>📦 安装</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 用 npm 安装
+npm install @material-ui/core
+
+// 用 yarn 安装
+yarn add @material-ui/core
+</code></pre></div></div>
+
+<h1 id="安装-material-uiicons">安装 material-ui/icons</h1>
+
+<ul>
+  <li>📦 安装</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install @material-ui/icons
+</code></pre></div></div>
+
+<p><a href="https://www.npmjs.com/package/@material-ui/icons">@material-ui/icons</a></p>
+
+<p><a href="https://material-ui.com/zh/components/material-icons/">Material Icons - Material-UI</a></p>
+
+<h1 id="安装-material-design-icons">安装 material-design-icons</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;Icon&gt;star&lt;/Icon&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install material-design-icons
+</code></pre></div></div>
+
+<h1 id="字形">字形：</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npm install typeface-roboto --save
+// entry.js
+import 'typeface-roboto'
+
+</code></pre></div></div>
+
+<h1 id="图标库-xxxx">图标库 <Icon>XXXX</Icon></h1>
+
+<ul>
+  <li>以下网址选图标, 注意一定要从下面选， 因为引入的是这个图标库</li>
+</ul>
+
+<p><a href="https://material.io/resources/icons/?style=baseline">Tools</a></p>
+
+<h3 id="官方文档">官方文档</h3>
+
+<p><a href="https://www.npmjs.com/package/material-design-icons-iconfont">material-design-icons-iconfont</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//安装
+npm install material-design-icons-iconfont --save
+</code></pre></div></div>
+
+<p><strong>引入</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import 'material-design-icons-iconfont/dist/material-design-icons.css'
+</code></pre></div></div>
+
+<p><strong>使用</strong></p>
+
+<ul>
+  <li>方法一</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;i className="material-icons"&gt;face&lt;/i&gt;
+
+</code></pre></div></div>
+
+<ul>
+  <li>方法二</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+import Icon from "@material-ui/core/Icon";
+&lt;Icon &gt;backup&lt;/Icon&gt;
+
+</code></pre></div></div>
+
+<ul>
+  <li>修改样式</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Icon style={}&gt;{item.icon}&lt;/Icon&gt;
+</code></pre></div></div>
+
+<h1 id="material-uistyles">Material-UI/Styles</h1>
+
+<h2 id="说明-1">说明：</h2>
+
+<p>使用 Jss 语法，将 css 写进 js 文件中，实现很多新功能，你如 theme nesting（主题嵌套），dynamic styles(动态模式)self-support（自我支持） 等等…</p>
+
+<h2 id="优点"><strong>优点：</strong></h2>
+
+<ul>
+  <li>💅 具备 styled-components 的  <a href="https://www.styled-components.com/docs/basics#motivation">优势</a>。</li>
+  <li>🚀 速度快</li>
+  <li>🧩 可通过<a href="https://github.com/cssinjs/jss/blob/master/docs/plugins.md">插件</a>API 扩展。</li>
+  <li>⚡️ 它使用  <a href="https://github.com/cssinjs/jss">JSS</a>  作为其核心 它在运行时和服务器端工作。</li>
+  <li>📦 大小不超<a href="https://bundlephobia.com/result?p=@material-ui/styles">15 KB</a> ， 跟 Material-UI 一起使用不会增加体积</li>
+</ul>
+
+<h2 id="官方文档-1">官方文档：</h2>
+
+<p><a href="https://material-ui.com/zh/styles/basics/#%E5%AE%89%E8%A3%85">@material-ui/styles - Material-UI</a></p>
+
+<h2 id="vscode-插件支持-jss-语法">vscode 插件，支持 jss 语法</h2>
+
+<ul>
+  <li>插件名称：Emmet JSS</li>
+</ul>
+
+<h2 id="使用方式">使用方式</h2>
+
+<p><strong>一共有<code class="language-plaintext highlighter-rouge">三种</code>使用方式， 以下介绍 hook 的使用</strong></p>
+
+<ul>
+  <li>Hook API (钩子函数)</li>
+  <li>Styled components API （样式化的组件 ）</li>
+  <li>Higher-order component API （高阶组件）</li>
+</ul>
+
+<h2 id="hook-api">Hook API</h2>
+
+<h3 id="1安装">1.<strong>安装</strong></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    // 用npm安装
+    npm install @material-ui/styles
+
+    // 用yarn安装
+    yarn add @material-ui/styles
+
+</code></pre></div></div>
+
+<h3 id="2使用-hook-api-方式">2.<strong>使用( HOOK API 方式）</strong></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    **第一步**： import { makeStyles } from '@material-ui/core/styles';
+
+    **第二步**： const useStyles = makeStyles({
+    					  root: {
+    					    color: 'white',
+    					    height: 48,
+    							...
+    					  },
+    					});
+
+    **第三步**：const classes = useStyles();
+
+    **第四步**：className={classes.root}
+
+
+    import React from 'react';
+    import { makeStyles } from '@material-ui/core/styles';  //**第一步**
+    import Button from '@material-ui/core/Button';
+
+    const useStyles = makeStyles({   //**第二步**
+      root: {
+        background: 'rgba(255, 105, 135, .3)',
+        height: 48,
+        padding: '0 30px',
+      },
+    });
+
+    export default function Hook() {
+      const classes = useStyles();       //**第三步**
+      return (
+    			&lt;Button className={classes.root}&gt;Hook&lt;/Button&gt;  //**第四步**
+    	);
+    }
+
+</code></pre></div></div>
+
+<h3 id="3注意事项">3.注意事项</h3>
+
+<p><code class="language-plaintext highlighter-rouge">①</code>引入 flex 布局以及其中布局样式要带有“”</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    CSS
+    .sidebar-switch-wrap {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    JSS
+    right: {
+        display: "flex",
+        flexDirection: "column",
+    },
+
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">②</code>className = <strong><code class="language-plaintext highlighter-rouge">"root</code></strong> → className=<code class="language-plaintext highlighter-rouge">{**classes.root**}</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">③</code> <strong>className 写法：<code class="language-plaintext highlighter-rouge">"font-h1-default"</code> → <code class="language-plaintext highlighter-rouge">[classes.fontH1Default]</code></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+//CSS写法：
+  className={CX({
+    "font-h1-default": true
+    "font-h1-choosen": item.href === newHref
+  })}
+
+//JSS写法：
+  className={CX({
+    [classes.fontH1Default]: true,
+    [classes.fontH1Choosen]: item.href === newHref
+  })}
+
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">④</code>伪类</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+goback: {
+    width: 24,
+    "&amp;:hover": {
+      backgroundColor: "#F7F6F3",
+      cursor: "pointer"
+    },
+    "&amp;:active": {
+      backgroundColor: "#DAD9D7"
+    }
+  },
+
+</code></pre></div></div>
+
+<h2 id="特性">特性</h2>
+
+<h3 id="1-支持嵌套选择器">1. 支持嵌套选择器</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+const useStyles = makeStyles({
+  root: {
+    color: 'red',
+    '&amp; p': {
+      color: 'green',
+      '&amp; span': {
+        color: 'blue'
+      }
+    }
+  },
+});
+
+</code></pre></div></div>
+
+<h3 id="2-支持传入属性">2. 支持传入属性</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    const useStyles = makeStyles({
+      foo: props =&gt; ({
+        backgroundColor: props.backgroundColor,
+      }),
+      bar: {
+        color: props =&gt; props.color,
+      },
+    });
+
+    function MyComponent() {
+
+      const props = { backgroundColor: 'black', color: 'white' };
+
+      const classes = useStyles(props);   //**传入属性**
+
+      return &lt;div className={`${classes.foo} ${classes.bar}`} /&gt;
+    }
+
+    **//设置容器固定宽高, 实际项目中使用**
+
+    import React from "react";
+    import { makeStyles } from "@material-ui/styles";
+    const useStyle = makeStyles({
+      LyoutContainerTB: newType =&gt; ({
+        display: "flex",
+        alignItems: "center",
+        width: "100%",
+        paddingTop: newType.paddingTop,
+        paddingBottom: newType.paddingBottom
+      })
+    });
+
+    function LyoutContainerTB(props) {
+      const { type, children } = props;
+      const newType = { paddingTop: type, paddingBottom: type };
+      const classes = useStyle(newType);
+      return &lt;div className={`${classes.LyoutContainerTB}`}&gt;{children}&lt;/div&gt;;
+    }
+    export default LyoutContainerTB;
+
+</code></pre></div></div>
+
+<h2 id="高级用法">高级用法</h2>
+
+<h3 id="字符串模板">字符串模板</h3>
+
+<ul>
+  <li>如果你喜欢用 css 语法而不是 jss, 那么可以使用规则
+<a href="https://cssinjs.org/jss-plugin-template/?v=v10.0.3"><code class="language-plaintext highlighter-rouge">jss-plugin-template</code></a>插入 css 语法</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+const useStyles = makeStyles({
+    root: `font-size: 16px; border: 0; color: white; height: 48px; padding: 0 30px; box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);`,
+    '@media print': {
+    button: `color: black`
+    },
+    '@keyframes id': {
+    from: `opacity: 0`,
+    to: `opacity: 1`
+    }
+});
+
+</code></pre></div></div>
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+    <section class="post-footer-item comment">
+      <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        /*写入自己的disqus信息*/
+        s.src = ' https://abc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    </script>
+
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2020/01/01/material-UI', // 可选。默认为 location.href
+  owner: 'guokaigdg',
+  repo: 'guokaigdg.github.io',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('container')
+</script>
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有disquslivereGitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>佩奇の家 ©
+  
+  
+    2018
+    -
+  
+  2020
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
