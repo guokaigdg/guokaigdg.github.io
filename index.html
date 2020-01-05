@@ -6,13 +6,11 @@ home-title: 日常 猫を搾る 美しいこと プログラミング
 description: すべての人を歓迎します
 ---
 
-{% include header.html %}
-{% include boot.html %}
+{% include header.html %} {% include boot.html %}
 <main>
-    {% include title.html %}
-    <ul class="post-list">
-      {% include posts_paginator.html %}
-    </ul>
+  {% include title.html %}
+  <ul class="post-list">
+    {% include posts_paginator.html %}
+  </ul>
 </main>
-{% include pageNav.html %}
-{% include footer.html %}
+{% include pageNav.html %} {% include footer.html %}
