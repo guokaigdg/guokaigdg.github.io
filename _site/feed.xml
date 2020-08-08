@@ -1,4 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-01T15:18:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">HTML5的元素嵌套规则</title><link href="http://localhost:4000/2020/01/01/heml5.html" rel="alternate" type="text/html" title="HTML5的元素嵌套规则" /><published>2020-01-01T20:00:21+08:00</published><updated>2020-01-01T20:00:21+08:00</updated><id>http://localhost:4000/2020/01/01/heml5</id><content type="html" xml:base="http://localhost:4000/2020/01/01/heml5.html">&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-09T00:12:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">佩奇の家</title><subtitle>JUST DO IT</subtitle><author><name>true</name></author><entry><title type="html">键盘修改映射</title><link href="http://localhost:4000/2020/08/08/key.html" rel="alternate" type="text/html" title="键盘修改映射" /><published>2020-08-08T20:00:21+08:00</published><updated>2020-08-08T20:00:21+08:00</updated><id>http://localhost:4000/2020/08/08/key</id><content type="html" xml:base="http://localhost:4000/2020/08/08/key.html">&lt;h1 id=&quot;键盘修改映射&quot;&gt;键盘修改映射&lt;/h1&gt;
+
+&lt;p&gt;下面进行修改&lt;/p&gt;
+
+&lt;p&gt;使用软件为 Karabiner&lt;/p&gt;
+
+&lt;p&gt;默认的上下左右键比较难按，所以设置为左边 Control 键跟 WSAD 键，比较人性化。
+默认的 Control+A 为 行首，Control+&lt;/p&gt;
+
+&lt;p&gt;功能描述 原键位 映射键位
+L_Control+WSAD 对应上下左右键 L_Control+W/S/A/D 上下左右键
+L_Control+Q 对应 Control+A L_Control+Q Control+A
+L_Option 转 L_Command L_Option L_Command
+L_Command 转 R_Option L_Command R_Option
+R_Option 转 R_Command R_Option R_Command
+看上边表格比较费劲，下面就上配置图吧&lt;/p&gt;
+
+&lt;p&gt;上边二张图可以直接在软件中修改成如图所示，下面这张图要在配置文件中设置&lt;/p&gt;
+
+&lt;p&gt;设置方法如下：
+进入到~/.config/karabiner/assets/complex_modifications，创建一个 my.json
+将下面代码复制进去&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;My vim style like arrow key control&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;rules&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;L_Control + q to L_Control + a &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;manipulators&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;from&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;q&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;modifiers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;mandatory&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;optional&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;any&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;to&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;modifiers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;basic&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;L_Control + w/a/s/d to arrows&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;manipulators&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;from&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;modifiers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;mandatory&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;optional&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;any&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;to&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;up_arrow&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;basic&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;from&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;modifiers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;mandatory&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;optional&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;any&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;to&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_arrow&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;basic&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;from&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;s&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;modifiers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;mandatory&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;optional&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;any&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;to&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;down_arrow&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;basic&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;from&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;modifiers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;mandatory&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;optional&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;any&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;to&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;key_code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;right_arrow&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;basic&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="HHKB" /><summary type="html">键盘修改映射</summary></entry><entry><title type="html">HTML5的元素嵌套规则</title><link href="http://localhost:4000/2020/01/01/heml5.html" rel="alternate" type="text/html" title="HTML5的元素嵌套规则" /><published>2020-01-01T20:00:21+08:00</published><updated>2020-01-01T20:00:21+08:00</updated><id>http://localhost:4000/2020/01/01/heml5</id><content type="html" xml:base="http://localhost:4000/2020/01/01/heml5.html">&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;html5-的元素嵌套规则&quot;&gt;HTML5 的元素嵌套规则&lt;/h1&gt;
 
@@ -579,7 +714,163 @@ const useStyles = makeStyles({
     }
 });
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="Material-UI" /><category term="Google-UI" /><summary type="html"></summary></entry><entry><title type="html">14款Mac外接显卡</title><link href="http://localhost:4000/2019/12/26/R9-Nano.html" rel="alternate" type="text/html" title="14款Mac外接显卡" /><published>2019-12-26T20:00:21+08:00</published><updated>2019-12-26T20:00:21+08:00</updated><id>http://localhost:4000/2019/12/26/R9-Nano</id><content type="html" xml:base="http://localhost:4000/2019/12/26/R9-Nano.html">&lt;h2 id=&quot;配置&quot;&gt;配置&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="Material-UI" /><category term="Google-UI" /><summary type="html"></summary></entry><entry><title type="html">HTML5的元素嵌套规则</title><link href="http://localhost:4000/2020/01/01/babel.html" rel="alternate" type="text/html" title="HTML5的元素嵌套规则" /><published>2020-01-01T20:00:21+08:00</published><updated>2020-01-01T20:00:21+08:00</updated><id>http://localhost:4000/2020/01/01/babel</id><content type="html" xml:base="http://localhost:4000/2020/01/01/babel.html">&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;babel-之-babel-polyfillbabel-runtimetransform-runtime-详解&quot;&gt;Babel 之 babel-polyfill、babel-runtime、transform-runtime 详解&lt;/h1&gt;
+
+&lt;p&gt;引言&lt;/p&gt;
+
+&lt;h3 id=&quot;babel-默认只转换新的-javascript-语法比如箭头函数扩展运算spread&quot;&gt;babel 默认只转换新的 JavaScript 语法，比如箭头函数、扩展运算（spread）。&lt;/h3&gt;
+
+&lt;p&gt;不转换新的 API，例如 Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise 等全局对象，以及一些定义在全局对象上的方法（比如 Object.assign）都不会转译。如果想使用这些新的对象和方法，则需要为当前环境提供一个垫片（polyfill）。&lt;/p&gt;
+
+&lt;p&gt;此篇仅对三种 polyfill 进行介绍，并讲了他们的安装配置。具体的每种对新语法的转换结果，可以看参考链接的第一个。&lt;/p&gt;
+
+&lt;h2 id=&quot;三种-polyfill-介绍&quot;&gt;三种 polyfill 介绍&lt;/h2&gt;
+
+&lt;h2 id=&quot;babel-polyfill&quot;&gt;babel-polyfill&lt;/h2&gt;
+
+&lt;p&gt;目前最常用的配合 Babel 一起使用的 polyfill 是 babel-polyfill，通过改写全局 prototype 的方式实现，它会加载整个 polyfill，针对编译的代码中新的 API 进行处理，并且在代码中插入一些帮助函数，比较适合单独运行的项目。&lt;/p&gt;
+
+&lt;p&gt;babel-polyfill 解决了 Babel 不转换新 API 的问题，但是直接在代码中插入帮助函数，会导致污染了全局环境，并且不同的代码文件中包含重复的代码，导致编译后的代码体积变大。虽然这对于应用程序或命令行工具来说可能是好事，但如果你的代码打算发布为供其他人使用的库，或你无法完全控制代码运行的环境，则会成为问题。&lt;/p&gt;
+
+&lt;h1 id=&quot;babel-runtime&quot;&gt;babel-runtime&lt;/h1&gt;
+
+&lt;p&gt;Babel 为了解决上述问题，提供了单独的包 babel-runtime 用以提供编译模块的工具函数，启用插件 babel-plugin-transform-runtime 后，Babel 就会使用 babel-runtime 下的工具函数。&lt;/p&gt;
+
+&lt;p&gt;babel-runtime 插件能够将这些工具函数的代码转换成 require 语句，指向为对 babel-runtime 的引用。每当要转译一个 api 时都要手动加上 require(‘babel-runtime’)。简单说 babel-runtime 更像是一种按需加载的实现，比如你哪里需要使用 Promise，只要在这个文件头部 require Promise from ‘babel-runtime/core-js/promise’就行了&lt;/p&gt;
+
+&lt;p&gt;不过如果你许多文件都要使用 Promise，难道每个文件都要 import 一遍不成？&lt;/p&gt;
+
+&lt;p&gt;babel-plugin-transform-runtime#
+为了方便使用 babel-runtime，解决手动 require 的苦恼。它会分析我们的 ast 中，是否有引用 babel-rumtime 中的垫片（通过映射关系），如果有，就会在当前模块顶部插入我们需要的垫片。&lt;/p&gt;
+
+&lt;p&gt;transform-runtime 是利用 plugin 自动识别并替换代码中的新特性，你不需要再引入，只需要装好 babel-runtime 和 配好 plugin 就可以了。&lt;/p&gt;
+
+&lt;p&gt;好处是按需替换，检测到你需要哪个，就引入哪个 polyfill，如果只用了一部分，打包完的文件体积对比 babel-polyfill 会小很多。而且 transform-runtime 不会污染原生的对象，方法，也不会对其他 polyfill 产生影响。&lt;/p&gt;
+
+&lt;p&gt;所以 transform-runtime 的方式更适合开发工具包，库，一方面是体积够小，另一方面是用户（开发者）不会因为引用了我们的工具，包而污染了全局的原生方法，产生副作用，还是应该留给用户自己去选择。&lt;/p&gt;
+
+&lt;h1 id=&quot;-比较&quot;&gt;⭐ 比较&lt;/h1&gt;
+
+&lt;p&gt;babel-polyfill 与 babel-runtime 相比虽然有各种缺点，但在某些情况下仍然不能被 babel-runtime 替代， 例如，&lt;/p&gt;
+
+&lt;p&gt;[1, 2, 3].includes(3)，Object.assign({}, {key: ‘value’})，Array，Object 以及其他”实例”下 es6 的方法，babel-runtime 是无法支持的， 因为 babel-runtime 只支持到 static 的方法。&lt;/p&gt;
+
+&lt;h1 id=&quot;安装配置&quot;&gt;安装配置&lt;/h1&gt;
+
+&lt;p&gt;babel-polyfill#
+因为这是一个 polyfill （它需要在你的源代码之前运行），我们需要让它成为一个 dependency，而不是一个 devDependency 。&lt;/p&gt;
+
+&lt;p&gt;npm install –save babel-polyfill&lt;/p&gt;
+
+&lt;p&gt;直接在代码中 require，或者在 webpack 的 entry 中添加，也可以在 babel 的 env 中设置 useBuildins 为 true 来开启。&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//示例：vue-cli 脚手架中使用&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;babel-polyfill&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//示例：webpack 的 entry 中添加&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;common&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;`babel-polyfill`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;`whatwg-fetch`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;`react`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;`react-dom`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;`redux`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;`react-redux`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;`js-cookie`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;babel-runtime 和 babel-plugin-transform-runtime#
+在大多数情况下，你应该安装 babel-plugin-transform-runtime 作为开发依赖（使用 –save-dev），并且将 babel-runtime 作为生产依赖（使用 –save）。这个看 vue-cli 生成的 package.json 就能发现。&lt;/p&gt;
+
+&lt;p&gt;因为 babel 编译 es6 到 es5 的过程中，babel-plugin-transform-runtime 这个插件会自动 polyfill es5 不支持的特性，这些 polyfill 包就是在 babel-runtime 这个包里（core-js 、regenerator 等）&lt;/p&gt;
+
+&lt;p&gt;npm install –save-dev babel-plugin-transform-runtime&lt;/p&gt;
+
+&lt;p&gt;npm install –save babel-runtime&lt;/p&gt;
+
+&lt;p&gt;用法#
+通过 .babelrc（推荐）&lt;/p&gt;
+
+&lt;p&gt;将以下内容添加到你的 .babelrc 文件中：&lt;/p&gt;
+
+&lt;p&gt;未包含选项：&lt;/p&gt;
+
+&lt;p&gt;Copy
+{
+“plugins”: [“transform-runtime”]
+}
+包含选项:&lt;/p&gt;
+
+&lt;p&gt;Copy
+{
+“plugins”: [
+[“transform-runtime”, {
+“helpers”: false,
+“polyfill”: false,
+“regenerator”: true,
+“moduleName”: “babel-runtime”
+}]
+]
+}
+选项# 1.辅助(helpers)&lt;/p&gt;
+
+&lt;p&gt;默认值是:true&lt;/p&gt;
+
+&lt;p&gt;表示是否开启内联的 babel helpers(即 babel 或者环境本来的存在的垫片或者某些对象方法函数)(clasCallCheck,extends,etc)在调用模块名字(moduleName)时将被替换名字。&lt;/p&gt;
+
+&lt;p&gt;2.垫片/polyfill&lt;/p&gt;
+
+&lt;p&gt;默认值是:`true’&lt;/p&gt;
+
+&lt;p&gt;表示是否把内置的东西(Promise,Set,Map,tec)转换成非全局污染垫片。&lt;/p&gt;
+
+&lt;p&gt;3.重新生成/regenerator&lt;/p&gt;
+
+&lt;p&gt;默认值是:true&lt;/p&gt;
+
+&lt;p&gt;是否开启 generator 函数转换成使用 regenerator runtime 来避免污染全局域。&lt;/p&gt;
+
+&lt;p&gt;4.模块名字/moduleName&lt;/p&gt;
+
+&lt;p&gt;默认值:babel-runtime&lt;/p&gt;
+
+&lt;p&gt;当调用辅助（内置垫片）设置模块（module）名字/路径.&lt;/p&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+
+&lt;p&gt;Copy
+{
+“moduleName”: “flavortown/runtime”
+}
+Copy
+import extends from ‘flavortown/runtime/helpers/extends’;
+优点#
+不会污染全局变量&lt;/p&gt;
+
+&lt;p&gt;多次使用只会打包一次&lt;/p&gt;
+
+&lt;p&gt;依赖统一按需引入,无重复引入,无多余引入&lt;/p&gt;
+
+&lt;p&gt;缺点#
+不支持实例化的方法，例 Array.includes(x) 就不能转化&lt;/p&gt;
+
+&lt;p&gt;如果使用的 API 用的次数不是很多，那么 transform-runtime 引入 polyfill 的包会比不是 transform-runtime 时大&lt;/p&gt;
+
+&lt;p&gt;随着应用的增大，相同的 polyfill 每个模块都要做重复的工作（检测，替换），虽然 polyfill 只是引用，编译效率不够高效。&lt;/p&gt;
+
+&lt;p&gt;参考链接#
+Babel 用法 | usages transform-runtime&lt;/p&gt;
+
+&lt;p&gt;小毛蛋_对 babel-transform-runtime，babel-polyfill 的一些理解&lt;/p&gt;
+
+&lt;p&gt;zackxizi babel-runtime 和 babel-polyfill 的作用介绍和使用&lt;/p&gt;
+
+&lt;p&gt;babel-polyfill、babel-runtime 的选择&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="HTML5" /><category term="标签" /><summary type="html"></summary></entry><entry><title type="html">14款Mac外接显卡</title><link href="http://localhost:4000/2019/12/26/R9-Nano.html" rel="alternate" type="text/html" title="14款Mac外接显卡" /><published>2019-12-26T20:00:21+08:00</published><updated>2019-12-26T20:00:21+08:00</updated><id>http://localhost:4000/2019/12/26/R9-Nano</id><content type="html" xml:base="http://localhost:4000/2019/12/26/R9-Nano.html">&lt;h2 id=&quot;配置&quot;&gt;配置&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191228010832281.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1296,128 +1587,4 @@ children | string | 按钮内容
 &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="==" /><category term="原型方法" /><summary type="html"></summary></entry><entry><title type="html">Linux不香吗</title><link href="http://localhost:4000/2019/11/21/linux.html" rel="alternate" type="text/html" title="Linux不香吗" /><published>2019-11-21T20:00:21+08:00</published><updated>2019-11-21T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/21/linux</id><content type="html" xml:base="http://localhost:4000/2019/11/21/linux.html">&lt;h3 id=&quot;linux-常用指令集合-赶紧打印出来贴在电脑上-哈哈&quot;&gt;Linux 常用指令集合 赶紧打印出来贴在电脑上 哈哈&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191122021028864.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="Linux指令" /><summary type="html">Linux 常用指令集合 赶紧打印出来贴在电脑上 哈哈</summary></entry><entry><title type="html">死锁是什么</title><link href="http://localhost:4000/2019/11/18/sisuo.html" rel="alternate" type="text/html" title="死锁是什么" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/sisuo</id><content type="html" xml:base="http://localhost:4000/2019/11/18/sisuo.html">&lt;h3 id=&quot;用个通俗的例子讲一讲死锁&quot;&gt;用个通俗的例子讲一讲死锁&lt;/h3&gt;
-
-&lt;p&gt;死锁是进程死锁的简称，是由Dijkstra于1965年研究银行家算法时首先提出来的。它是计算机系统乃至并发程序设计中最难处理的问题之一。实际上，死锁问题不仅在计算机系统中存在，在我们日常生活中它也广泛存在。这里，我想抛开语言，用一个例子来聊一聊死锁问题，聊一聊它是怎么产生的？应该怎么防止？&lt;/p&gt;
-
-&lt;p&gt;假设我们有一把蓝钥匙，可以打开一扇蓝色的门；以及一把红钥匙，可以打开一扇红色的门。两把钥匙被保存在一个皮箱里。同时我们定义六种行为：获取蓝钥匙，打开蓝色门，归还蓝钥匙，获取红钥匙，打开红色门，归还红钥匙。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://pic4.zhimg.com/80/v2-823088df49d849ebbcb52739ec20333b_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;游戏规则是：一个人（线程）必须通过排列六种指令的顺序，打开两扇门，最后归还钥匙。&lt;/p&gt;
-
-&lt;p&gt;随便排一下就好了啊，只要注意同一颜色的三种指令的先后顺序是“取钥匙 -&amp;gt; 开门 -&amp;gt; 还钥匙”就可以了。比如下面这种执行顺序：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://pic1.zhimg.com/80/v2-47148333a7ad551e6e7598118290ac64_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;计算下我们可以知道，可能的解法一共有20种（ [公式] ），这里画出其中的6种：
-&lt;img src=&quot;https://pic1.zhimg.com/80/v2-1a3491eb9bcf99612863a4be404e57f4_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;同样的规则，只不过换成两个线程同时进行这个游戏，每个线程都有各自的两扇门需要打开，但是两个线程共享一副红蓝钥匙。如果某个线程取钥匙时发现钥匙已被另一个线程取走了，它会等着，等到另一个线程归还了钥匙之后再继续。&lt;/p&gt;
-
-&lt;p&gt;我们从单人模式的6组解中随机全取两组：解法3和解法4。
-&lt;img src=&quot;https://pic2.zhimg.com/80/v2-021292616c89207b9868f3991be7d699_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;把这两组解分别作为线程A和线程B，并且同时开始执行这两组指令：
-&lt;img src=&quot;https://pic3.zhimg.com/80/v2-0ddef2bf3fe48044006b54d942c57f06_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;由于线程B在第四步的时候，需要等线程A运行到第六步归还了蓝钥匙之后才能继续，所以最后线程A先跑完，线程B后跑完，但是两个线程都成功的完成了任务。&lt;/p&gt;
-
-&lt;p&gt;那是不是从6组解法中任意选出两组解法都可以呢？&lt;/p&gt;
-
-&lt;p&gt;我们这次选解法3和解法5作为线程A和线程B试一试：
-&lt;img src=&quot;https://pic2.zhimg.com/80/v2-4423d2645e0d0ef610cf63d34013792d_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;同时开始运行线程A和线程B：
-&lt;img src=&quot;https://pic4.zhimg.com/80/v2-08a5a1993bfa2468f2a40f7cb9864b67_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;可以看到，当两个线程都运行到第三步的时候，线程A在等线程B归还红钥匙，线程B在等线程A归还蓝钥匙，因而两个线程都永远卡在那里无法前进。&lt;/p&gt;
-
-&lt;p&gt;这就是形成了死锁。&lt;/p&gt;
-
-&lt;p&gt;在全部的20种可能线程解法中，随机选出两组线程，有一定的几率会出现死锁的情况（有兴趣的知友可以算一算这个几率是多少？如果是选三组线程呢？）。一般来说死锁的出现必须满足以下四个必要条件：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;互斥条件：指进程对所分配到的资源进行排它性使用，即在一段时间内某资源只由一个进程占用。如果此时还有其它进程请求资源，则请求者只能等待，直至占有资源的进程用毕释放。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;——只有一副钥匙&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;请求和保持条件：指进程已经保持至少一个资源，但又提出了新的资源请求，而该资源已被其它进程占有，此时请求进程阻塞，但又对自己已获得的其它资源保持不放。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;——拿着红钥匙的人在没有归还红钥匙的情况下，又提出要蓝钥匙&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;不剥夺条件：指进程已获得的资源，在未使用完之前，不能被剥夺，只能在使用完时由自己释放。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;——人除非归还了钥匙，不然一直占用着钥匙&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;环路等待条件：指在发生死锁时，必然存在一个进程——资源的环形链，即进程集合{P0，P1，P2，···，Pn}中的P0正在等待一个P1占用的资源；P1正在等待P2占用的资源，……，Pn正在等待已被P0占用的资源。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;——拿着红钥匙的人在等蓝钥匙，同时那个拿着蓝钥匙的人在等红钥匙&lt;/p&gt;
-
-&lt;p&gt;要避免出现死锁的问题，只需要破坏四个条件中的任何一个就可以了。&lt;/p&gt;
-
-&lt;h4 id=&quot;我们来看看常见的避免死锁的方法&quot;&gt;我们来看看常见的避免死锁的方法。&lt;/h4&gt;
-
-&lt;p&gt;—方法一 . 破坏互斥条件—&lt;/p&gt;
-
-&lt;p&gt;只有一副钥匙，这是形成死锁的最关键的原因。显然，如果我们能在两个线程跑之前，能给每个线程单独拷贝一份钥匙的副本，就能有效的避免死锁了。
-&lt;img src=&quot;https://pic1.zhimg.com/80/v2-6245ebc4fa33da062dd3269696c757d0_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;当然，这种方法试用范围并不广。因为有时如果系统拷贝那副钥匙的成本极高，而线程又很多的话，这种方法就不适用了。&lt;/p&gt;
-
-&lt;p&gt;—方法二. 破坏环路等待条件—&lt;/p&gt;
-
-&lt;p&gt;会出现死锁的两两组合，一定都是一个线程先取了红钥匙而另一个线程先取了蓝钥匙，从而导致了可能形成了“环路等待”。所以我们可以强制规定任何线程取钥匙的顺序只能是 “先取蓝钥匙再取红钥匙”的话，就能避免死锁了。（六组解也就只剩下前三组解是有效的了）
-&lt;img src=&quot;https://pic1.zhimg.com/80/v2-360a73cf950da233cf277a95db8147a4_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;—方法三.破坏不剥夺条件—&lt;/p&gt;
-
-&lt;p&gt;除非线程自己还钥匙，否则线程会一直占有钥匙，是形成不可剥夺条件的原因。这里，我们可以通过设置一个”最长占用时间“的阈值来解决这个问题——如果过了10分钟仍然没有进入下一个步骤，则归还已有的钥匙。这样的话，两个线程都能取到所需的钥匙继续下去了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://pic3.zhimg.com/80/v2-581b37523034b9c383be05a2bc3d46b2_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;—方法四.破坏请求和保持条件—&lt;/p&gt;
-
-&lt;p&gt;任何一个线程“贪心”，都可能会导致死锁。大致就是说有了一把钥匙还没还就要另一把。这里我们可以通过规定在任何情况下，一个线程获取一把钥匙之后，必须归还了钥匙之后才能请求另一把钥匙，就可以有效解决这个问题。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://pic3.zhimg.com/80/v2-5897c4b4a827a3a55886d4eed142c282_hd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;我经常用这个取钥匙开门的例子来讲解死锁，一个原因是讲解的过程中可以用人和实物来亲自示范，比较容易给人留下印象。更重要的一点是，这个例子对应的几种避免死锁的方法和思想可以很容易地运用到实际的编程当中。&lt;/p&gt;
-
-&lt;p&gt;死锁是一个很有意思的话题，实际工作中接触到的频率还蛮高的。所有的死锁问题中，SQL数据库的死锁问题其实是被讨论的最多的。下一次有机会专门来聊一聊SQL DB的死锁问题。&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="死锁" /><summary type="html">用个通俗的例子讲一讲死锁</summary></entry><entry><title type="html">关于a.x = a = {n:2} 的思考 [快手]</title><link href="http://localhost:4000/2019/11/18/kuaishou.html" rel="alternate" type="text/html" title="关于a.x = a = {n:2} 的思考 [快手]" /><published>2019-11-18T20:00:21+08:00</published><updated>2019-11-18T20:00:21+08:00</updated><id>http://localhost:4000/2019/11/18/kuaishou</id><content type="html" xml:base="http://localhost:4000/2019/11/18/kuaishou.html">&lt;h3 id=&quot;面试遇到的一个题目-分享下&quot;&gt;面试遇到的一个题目, 分享下&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;关于js中连续赋值的问题, 一般情况写不要随便写连续赋值, 容易出问题
-考虑下一下会输出什么内容, 先思考下, 然后上机测试下看看考虑的对不对&lt;/p&gt;
-  &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
-  &lt;hr /&gt;
-  &lt;h3 id=&quot;答案&quot;&gt;答案:&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//a指向了一个新地址&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//a.x原来中的a还是指向原来位置,所以 a.x =  a = {n:2} 等于实现了 a.x = {n:2}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//undefined , 原因是此时a 因为a = {n:2}操作, a的指向已经变了, 现在a跟之前的a.n中的a不是一个指向了&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//{n:2} &lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//{n:2}  a指向了一个新地址&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//{n:1 x:{n:2} //a.x原来中的ah还是指向原来位置 a.x =  a = {n:2} 等于实现了 a.x = {n:2}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ma_meng</name></author><category term="js连续赋值" /><summary type="html">面试遇到的一个题目, 分享下 关于js中连续赋值的问题, 一般情况写不要随便写连续赋值, 容易出问题 考虑下一下会输出什么内容, 先思考下, 然后上机测试下看看考虑的对不对 var a = { n:1, } var b =a ; a.x = a = {n:2} console.log(a.x); console.log(b.x); console.log(a); console.log(b); 答案:</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20191122021028864.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>ma_meng</name></author><category term="Linux指令" /><summary type="html">Linux 常用指令集合 赶紧打印出来贴在电脑上 哈哈</summary></entry></feed>
